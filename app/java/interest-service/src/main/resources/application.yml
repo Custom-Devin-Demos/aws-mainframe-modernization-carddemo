@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: interest-service
+  datasource:
+    url: ${JDBC_URL:jdbc:postgresql://localhost:5432/carddemo}
+    username: ${JDBC_USER:carddemo}
+    password: ${JDBC_PASSWORD:carddemo}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  batch:
+    # Do not auto-run jobs on application startup; the job is launched explicitly
+    # (via the batch JobLauncher / scheduler).
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
