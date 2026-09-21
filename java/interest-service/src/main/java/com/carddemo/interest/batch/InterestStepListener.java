@@ -60,9 +60,10 @@ public class InterestStepListener implements StepExecutionListener {
 
     @Override
     public void beforeStep(StepExecution stepExecution) {
-        xrefs.load(readRecords(xrefFile, CardXref::fromRecord));
-        discgrps.load(readRecords(discgrpFile, DisclosureGroup::fromRecord));
-        accounts.load(readRecords(acctFile, Account::fromRecord));
+        xrefs.load(readRecords(xrefFile, line -> CardXref.fromRecord(padRecord(line, CardXref.RECORD_LENGTH))));
+        discgrps.load(readRecords(discgrpFile,
+                line -> DisclosureGroup.fromRecord(padRecord(line, DisclosureGroup.RECORD_LENGTH))));
+        accounts.load(readRecords(acctFile, line -> Account.fromRecord(padRecord(line, Account.RECORD_LENGTH))));
     }
 
     @Override
@@ -85,6 +86,14 @@ public class InterestStepListener implements StepExecutionListener {
         } catch (IOException e) {
             throw new UncheckedIOException("ERROR OPENING " + file, e);
         }
+    }
+
+    /**
+     * Line-sequential files written by GnuCOBOL drop trailing FILLER spaces; a fixed-length COBOL
+     * READ pads them back, so short lines are space-filled to the record length.
+     */
+    static String padRecord(String line, int recordLength) {
+        return line.length() >= recordLength ? line : line + " ".repeat(recordLength - line.length());
     }
 
     static <T> void writeRecords(Path file, List<T> records, Function<T, String> formatter) throws IOException {

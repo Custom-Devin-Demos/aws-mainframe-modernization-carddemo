@@ -86,7 +86,8 @@ public class InterestJobConfig {
         return new FlatFileItemReaderBuilder<TranCatBalance>()
                 .name("tcatbalReader")
                 .resource(new FileSystemResource(tcatbalFile))
-                .lineMapper((line, lineNumber) -> TranCatBalance.fromRecord(line))
+                .lineMapper((line, lineNumber) -> TranCatBalance.fromRecord(
+                        InterestStepListener.padRecord(line, TranCatBalance.RECORD_LENGTH)))
                 .build();
     }
 
