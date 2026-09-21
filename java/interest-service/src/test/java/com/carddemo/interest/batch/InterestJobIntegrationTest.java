@@ -16,7 +16,8 @@ import java.nio.file.Path;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.junit.jupiter.api.io.TempDir;
 import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.JobExecution;
@@ -31,7 +32,8 @@ import org.springframework.boot.test.context.SpringBootTest;
  * Drives reader -> InterestProcessor -> writer over the repository sample data
  * (app/data/ASCII, the same files JCL INTCALC reads) and checks the CBACT04C invariants:
  * one interest transaction per TCATBAL record whose rate is non-zero, sequential TRAN-IDs,
- * every account rewritten with cycle credit/debit zeroed and interest posted.
+ * every posted account rewritten with cycle credit/debit zeroed and interest added. The final
+ * control group is posted only with {@code postFinalAccount=true} (see InterestJobConfig).
  */
 @SpringBootTest
 @SpringBatchTest
@@ -46,8 +48,10 @@ class InterestJobIntegrationTest {
     @TempDir
     Path work;
 
-    @Test
-    void procedureDivision_mainLoop_oneTransactionPerNonZeroRateCategoryAndAccountsRewritten() throws Exception {
+    @ParameterizedTest(name = "postFinalAccount={0}")
+    @ValueSource(booleans = {false, true})
+    void procedureDivision_mainLoop_oneTransactionPerNonZeroRateCategoryAndAccountsRewritten(boolean postFinalAccount)
+            throws Exception {
         Path tcatbal = copy("tcatbal.txt");
         Path discgrp = copy("discgrp.txt");
         Path xref = copy("cardxref.txt");
@@ -55,7 +59,8 @@ class InterestJobIntegrationTest {
         Path tran = work.resolve("systran.txt");
         List<Account> accountsBefore = read(acct, Account::fromRecord);
 
-        JobExecution execution = jobLauncherTestUtils.launchJob(params(tcatbal, xref, discgrp, acct, tran));
+        JobExecution execution = jobLauncherTestUtils.launchJob(
+                params(tcatbal, xref, discgrp, acct, tran, postFinalAccount));
 
         assertThat(execution.getStatus()).isEqualTo(BatchStatus.COMPLETED);
 
@@ -96,12 +101,14 @@ class InterestJobIntegrationTest {
         assertThat(acctLines).hasSize(accountsBefore.size());
         assertThat(acctLines).allSatisfy(line -> assertThat(line).hasSize(Account.RECORD_LENGTH));
         List<Account> accountsAfter = acctLines.stream().map(Account::fromRecord).toList();
+        String lastAcctId = balances.get(balances.size() - 1).acctId();
         for (int i = 0; i < accountsAfter.size(); i++) {
             Account before = accountsBefore.get(i);
             Account after = accountsAfter.get(i);
             assertThat(after.id()).isEqualTo(before.id());
             BigDecimal interest = expectedInterest.getOrDefault(before.id(), new BigDecimal("0.00"));
-            boolean touched = balances.stream().anyMatch(b -> b.acctId().equals(before.id()));
+            boolean touched = balances.stream().anyMatch(b -> b.acctId().equals(before.id()))
+                    && (postFinalAccount || !before.id().equals(lastAcctId));
             if (touched) {
                 assertThat(after.currBal()).isEqualByComparingTo(before.currBal().add(interest));
                 assertThat(after.currCycCredit()).isEqualByComparingTo("0.00");
@@ -112,8 +119,10 @@ class InterestJobIntegrationTest {
         }
     }
 
-    static JobParameters params(Path tcatbal, Path xref, Path discgrp, Path acct, Path tran) {
+    static JobParameters params(Path tcatbal, Path xref, Path discgrp, Path acct, Path tran,
+                                boolean postFinalAccount) {
         return new JobParametersBuilder()
+                .addString(InterestJobConfig.PARAM_POST_FINAL_ACCOUNT, Boolean.toString(postFinalAccount))
                 .addString(InterestJobConfig.PARAM_RUN_DATE, RUN_DATE)
                 .addString(InterestJobConfig.PARAM_TCATBAL_FILE, tcatbal.toString())
                 .addString(InterestJobConfig.PARAM_XREF_FILE, xref.toString())

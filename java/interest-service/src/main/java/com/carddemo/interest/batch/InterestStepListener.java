@@ -25,8 +25,9 @@ import org.springframework.batch.item.ItemWriter;
  *
  * <p>{@code beforeStep} = 0100-XREFFILE-OPEN / 0200-DISCGRP-OPEN / 0300-ACCTFILE-OPEN: the keyed
  * VSAM files are loaded into the in-memory repositories.
- * {@code afterStep} = the END-OF-FILE branch (line 220, final 1050-UPDATE-ACCOUNT) followed by
- * 9300-ACCTFILE-CLOSE: the rewritten account records are persisted back to the account file in place.
+ * {@code afterStep} = 9300-ACCTFILE-CLOSE: the rewritten account records are persisted back to the
+ * account file in place. The END-OF-FILE branch (line 220, final 1050-UPDATE-ACCOUNT) is dead code in
+ * CBACT04C and is only performed when {@code postFinalAccount} is set.
  */
 @Trace(program = "CBACT04C", paragraph = "0100/0200/0300-*-OPEN, 9100/9200/9300-*-CLOSE")
 public class InterestStepListener implements StepExecutionListener {
@@ -34,6 +35,7 @@ public class InterestStepListener implements StepExecutionListener {
     private final Path xrefFile;
     private final Path discgrpFile;
     private final Path acctFile;
+    private final boolean postFinalAccount;
     private final InMemoryCardXrefRepository xrefs;
     private final InMemoryDisclosureGroupRepository discgrps;
     private final InMemoryAccountRepository accounts;
@@ -43,6 +45,7 @@ public class InterestStepListener implements StepExecutionListener {
     public InterestStepListener(String xrefFile,
                                 String discgrpFile,
                                 String acctFile,
+                                boolean postFinalAccount,
                                 InMemoryCardXrefRepository xrefs,
                                 InMemoryDisclosureGroupRepository discgrps,
                                 InMemoryAccountRepository accounts,
@@ -51,6 +54,7 @@ public class InterestStepListener implements StepExecutionListener {
         this.xrefFile = Path.of(xrefFile);
         this.discgrpFile = Path.of(discgrpFile);
         this.acctFile = Path.of(acctFile);
+        this.postFinalAccount = postFinalAccount;
         this.xrefs = xrefs;
         this.discgrps = discgrps;
         this.accounts = accounts;
@@ -71,7 +75,9 @@ public class InterestStepListener implements StepExecutionListener {
     public ExitStatus afterStep(StepExecution stepExecution) {
         if (!stepExecution.getStatus().isUnsuccessful()) {
             try {
-                writer.write(Chunk.of(processor.flush()));
+                if (postFinalAccount) {
+                    writer.write(Chunk.of(processor.flush()));
+                }
                 writeRecords(acctFile, accounts.findAll(), Account::toRecord);
             } catch (Exception e) {
                 throw new IllegalStateException("ERROR RE-WRITING ACCOUNT FILE", e);

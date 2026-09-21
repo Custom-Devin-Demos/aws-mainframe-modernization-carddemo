@@ -52,6 +52,13 @@ public class InterestJobConfig {
     public static final String PARAM_DISCGRP_FILE = "discgrpFile";
     public static final String PARAM_ACCT_FILE = "acctFile";
     public static final String PARAM_TRAN_FILE = "tranFile";
+    /**
+     * Optional (default {@code false}). CBACT04C's {@code ELSE PERFORM 1050-UPDATE-ACCOUNT} on line 220
+     * is unreachable: {@code PERFORM UNTIL END-OF-FILE = 'Y'} exits before that branch can run, so the
+     * last account in TCATBALF gets its transactions written but its balance is never posted. The
+     * default reproduces that; {@code true} posts the final account as the paragraph evidently intended.
+     */
+    public static final String PARAM_POST_FINAL_ACCOUNT = "postFinalAccount";
 
     /** COBOL processes one record at a time; chunk size only affects transaction boundaries. */
     static final int CHUNK_SIZE = 100;
@@ -133,12 +140,13 @@ public class InterestJobConfig {
             @Value("#{jobParameters['" + PARAM_XREF_FILE + "']}") String xrefFile,
             @Value("#{jobParameters['" + PARAM_DISCGRP_FILE + "']}") String discgrpFile,
             @Value("#{jobParameters['" + PARAM_ACCT_FILE + "']}") String acctFile,
+            @Value("#{jobParameters['" + PARAM_POST_FINAL_ACCOUNT + "'] ?: 'false'}") boolean postFinalAccount,
             InMemoryCardXrefRepository xrefs,
             InMemoryDisclosureGroupRepository discgrps,
             InMemoryAccountRepository accounts,
             InterestProcessor interestProcessor,
             ItemWriter<InterestItemResult> interestItemWriter) {
-        return new InterestStepListener(xrefFile, discgrpFile, acctFile, xrefs, discgrps, accounts,
-                interestProcessor, interestItemWriter);
+        return new InterestStepListener(xrefFile, discgrpFile, acctFile, postFinalAccount, xrefs, discgrps,
+                accounts, interestProcessor, interestItemWriter);
     }
 }

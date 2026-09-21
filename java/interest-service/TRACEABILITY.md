@@ -127,7 +127,7 @@ Files/DDs in CBACT04C and their Java counterparts (FILE-CONTROL lines 28-56, FD 
 | control-break block | 194-206 | `InterestProcessor.process`: `if (!item.acctId().equals(lastAcctNum))` | On account change: if not first time, post the *previous* account (`AccountPostingService.postInterest` + returned in `InterestItemResult.accountUpdates`), else clear first-time flag (195-199); reset running total to 0 (200); remember account (201); load account (`AccountRepository.findById`, 202-203) and xref (`CardXrefRepository.findByAcctId`, 204-205). The account posted at the break is the one read at the previous break, so the processor must retain the previous `Account`. |
 | disclosure key build + rate lookup | 210-213 | `InterestRateService.getRate(account.groupId(), item.typeCd(), item.catCd())` | Key = ACCT-GROUP-ID of the *current* account + TRANCAT-TYPE-CD + TRANCAT-CD |
 | rate == 0 guard | 214-217 | `InterestProcessor.process`: `if (rate.signum() != 0)` | Only when `DIS-INT-RATE NOT = 0`: compute interest (1300) and fees (1400). Zero-rate records produce no transaction and do not touch WS-TOTAL-INT, but the account is still rewritten at the control break / EOF with WS-TOTAL-INT = 0 added and cycle credit/debit zeroed. |
-| EOF branch | 219-221 | `batch.InterestProcessor.flush()` (called once after the reader returns null, before the final write) | `PERFORM 1050-UPDATE-ACCOUNT` for the last account. Note: this runs even if the input file was empty (WS-FIRST-TIME still 'Y', ACCOUNT-RECORD never read) - see section 6. |
+| EOF branch | 219-221 | `batch.InterestProcessor.flush()`, invoked from `InterestStepListener.afterStep` only when job parameter `postFinalAccount=true` | **Dead code in CBACT04C**: `PERFORM UNTIL END-OF-FILE = 'Y'` (188) exits before the `ELSE` can run, so the last account's balance is never posted (confirmed by the GnuCOBOL golden files). Default Java behaviour reproduces that; see section 6 item 4. |
 | closes / end | 224-232 | Spring Batch step completion; `DISPLAY 'END OF EXECUTION...'` (230) -> log | `GOBACK` (232) -> `InterestServiceApplication.main` `System.exit(SpringApplication.exit(...))` |
 | 0000-TCATBALF-OPEN | 234-250 | `ItemReader.open()` / resource existence check in `InterestJobConfig` | non-'00' status -> `InterestServiceException` |
 | 0100-XREFFILE-OPEN | 252-268 | `InMemoryCardXrefRepository.load(...)` from `PARAM_XREF_FILE` | idem |
@@ -222,10 +222,8 @@ Files/DDs in CBACT04C and their Java counterparts (FILE-CONTROL lines 28-56, FD 
 | `batch.InterestProcessorTest.mainLoop_flushPostsLastAccountAtEof` | 219-221 |
 | `batch.InterestProcessorTest.paragraph1100GetAcctData_missingAccountAbends` | 1100 372-391 -> `InterestServiceException` |
 | `batch.InterestProcessorTest.paragraph1110GetXrefData_missingXrefAbends` | 1110 393-413 -> `InterestServiceException` |
-| `batch.InterestJobIntegrationTest.procedureDivision_runsJobEndToEndOnFixture` | 180-232 with `PARAM_RUN_DATE=2022071800` and fixture files; asserts step `COMPLETED`, transaction count, account file rewritten |
-| `batch.InterestJobIntegrationTest.paragraph0000To0400Open_missingInputFileFailsJob` | 234-323 -> step `FAILED` with `InterestServiceException` |
-| `parity.GoldenFileParityTest.paragraph1300BWriteTx_systranMatchesGoldenFile` | 1300-B 473-515: byte-for-byte compare of `expected/systran.txt` (timestamps pinned via `Db2TimestampSupplier`) |
-| `parity.GoldenFileParityTest.paragraph1050UpdateAccount_acctdataMatchesGoldenFile` | 1050 350-370: `expected/acctdata.txt` |
+| `batch.InterestJobIntegrationTest.procedureDivision_mainLoop_oneTransactionPerNonZeroRateCategoryAndAccountsRewritten` | 180-232 over `app/data/ASCII` with `runDate=2022071800`, both `postFinalAccount` settings; asserts `COMPLETED`, one transaction per non-zero-rate record, sequential TRAN-IDs, posted balances / zeroed cycle fields |
+| `batch.GoldenFileParityTest.cbact04c_outputMatchesCobolGoldenFiles` | 180-232 for scenarios `sample-data`, `nonzero-balances`, `single-account`: byte-for-byte compare of `expected/systran.txt` (bytes 279-330 timestamp format only) and `expected/acctdata.txt` produced by CBACT04C under GnuCOBOL |
 | `InterestServiceApplicationTests.contextLoads` | Spring wiring of `InterestJobConfig`, repositories, services (already present) |
 
 Fixture layout: `src/test/resources/fixtures/<scenario>/{input,expected}` (see `fixtures/README.md`).
@@ -247,8 +245,8 @@ Fixture layout: `src/test/resources/fixtures/<scenario>/{input,expected}` (see `
   field as six ASCII/EBCDIC digits with leading zeros -> `String.format("%06d", suffix)`. Overflow past
   999999 wraps to 000000 in COBOL (and would then produce duplicate TRAN-IDs).
 - **First-time flag.** `WS-FIRST-TIME` starts `'Y'`; the first control break flips it to `'N'` without
-  posting. From then on every control break posts the previous account. EOF (220) posts the final
-  account unconditionally.
+  posting. From then on every control break posts the previous account. The EOF branch (220) that
+  would post the final account is unreachable (see section 6 item 4).
 - **Accounts whose rates are all zero.** The guard at 214 only skips 1300/1400. The control break and
   EOF still run 1050-UPDATE-ACCOUNT, so the account is REWRITTEN with `ACCT-CURR-BAL + 0` and
   `ACCT-CURR-CYC-CREDIT = ACCT-CURR-CYC-DEBIT = 0`, and no transaction is produced. Java must emit the
@@ -272,10 +270,13 @@ Fixture layout: `src/test/resources/fixtures/<scenario>/{input,expected}` (see `
    start/end banners (181, 230); 'ACCOUNT NOT FOUND' (375, 397); 'DISCLOSURE GROUP RECORD MISSING' /
    'TRY WITH DEFAULT GROUP CODE' (418-419). Java: SLF4J logging (DEBUG for 193, INFO for banners, WARN
    for the fallback). SYSOUT parity is out of scope for the golden-file tests.
-4. **Empty input file.** With zero TCATBAL records, COBOL reaches EOF with `WS-FIRST-TIME = 'Y'` and
-   still PERFORMs 1050 (220), REWRITing an `ACCOUNT-RECORD` that was never READ (status would be
-   non-'00' -> abend, or on some runtimes rewrite garbage). Java `flush()` should post nothing when
-   `firstTime` is still true. Deliberate divergence.
+4. **Final account is never posted (EOF branch is dead code).** The `ELSE PERFORM 1050-UPDATE-ACCOUNT`
+   at 219-221 sits inside `PERFORM UNTIL END-OF-FILE = 'Y'`; once 1000-TCATBALF-GET-NEXT sets
+   `END-OF-FILE = 'Y'` the loop terminates before the ELSE is evaluated. The last control group's
+   transactions are written (1300-B) but its `ACCT-CURR-BAL` is left unchanged - verified by running the
+   program under GnuCOBOL (`fixtures/single-account`, account 7 of `fixtures/nonzero-balances`).
+   Java reproduces this by default; job parameter `postFinalAccount=true` performs the evidently
+   intended final 1050 via `InterestProcessor.flush()` (which posts nothing on an empty input file).
 5. **INVALID KEY on 1100/1110 is effectively fatal.** The `INVALID KEY` clauses only DISPLAY; the
    subsequent status check abends. Java throws `InterestServiceException` directly - same outcome,
    fewer log lines.
