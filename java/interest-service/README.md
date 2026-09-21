@@ -44,9 +44,23 @@ mirror in `~/.m2/settings.xml`:
 
 ## Run
 
+Job `interestCalcJob` takes the same inputs as JCL STEP15. `runDate` is the JCL `PARM`
+(`2022071800`); the four input files are the ASCII fixed-width layouts from `app/data/ASCII`
+(one record per line). The account file is rewritten in place (VSAM `REWRITE`), transactions are
+appended to `tranFile` (SYSTRAN).
+
 ```
-./mvnw spring-boot:run -Dspring-boot.run.arguments="runDate=2022071800,tcatbalFile=...,xrefFile=...,discgrpFile=...,acctFile=...,tranFile=..."
+cp ../../app/data/ASCII/acctdata.txt /tmp/acctdata.txt
+./mvnw spring-boot:run -Dspring-boot.run.arguments="runDate=2022071800 \
+  tcatbalFile=../../app/data/ASCII/tcatbal.txt xrefFile=../../app/data/ASCII/cardxref.txt \
+  discgrpFile=../../app/data/ASCII/discgrp.txt acctFile=/tmp/acctdata.txt tranFile=/tmp/systran.txt"
 ```
+
+Step `interestCalcStep`: `FlatFileItemReader<TranCatBalance>` -> `InterestProcessor` (stateful
+control-break, one instance per step execution) -> `InterestItemWriter` (SYSTRAN
+`FlatFileItemWriter<Transaction>` + account `REWRITE`). `InterestStepListener` loads the keyed
+files before the step and, after the last chunk, performs the COBOL end-of-file branch
+(`InterestProcessor.flush()` = final `1050-UPDATE-ACCOUNT`) and writes the account file back.
 
 ## Conventions
 
