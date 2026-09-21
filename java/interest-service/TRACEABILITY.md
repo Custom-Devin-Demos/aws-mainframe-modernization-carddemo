@@ -17,11 +17,11 @@ and `app/cpy` on the `main` branch.
 
 | Copybook | COBOL structure | Lines | Java type | Notes |
 |---|---|---|---|---|
-| CVTRA01Y | TRAN-CAT-BAL-RECORD | | `domain.TranCatBalance` | |
-| CVTRA02Y | DIS-GROUP-RECORD | | `domain.DisclosureGroup` | |
-| CVACT01Y | ACCOUNT-RECORD | | `domain.Account` | |
-| CVACT03Y | CARD-XREF-RECORD | | `domain.CardXref` | |
-| CVTRA05Y | TRAN-RECORD | | `domain.Transaction` | |
+| CVTRA01Y | TRAN-CAT-BAL-RECORD | 4-10 | `domain.TranCatBalance` | |
+| CVTRA02Y | DIS-GROUP-RECORD | 4-10 | `domain.DisclosureGroup` | |
+| CVACT01Y | ACCOUNT-RECORD | 4-17 | `domain.Account` | |
+| CVACT03Y | CARD-XREF-RECORD | 4-8 | `domain.CardXref` | |
+| CVTRA05Y | TRAN-RECORD | 4-18 | `domain.Transaction` | |
 
 ## 2. Paragraphs -> Java classes / methods
 

@@ -24,7 +24,7 @@ import java.math.BigDecimal;
  *
  * All S9(10)V99 fields are {@link BigDecimal} with scale 2.
  */
-@Trace(copybook = "CVACT01Y", lines = "16-30")
+@Trace(copybook = "CVACT01Y", lines = "4-17")
 public record Account(
         String id,
         String activeStatus,
@@ -41,12 +41,51 @@ public record Account(
 
     public static final int RECORD_LENGTH = 300;
 
-    public static Account fromRecord(String record) {
-        throw new UnsupportedOperationException("Child A: implement CVACT01Y parsing");
+    public Account {
+        currBal = CobolFields.scale2(currBal, "currBal");
+        creditLimit = CobolFields.scale2(creditLimit, "creditLimit");
+        cashCreditLimit = CobolFields.scale2(cashCreditLimit, "cashCreditLimit");
+        currCycCredit = CobolFields.scale2(currCycCredit, "currCycCredit");
+        currCycDebit = CobolFields.scale2(currCycDebit, "currCycDebit");
     }
 
+    @Trace(copybook = "CVACT01Y", lines = "4-17")
+    public static Account fromRecord(String record) {
+        String value = CobolFields.checkLength(record, RECORD_LENGTH);
+        return new Account(
+                CobolFields.pic9(value, 0, 11),
+                CobolFields.picX(value, 11, 1),
+                CobolFields.picS9V99(value, 12, 12),
+                CobolFields.picS9V99(value, 24, 12),
+                CobolFields.picS9V99(value, 36, 12),
+                CobolFields.picX(value, 48, 10),
+                CobolFields.picX(value, 58, 10),
+                CobolFields.picX(value, 68, 10),
+                CobolFields.picS9V99(value, 78, 12),
+                CobolFields.picS9V99(value, 90, 12),
+                CobolFields.picX(value, 102, 10),
+                CobolFields.picX(value, 112, 10));
+    }
+
+    @Trace(copybook = "CVACT01Y", lines = "4-17")
     public String toRecord() {
-        throw new UnsupportedOperationException("Child A: implement CVACT01Y formatting");
+        String result = CobolFields.format9(id, 11)
+                + CobolFields.formatX(activeStatus, 1)
+                + CobolFields.formatS9V99(currBal, 12)
+                + CobolFields.formatS9V99(creditLimit, 12)
+                + CobolFields.formatS9V99(cashCreditLimit, 12)
+                + CobolFields.formatX(openDate, 10)
+                + CobolFields.formatX(expirationDate, 10)
+                + CobolFields.formatX(reissueDate, 10)
+                + CobolFields.formatS9V99(currCycCredit, 12)
+                + CobolFields.formatS9V99(currCycDebit, 12)
+                + CobolFields.formatX(addrZip, 10)
+                + CobolFields.formatX(groupId, 10)
+                + " ".repeat(178);
+        if (result.length() != RECORD_LENGTH) {
+            throw new IllegalStateException("record length " + result.length() + ", expected " + RECORD_LENGTH);
+        }
+        return result;
     }
 
     /** Copy with new balance / cycle fields (used by AccountPostingService.postInterest). */

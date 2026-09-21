@@ -20,7 +20,7 @@ import java.math.BigDecimal;
  * @param catCd   DIS-TRAN-CAT-CD, 4 digits
  * @param intRate DIS-INT-RATE, scale 2 (annual percentage rate)
  */
-@Trace(copybook = "CVTRA02Y", lines = "16-22")
+@Trace(copybook = "CVTRA02Y", lines = "4-10")
 public record DisclosureGroup(String groupId, String typeCd, String catCd, BigDecimal intRate) {
 
     public static final int RECORD_LENGTH = 50;
@@ -28,11 +28,30 @@ public record DisclosureGroup(String groupId, String typeCd, String catCd, BigDe
     /** Group id used for the fallback lookup in 1200-GET-INTEREST-RATE (CBACT04C line 437). */
     public static final String DEFAULT_GROUP_ID = "DEFAULT";
 
-    public static DisclosureGroup fromRecord(String record) {
-        throw new UnsupportedOperationException("Child A: implement CVTRA02Y parsing");
+    public DisclosureGroup {
+        intRate = CobolFields.scale2(intRate, "intRate");
     }
 
+    @Trace(copybook = "CVTRA02Y", lines = "4-10")
+    public static DisclosureGroup fromRecord(String record) {
+        String value = CobolFields.checkLength(record, RECORD_LENGTH);
+        return new DisclosureGroup(
+                CobolFields.picX(value, 0, 10),
+                CobolFields.picX(value, 10, 2),
+                CobolFields.pic9(value, 12, 4),
+                CobolFields.picS9V99(value, 16, 6));
+    }
+
+    @Trace(copybook = "CVTRA02Y", lines = "4-10")
     public String toRecord() {
-        throw new UnsupportedOperationException("Child A: implement CVTRA02Y formatting");
+        String result = CobolFields.formatX(groupId, 10)
+                + CobolFields.formatX(typeCd, 2)
+                + CobolFields.format9(catCd, 4)
+                + CobolFields.formatS9V99(intRate, 6)
+                + " ".repeat(28);
+        if (result.length() != RECORD_LENGTH) {
+            throw new IllegalStateException("record length " + result.length() + ", expected " + RECORD_LENGTH);
+        }
+        return result;
     }
 }

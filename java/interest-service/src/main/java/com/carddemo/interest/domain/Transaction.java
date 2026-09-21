@@ -23,7 +23,7 @@ import java.math.BigDecimal;
  * 05 FILLER              PIC X(20)
  * </pre>
  */
-@Trace(copybook = "CVTRA05Y", lines = "16-31")
+@Trace(copybook = "CVTRA05Y", lines = "4-18")
 public record Transaction(
         String id,
         String typeCd,
@@ -41,11 +41,48 @@ public record Transaction(
 
     public static final int RECORD_LENGTH = 350;
 
-    public static Transaction fromRecord(String record) {
-        throw new UnsupportedOperationException("Child A: implement CVTRA05Y parsing");
+    public Transaction {
+        amount = CobolFields.scale2(amount, "amount");
     }
 
+    @Trace(copybook = "CVTRA05Y", lines = "4-18")
+    public static Transaction fromRecord(String record) {
+        String value = CobolFields.checkLength(record, RECORD_LENGTH);
+        return new Transaction(
+                CobolFields.picX(value, 0, 16),
+                CobolFields.picX(value, 16, 2),
+                CobolFields.pic9(value, 18, 4),
+                CobolFields.picX(value, 22, 10),
+                CobolFields.picX(value, 32, 100),
+                CobolFields.picS9V99(value, 132, 11),
+                CobolFields.pic9(value, 143, 9),
+                CobolFields.picX(value, 152, 50),
+                CobolFields.picX(value, 202, 50),
+                CobolFields.picX(value, 252, 10),
+                CobolFields.picX(value, 262, 16),
+                CobolFields.picX(value, 278, 26),
+                CobolFields.picX(value, 304, 26));
+    }
+
+    @Trace(copybook = "CVTRA05Y", lines = "4-18")
     public String toRecord() {
-        throw new UnsupportedOperationException("Child A: implement CVTRA05Y formatting");
+        String result = CobolFields.formatX(id, 16)
+                + CobolFields.formatX(typeCd, 2)
+                + CobolFields.format9(catCd, 4)
+                + CobolFields.formatX(source, 10)
+                + CobolFields.formatX(description, 100)
+                + CobolFields.formatS9V99(amount, 11)
+                + CobolFields.format9(merchantId, 9)
+                + CobolFields.formatX(merchantName, 50)
+                + CobolFields.formatX(merchantCity, 50)
+                + CobolFields.formatX(merchantZip, 10)
+                + CobolFields.formatX(cardNum, 16)
+                + CobolFields.formatX(origTs, 26)
+                + CobolFields.formatX(procTs, 26)
+                + " ".repeat(20);
+        if (result.length() != RECORD_LENGTH) {
+            throw new IllegalStateException("record length " + result.length() + ", expected " + RECORD_LENGTH);
+        }
+        return result;
     }
 }
