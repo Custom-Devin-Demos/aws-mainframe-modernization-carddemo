@@ -1,0 +1,353 @@
+--- app/cbl/CBACT04C.cbl	2026-09-21 09:34:10.120398235 +0000
++++ java/interest-service/tools/cobol/CBACT04C-LS.cbl	2026-09-21 17:54:36.713474737 +0000
+@@ -19,40 +19,50 @@
+       * either express or implied. See the License for the specific     
+       * language governing permissions and limitations under the License
+       ******************************************************************
++      * GnuCOBOL parity harness copy (java/interest-service/tools/cobol)
++      * ---------------------------------------------------------------
++      * This is app/cbl/CBACT04C.cbl with ONLY the VSAM KSDS access
++      * replaced by LINE SEQUENTIAL files + in-memory keyed lookups,
++      * because the GnuCOBOL build on the dev box has no indexed-file
++      * handler.  Every change is tagged with "*LS" in columns 1-7 or
++      * listed in tools/cobol/README.md.  Paragraphs 1300-COMPUTE-
++      * INTEREST and 1300-B-WRITE-TX are byte-identical to the original;
++      * 1050 / 1200 / 1200-A differ only in the single I/O verb, which
++      * is delegated to an LS-* paragraph that reproduces the same
++      * FILE STATUS values ('00' found, '23' not found).
++      ******************************************************************
+        IDENTIFICATION DIVISION.                                                 
+        PROGRAM-ID.    CBACT04C.                                                 
+        AUTHOR.        AWS.                                                      
+        ENVIRONMENT DIVISION.                                                    
+        INPUT-OUTPUT SECTION.                                                    
+        FILE-CONTROL.                                                            
++      *LS  INDEXED/SEQUENTIAL -> LINE SEQUENTIAL (one record per line).
++      *LS  TCATBALF must already be in ascending key order (KSDS order).
+            SELECT TCATBAL-FILE ASSIGN TO TCATBALF                               
+-                  ORGANIZATION IS INDEXED                                       
+-                  ACCESS MODE  IS SEQUENTIAL                                    
+-                  RECORD KEY   IS FD-TRAN-CAT-KEY                               
++                  ORGANIZATION IS LINE SEQUENTIAL
+                   FILE STATUS  IS TCATBALF-STATUS.                              
+                                                                                 
+            SELECT XREF-FILE ASSIGN TO   XREFFILE                                
+-                  ORGANIZATION IS INDEXED                                       
+-                  ACCESS MODE  IS RANDOM                                        
+-                  RECORD KEY   IS FD-XREF-CARD-NUM                              
+-                  ALTERNATE RECORD KEY IS FD-XREF-ACCT-ID                       
++                  ORGANIZATION IS LINE SEQUENTIAL
+                   FILE STATUS  IS XREFFILE-STATUS.                              
+                                                                                 
+            SELECT ACCOUNT-FILE ASSIGN TO ACCTFILE                               
+-                  ORGANIZATION IS INDEXED                                       
+-                  ACCESS MODE  IS RANDOM                                        
+-                  RECORD KEY   IS FD-ACCT-ID                                    
++                  ORGANIZATION IS LINE SEQUENTIAL
+                   FILE STATUS  IS ACCTFILE-STATUS.                              
+                                                                                 
++      *LS  New: updated account records are written here on close
++      *LS  (replaces the in-place KSDS REWRITE).
++           SELECT ACCTOUT-FILE ASSIGN TO ACCTOUT
++                  ORGANIZATION IS LINE SEQUENTIAL
++                  FILE STATUS  IS ACCTOUT-STATUS.
++
+            SELECT DISCGRP-FILE ASSIGN TO DISCGRP                                
+-                  ORGANIZATION IS INDEXED                                       
+-                  ACCESS MODE  IS RANDOM                                        
+-                  RECORD KEY   IS FD-DISCGRP-KEY                                
++                  ORGANIZATION IS LINE SEQUENTIAL
+                   FILE STATUS  IS DISCGRP-STATUS.                               
+                                                                                 
+            SELECT TRANSACT-FILE ASSIGN TO TRANSACT                              
+-                  ORGANIZATION IS SEQUENTIAL                                    
+-                  ACCESS MODE  IS SEQUENTIAL                                    
++                  ORGANIZATION IS LINE SEQUENTIAL
+                   FILE STATUS  IS TRANFILE-STATUS.                              
+                                                                                 
+       *                                                                         
+@@ -86,6 +96,10 @@
+            05 FD-ACCT-ID                        PIC 9(11).                      
+            05 FD-ACCT-DATA                      PIC X(289).                     
+                                                                                 
++      *LS  New output FD, same layout as ACCOUNT-FILE.
++       FD  ACCTOUT-FILE.
++       01  FD-ACCTOUT-REC                       PIC X(300).
++
+        FD  TRANSACT-FILE.                                                       
+        01  FD-TRANFILE-REC.                                                     
+            05 FD-TRANS-ID                       PIC X(16).                      
+@@ -172,6 +186,31 @@
+            05 WS-RECORD-COUNT           PIC 9(09) VALUE 0.                      
+            05 WS-TRANID-SUFFIX          PIC 9(06) VALUE 0.                      
+                                                                                 
++      *LS  In-memory images of the three keyed VSAM files.
++       01  ACCTOUT-STATUS.
++           05  ACCTOUT-STAT1       PIC X.
++           05  ACCTOUT-STAT2       PIC X.
++       01  LS-EOF                  PIC X VALUE 'N'.
++       01  LS-IDX                  PIC 9(05) COMP.
++       01  LS-XREF-COUNT           PIC 9(05) COMP VALUE 0.
++       01  LS-XREF-TABLE.
++           05  LS-XREF-ENTRY OCCURS 20000 TIMES.
++               10  LS-XREF-CARD-NUM     PIC X(16).
++               10  LS-XREF-CUST-NUM     PIC 9(09).
++               10  LS-XREF-ACCT-ID      PIC 9(11).
++               10  LS-XREF-FILLER       PIC X(14).
++       01  LS-ACCT-COUNT           PIC 9(05) COMP VALUE 0.
++       01  LS-ACCT-CUR             PIC 9(05) COMP VALUE 0.
++       01  LS-ACCT-TABLE.
++           05  LS-ACCT-ENTRY OCCURS 20000 TIMES.
++               10  LS-ACCT-ID           PIC 9(11).
++               10  LS-ACCT-DATA         PIC X(289).
++       01  LS-DISC-COUNT           PIC 9(05) COMP VALUE 0.
++       01  LS-DISC-TABLE.
++           05  LS-DISC-ENTRY OCCURS 20000 TIMES.
++               10  LS-DISC-KEY          PIC X(16).
++               10  LS-DISC-DATA         PIC X(34).
++
+        LINKAGE SECTION.                                                         
+        01  EXTERNAL-PARMS.                                                      
+            05  PARM-LENGTH         PIC S9(04) COMP.                             
+@@ -252,6 +291,10 @@
+        0100-XREFFILE-OPEN.                                                      
+            MOVE 8 TO APPL-RESULT.                                               
+            OPEN INPUT XREF-FILE                                                 
++      *LS  load the whole file into LS-XREF-TABLE
++           IF  XREFFILE-STATUS = '00'
++               PERFORM LS-LOAD-XREF
++           END-IF
+            IF  XREFFILE-STATUS = '00'                                           
+                MOVE 0 TO APPL-RESULT                                            
+            ELSE                                                                 
+@@ -270,6 +313,10 @@
+        0200-DISCGRP-OPEN.                                                       
+            MOVE 8 TO APPL-RESULT.                                               
+            OPEN INPUT DISCGRP-FILE                                              
++      *LS  load the whole file into LS-DISC-TABLE
++           IF  DISCGRP-STATUS = '00'
++               PERFORM LS-LOAD-DISCGRP
++           END-IF
+            IF  DISCGRP-STATUS = '00'                                            
+                MOVE 0 TO APPL-RESULT                                            
+            ELSE                                                                 
+@@ -288,7 +335,15 @@
+       *---------------------------------------------------------------*         
+        0300-ACCTFILE-OPEN.                                                      
+            MOVE 8 TO APPL-RESULT.                                               
+-           OPEN I-O ACCOUNT-FILE                                                
++      *LS  I-O -> INPUT + load into LS-ACCT-TABLE; open ACCTOUT-FILE
++           OPEN INPUT ACCOUNT-FILE
++           IF  ACCTFILE-STATUS = '00'
++               PERFORM LS-LOAD-ACCOUNTS
++           END-IF
++           IF  ACCTFILE-STATUS = '00'
++               OPEN OUTPUT ACCTOUT-FILE
++               MOVE ACCTOUT-STATUS TO ACCTFILE-STATUS
++           END-IF
+            IF  ACCTFILE-STATUS = '00'                                           
+                MOVE 0 TO APPL-RESULT                                            
+            ELSE                                                                 
+@@ -353,7 +408,8 @@
+            MOVE 0 TO ACCT-CURR-CYC-CREDIT                                       
+            MOVE 0 TO ACCT-CURR-CYC-DEBIT                                        
+                                                                                 
+-           REWRITE FD-ACCTFILE-REC FROM  ACCOUNT-RECORD                         
++      *LS  was: REWRITE FD-ACCTFILE-REC FROM  ACCOUNT-RECORD
++           PERFORM LS-REWRITE-ACCOUNT
+            IF  ACCTFILE-STATUS  = '00'                                          
+                MOVE 0 TO APPL-RESULT                                            
+            ELSE                                                                 
+@@ -370,10 +426,11 @@
+            EXIT.                                                                
+       *---------------------------------------------------------------*         
+        1100-GET-ACCT-DATA.                                                      
+-           READ ACCOUNT-FILE INTO ACCOUNT-RECORD                                
+-               INVALID KEY                                                      
++      *LS  was: READ ACCOUNT-FILE INTO ACCOUNT-RECORD INVALID KEY ...
++           PERFORM LS-READ-ACCOUNT
++           IF  ACCTFILE-STATUS = '23'
+                   DISPLAY 'ACCOUNT NOT FOUND: ' FD-ACCT-ID                      
+-           END-READ                                                             
++           END-IF
+                                                                                 
+            IF  ACCTFILE-STATUS  = '00'                                          
+                MOVE 0 TO APPL-RESULT                                            
+@@ -391,11 +448,12 @@
+            EXIT.                                                                
+       *---------------------------------------------------------------*         
+        1110-GET-XREF-DATA.                                                      
+-           READ XREF-FILE INTO CARD-XREF-RECORD                                 
+-            KEY IS FD-XREF-ACCT-ID                                              
+-               INVALID KEY                                                      
++      *LS  was: READ XREF-FILE INTO CARD-XREF-RECORD
++      *LS         KEY IS FD-XREF-ACCT-ID INVALID KEY ...
++           PERFORM LS-READ-XREF
++           IF  XREFFILE-STATUS = '23'
+                   DISPLAY 'ACCOUNT NOT FOUND: ' FD-XREF-ACCT-ID                 
+-           END-READ                                                             
++           END-IF
+                                                                                 
+            IF  XREFFILE-STATUS   = '00'                                         
+                MOVE 0 TO APPL-RESULT                                            
+@@ -413,11 +471,12 @@
+            EXIT.                                                                
+       *---------------------------------------------------------------*         
+        1200-GET-INTEREST-RATE.                                                  
+-           READ DISCGRP-FILE INTO DIS-GROUP-RECORD                              
+-                INVALID KEY                                                     
++      *LS  was: READ DISCGRP-FILE INTO DIS-GROUP-RECORD INVALID KEY ...
++           PERFORM LS-READ-DISCGRP
++           IF  DISCGRP-STATUS = '23'
+                    DISPLAY 'DISCLOSURE GROUP RECORD MISSING'                    
+                    DISPLAY 'TRY WITH DEFAULT GROUP CODE'                        
+-           END-READ.                                                            
++           END-IF.
+                                                                                 
+            IF  DISCGRP-STATUS  = '00'  OR '23'                                  
+                MOVE 0 TO APPL-RESULT                                            
+@@ -441,7 +500,8 @@
+                                                                                 
+       *---------------------------------------------------------------*         
+        1200-A-GET-DEFAULT-INT-RATE.                                             
+-           READ DISCGRP-FILE INTO DIS-GROUP-RECORD                              
++      *LS  was: READ DISCGRP-FILE INTO DIS-GROUP-RECORD
++           PERFORM LS-READ-DISCGRP
+                                                                                 
+            IF  DISCGRP-STATUS  = '00'                                           
+                MOVE 0 TO APPL-RESULT                                            
+@@ -576,8 +636,13 @@
+       *---------------------------------------------------------------*         
+        9300-ACCTFILE-CLOSE.                                                     
+            MOVE 8 TO APPL-RESULT.                                               
++      *LS  dump LS-ACCT-TABLE (input order) to ACCTOUT-FILE first
++           PERFORM LS-UNLOAD-ACCOUNTS
+            CLOSE ACCOUNT-FILE                                                   
+            IF  ACCTFILE-STATUS  = '00'                                          
++               MOVE ACCTOUT-STATUS TO ACCTFILE-STATUS
++           END-IF
++           IF  ACCTFILE-STATUS  = '00'
+                MOVE 0 TO APPL-RESULT                                            
+            ELSE                                                                 
+                MOVE 12 TO APPL-RESULT                                           
+@@ -631,6 +696,120 @@
+            MOVE 999 TO ABCODE                                                   
+            CALL 'CEE3ABD' USING ABCODE, TIMING.                                 
+                                                                                 
++      *LS *************************************************************
++      *LS  In-memory emulation of the VSAM KSDS accesses.
++      *LS  Each LS-READ-* sets the file's FILE STATUS to '00' when the
++      *LS  key is found and '23' (record not found) otherwise, exactly
++      *LS  the codes the original program tests for.
++      *LS *************************************************************
++       LS-LOAD-XREF.
++           MOVE 'N' TO LS-EOF
++           PERFORM UNTIL LS-EOF = 'Y'
++               READ XREF-FILE
++                   AT END MOVE 'Y' TO LS-EOF
++                   NOT AT END
++                       ADD 1 TO LS-XREF-COUNT
++                       MOVE FD-XREFFILE-REC
++                         TO LS-XREF-ENTRY(LS-XREF-COUNT)
++               END-READ
++           END-PERFORM
++           MOVE '00' TO XREFFILE-STATUS
++           EXIT.
++
++       LS-LOAD-DISCGRP.
++           MOVE 'N' TO LS-EOF
++           PERFORM UNTIL LS-EOF = 'Y'
++               READ DISCGRP-FILE
++                   AT END MOVE 'Y' TO LS-EOF
++                   NOT AT END
++                       ADD 1 TO LS-DISC-COUNT
++                       MOVE FD-DISCGRP-REC
++                         TO LS-DISC-ENTRY(LS-DISC-COUNT)
++               END-READ
++           END-PERFORM
++           MOVE '00' TO DISCGRP-STATUS
++           EXIT.
++
++       LS-LOAD-ACCOUNTS.
++           MOVE 'N' TO LS-EOF
++           PERFORM UNTIL LS-EOF = 'Y'
++               READ ACCOUNT-FILE
++                   AT END MOVE 'Y' TO LS-EOF
++                   NOT AT END
++                       ADD 1 TO LS-ACCT-COUNT
++                       MOVE FD-ACCTFILE-REC
++                         TO LS-ACCT-ENTRY(LS-ACCT-COUNT)
++               END-READ
++           END-PERFORM
++           MOVE '00' TO ACCTFILE-STATUS
++           EXIT.
++
++      *LS  READ XREF-FILE KEY IS FD-XREF-ACCT-ID (alternate key, first
++      *LS  match in file order).
++       LS-READ-XREF.
++           MOVE '23' TO XREFFILE-STATUS
++           PERFORM VARYING LS-IDX FROM 1 BY 1
++             UNTIL LS-IDX > LS-XREF-COUNT
++                OR XREFFILE-STATUS = '00'
++               IF LS-XREF-ACCT-ID(LS-IDX) = FD-XREF-ACCT-ID
++                   MOVE LS-XREF-ENTRY(LS-IDX) TO FD-XREFFILE-REC
++                   MOVE FD-XREFFILE-REC       TO CARD-XREF-RECORD
++                   MOVE '00' TO XREFFILE-STATUS
++               END-IF
++           END-PERFORM
++           EXIT.
++
++      *LS  READ ACCOUNT-FILE (primary key FD-ACCT-ID). Remembers the
++      *LS  slot so LS-REWRITE-ACCOUNT can update it in place.
++       LS-READ-ACCOUNT.
++           MOVE '23' TO ACCTFILE-STATUS
++           MOVE 0 TO LS-ACCT-CUR
++           PERFORM VARYING LS-IDX FROM 1 BY 1
++             UNTIL LS-IDX > LS-ACCT-COUNT
++                OR ACCTFILE-STATUS = '00'
++               IF LS-ACCT-ID(LS-IDX) = FD-ACCT-ID
++                   MOVE LS-IDX TO LS-ACCT-CUR
++                   MOVE LS-ACCT-ENTRY(LS-IDX) TO FD-ACCTFILE-REC
++                   MOVE FD-ACCTFILE-REC       TO ACCOUNT-RECORD
++                   MOVE '00' TO ACCTFILE-STATUS
++               END-IF
++           END-PERFORM
++           EXIT.
++
++      *LS  REWRITE FD-ACCTFILE-REC FROM ACCOUNT-RECORD
++       LS-REWRITE-ACCOUNT.
++           IF LS-ACCT-CUR > 0
++               MOVE ACCOUNT-RECORD TO FD-ACCTFILE-REC
++               MOVE FD-ACCTFILE-REC TO LS-ACCT-ENTRY(LS-ACCT-CUR)
++               MOVE '00' TO ACCTFILE-STATUS
++           ELSE
++               MOVE '43' TO ACCTFILE-STATUS
++           END-IF
++           EXIT.
++
++      *LS  READ DISCGRP-FILE (primary key FD-DISCGRP-KEY).
++       LS-READ-DISCGRP.
++           MOVE '23' TO DISCGRP-STATUS
++           PERFORM VARYING LS-IDX FROM 1 BY 1
++             UNTIL LS-IDX > LS-DISC-COUNT
++                OR DISCGRP-STATUS = '00'
++               IF LS-DISC-KEY(LS-IDX) = FD-DISCGRP-KEY
++                   MOVE LS-DISC-ENTRY(LS-IDX) TO FD-DISCGRP-REC
++                   MOVE FD-DISCGRP-REC        TO DIS-GROUP-RECORD
++                   MOVE '00' TO DISCGRP-STATUS
++               END-IF
++           END-PERFORM
++           EXIT.
++
++      *LS  Write every account (input order) to ACCTOUT-FILE and close.
++       LS-UNLOAD-ACCOUNTS.
++           PERFORM VARYING LS-IDX FROM 1 BY 1
++             UNTIL LS-IDX > LS-ACCT-COUNT
++               WRITE FD-ACCTOUT-REC FROM LS-ACCT-ENTRY(LS-IDX)
++           END-PERFORM
++           CLOSE ACCTOUT-FILE
++           EXIT.
++
+       *****************************************************************         
+        9910-DISPLAY-IO-STATUS.                                                  
+            IF  IO-STATUS NOT NUMERIC                                            
