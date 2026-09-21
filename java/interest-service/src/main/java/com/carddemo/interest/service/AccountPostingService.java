@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccountPostingService {
 
+    /** ACCT-CURR-BAL is PIC S9(10)V99. */
+    static final int BALANCE_SCALE = 2;
+
     /**
      * ADD WS-TOTAL-INT TO ACCT-CURR-BAL; MOVE 0 TO ACCT-CURR-CYC-CREDIT / ACCT-CURR-CYC-DEBIT.
      *
@@ -16,12 +19,14 @@ public class AccountPostingService {
      */
     @Trace(program = "CBACT04C", paragraph = "1050-UPDATE-ACCOUNT", lines = "350-356")
     public Account postInterest(Account account, BigDecimal totalInterest) {
-        throw new UnsupportedOperationException("Coordinator integration step 1");
+        BigDecimal zero = BigDecimal.ZERO.setScale(BALANCE_SCALE);
+        BigDecimal newBalance = account.currBal().add(totalInterest).setScale(BALANCE_SCALE);
+        return account.withBalances(newBalance, zero, zero);
     }
 
     /** 1400-COMPUTE-FEES: "To be implemented" in COBOL; intentionally a no-op. */
     @Trace(program = "CBACT04C", paragraph = "1400-COMPUTE-FEES", lines = "518-520", note = "To be implemented")
     public void computeFees(Account account) {
-        throw new UnsupportedOperationException("Coordinator integration step 1");
+        // To be implemented (mirrors the COBOL paragraph, which contains only EXIT).
     }
 }
