@@ -1,0 +1,10 @@
+START OF EXECUTION OF PROGRAM CBTRN01C
+0000000000683580010001POS TERM  Purchase at Abshire-Lowe                                                                            0000005047G800000000Abshire-Lowe                                      North Enoshaven                                   72112     48594526128770652022-06-10 19:27:53.000000                                              
+SUCCESSFUL READ OF XREF
+CARD NUMBER: 4859452612877065
+ACCOUNT ID : 00000000007
+CUSTOMER ID: 000000007
+SUCCESSFUL READ OF ACCOUNT FILE
+ERROR READING DAILY TRANSACTION FILE
+FILE STATUS IS: NNNN0004
+ABENDING PROGRAM

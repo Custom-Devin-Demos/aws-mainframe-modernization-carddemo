@@ -1,0 +1,1808 @@
+line_no,line_text
+1,START OF EXECUTION OF PROGRAM CBTRN01C
+2,0000000000683580010001POS TERM  Purchase at Abshire-Lowe                                                                            0000005047G800000000Abshire-Lowe                                      North Enoshaven                                   72112     48594526128770652022-06-10 19:27:53.000000
+3,SUCCESSFUL READ OF XREF
+4,CARD NUMBER: 4859452612877065
+5,ACCOUNT ID : 00000000007
+6,CUSTOMER ID: 000000007
+7,SUCCESSFUL READ OF ACCOUNT FILE
+8,"0000000001774260030001OPERATOR  Return item at Nitzsche, Nicolas and Lowe                                                           0000009190}800000000Nitzsche, Nicolas and Lowe                        Fidelshire                                        53378     09279871086362322022-06-10 19:27:53.000000"
+9,SUCCESSFUL READ OF XREF
+10,CARD NUMBER: 0927987108636232
+11,ACCOUNT ID : 00000000020
+12,CUSTOMER ID: 000000020
+13,SUCCESSFUL READ OF ACCOUNT FILE
+14,"0000000006292564010001POS TERM  Purchase at Ernser, Roob and Gleason                                                                0000000678H800000000Ernser, Roob and Gleason                          North Makenziemouth                               78487-796560096191506745262022-06-10 19:27:53.000000"
+15,SUCCESSFUL READ OF XREF
+16,CARD NUMBER: 6009619150674526
+17,ACCOUNT ID : 00000000005
+18,CUSTOMER ID: 000000005
+19,SUCCESSFUL READ OF ACCOUNT FILE
+20,0000000009101861010001POS TERM  Purchase at Guann LLC                                                                               0000002817G800000000Guann LLC                                         South Lynn                                        51508-916680405804103486802022-06-10 19:27:53.000000
+21,SUCCESSFUL READ OF XREF
+22,CARD NUMBER: 8040580410348680
+23,ACCOUNT ID : 00000000026
+24,CUSTOMER ID: 000000026
+25,SUCCESSFUL READ OF ACCOUNT FILE
+26,0000000010142252010001POS TERM  Purchase at Kertzmann-Schoen                                                                        0000004546F800000000Kertzmann-Schoen                                  East Eulahstad                                    98754-108956568305449812162022-06-10 19:27:53.000000
+27,SUCCESSFUL READ OF XREF
+28,CARD NUMBER: 5656830544981216
+29,ACCOUNT ID : 00000000046
+30,CUSTOMER ID: 000000046
+31,SUCCESSFUL READ OF ACCOUNT FILE
+32,0000000010229018010001POS TERM  Purchase at Gislason-Medhurst                                                                       0000008499I800000000Gislason-Medhurst                                 Colleenburgh                                      23712-208073793356346611422022-06-10 19:27:53.000000
+33,SUCCESSFUL READ OF XREF
+34,CARD NUMBER: 7379335634661142
+35,ACCOUNT ID : 00000000045
+36,CUSTOMER ID: 000000045
+37,SUCCESSFUL READ OF ACCOUNT FILE
+38,0000000016259484030001OPERATOR  Return item at Sipes Inc                                                                            0000000567P800000000Sipes Inc                                         Emilioside                                        93329     40115008917773672022-06-10 19:27:53.000000
+39,SUCCESSFUL READ OF XREF
+40,CARD NUMBER: 4011500891777367
+41,ACCOUNT ID : 00000000013
+42,CUSTOMER ID: 000000013
+43,SUCCESSFUL READ OF ACCOUNT FILE
+44,0000000017874199010001POS TERM  Purchase at Legros Group                                                                            0000003736F800000000Legros Group                                      Carmeloborough                                    34849-512780405804103486802022-06-10 19:27:53.000000
+45,SUCCESSFUL READ OF XREF
+46,CARD NUMBER: 8040580410348680
+47,ACCOUNT ID : 00000000026
+48,CUSTOMER ID: 000000026
+49,SUCCESSFUL READ OF ACCOUNT FILE
+50,0000000019065428030001OPERATOR  Return item at Turcotte Group                                                                       0000005358Q800000000Turcotte Group                                    Andrewfurt                                        41346-378965035351817959922022-06-10 19:27:53.000000
+51,SUCCESSFUL READ OF XREF
+52,CARD NUMBER: 6503535181795992
+53,ACCOUNT ID : 00000000048
+54,CUSTOMER ID: 000000048
+55,SUCCESSFUL READ OF ACCOUNT FILE
+56,"0000000021711604010001POS TERM  Purchase at Gleason, Shanahan and Reynolds                                                          0000004161A800000000Gleason, Shanahan and Reynolds                    Myrticeport                                       21768-082395017337214298932022-06-10 19:27:53.000000"
+57,SUCCESSFUL READ OF XREF
+58,CARD NUMBER: 9501733721429893
+59,ACCOUNT ID : 00000000009
+60,CUSTOMER ID: 000000009
+61,SUCCESSFUL READ OF ACCOUNT FILE
+62,0000000025430891010001POS TERM  Purchase at Beatty-Hessel                                                                           0000000943C800000000Beatty-Hessel                                     Simonisport                                       52595     32607636123375602022-06-10 19:27:53.000000
+63,SUCCESSFUL READ OF XREF
+64,CARD NUMBER: 3260763612337560
+65,ACCOUNT ID : 00000000010
+66,CUSTOMER ID: 000000010
+67,SUCCESSFUL READ OF ACCOUNT FILE
+68,"0000000028097268010001POS TERM  Purchase at Wolf, Cruickshank and Bode                                                              0000002502B800000000Wolf, Cruickshank and Bode                        Fritzchester                                      20195-515670941427510555512022-06-10 19:27:53.000000"
+69,SUCCESSFUL READ OF XREF
+70,CARD NUMBER: 7094142751055551
+71,ACCOUNT ID : 00000000032
+72,CUSTOMER ID: 000000032
+73,SUCCESSFUL READ OF ACCOUNT FILE
+74,0000000030755266010001POS TERM  Purchase at Ratke LLC                                                                               0000008295E800000000Ratke LLC                                         Brendenfort                                       35302-649537662819841551542022-06-10 19:27:53.000000
+75,SUCCESSFUL READ OF XREF
+76,CARD NUMBER: 3766281984155154
+77,ACCOUNT ID : 00000000041
+78,CUSTOMER ID: 000000041
+79,SUCCESSFUL READ OF ACCOUNT FILE
+80,0000000032979555010001POS TERM  Purchase at Treutel-Leffler                                                                         0000000294D800000000Treutel-Leffler                                   New Nicolette                                     65014-004565092303625538162022-06-10 19:27:53.000000
+81,SUCCESSFUL READ OF XREF
+82,CARD NUMBER: 6509230362553816
+83,ACCOUNT ID : 00000000030
+84,CUSTOMER ID: 000000030
+85,SUCCESSFUL READ OF ACCOUNT FILE
+86,0000000033688127010001POS TERM  Purchase at Schinner-Steuber                                                                        0000009589I800000000Schinner-Steuber                                  Schmittchester                                    50777-553537662819841551542022-06-10 19:27:53.000000
+87,SUCCESSFUL READ OF XREF
+88,CARD NUMBER: 3766281984155154
+89,ACCOUNT ID : 00000000041
+90,CUSTOMER ID: 000000041
+91,SUCCESSFUL READ OF ACCOUNT FILE
+92,"0000000040455859010001POS TERM  Purchase at Brekke, Bradtke and Weimann                                                             0000007154D800000000Brekke, Bradtke and Weimann                       Veummouth                                         18481-501311421676928789312022-06-10 19:27:53.000000"
+93,SUCCESSFUL READ OF XREF
+94,CARD NUMBER: 1142167692878931
+95,ACCOUNT ID : 00000000037
+96,CUSTOMER ID: 000000037
+97,SUCCESSFUL READ OF ACCOUNT FILE
+98,0000000043636099030001OPERATOR  Return item at Nader-Bayer                                                                          0000009456O800000000Nader-Bayer                                       Goyetteville                                      35324     29401393623004492022-06-10 19:27:53.000000
+99,SUCCESSFUL READ OF XREF
+100,CARD NUMBER: 2940139362300449
+101,ACCOUNT ID : 00000000022
+102,CUSTOMER ID: 000000022
+103,SUCCESSFUL READ OF ACCOUNT FILE
+104,"0000000051205286010001POS TERM  Purchase at Goodwin, Von and Krajcik                                                                0000006493C800000000Goodwin, Von and Krajcik                          Ericmouth                                         03874     70941427510555512022-06-10 19:27:53.000000"
+105,SUCCESSFUL READ OF XREF
+106,CARD NUMBER: 7094142751055551
+107,ACCOUNT ID : 00000000032
+108,CUSTOMER ID: 000000032
+109,SUCCESSFUL READ OF ACCOUNT FILE
+110,0000000054288996010001POS TERM  Purchase at Cremin and Sons                                                                         0000005026F800000000Cremin and Sons                                   Bartonside                                        08677     45347841027139512022-06-10 19:27:53.000000
+111,SUCCESSFUL READ OF XREF
+112,CARD NUMBER: 4534784102713951
+113,ACCOUNT ID : 00000000036
+114,CUSTOMER ID: 000000036
+115,SUCCESSFUL READ OF ACCOUNT FILE
+116,"0000000054727064010001POS TERM  Purchase at McDermott, Lockman and Weimann                                                          0000003031A800000000McDermott, Lockman and Weimann                    West Nedra                                        05293     10140865652243502022-06-10 19:27:53.000000"
+117,SUCCESSFUL READ OF XREF
+118,CARD NUMBER: 1014086565224350
+119,ACCOUNT ID : 00000000044
+120,CUSTOMER ID: 000000044
+121,SUCCESSFUL READ OF ACCOUNT FILE
+122,0000000058866561010001POS TERM  Purchase at Blick-Rippin                                                                            0000001838H800000000Blick-Rippin                                      East Julien                                       87157     05000244537657402022-06-10 19:27:53.000000
+123,SUCCESSFUL READ OF XREF
+124,CARD NUMBER: 0500024453765740
+125,ACCOUNT ID : 00000000050
+126,CUSTOMER ID: 000000050
+127,SUCCESSFUL READ OF ACCOUNT FILE
+128,0000000060921254010001POS TERM  Purchase at Kihn-Quigley                                                                            0000007793C800000000Kihn-Quigley                                      New Katrine                                       42756-058457873512288793392022-06-10 19:27:53.000000
+129,SUCCESSFUL READ OF XREF
+130,CARD NUMBER: 5787351228879339
+131,ACCOUNT ID : 00000000047
+132,CUSTOMER ID: 000000047
+133,SUCCESSFUL READ OF ACCOUNT FILE
+134,0000000061394789030001OPERATOR  Return item at Heaney-Raynor                                                                        0000000709R800000000Heaney-Raynor                                     North Daisy                                       28696     27453037200020902022-06-10 19:27:53.000000
+135,SUCCESSFUL READ OF XREF
+136,CARD NUMBER: 2745303720002090
+137,ACCOUNT ID : 00000000039
+138,CUSTOMER ID: 000000039
+139,SUCCESSFUL READ OF ACCOUNT FILE
+140,"0000000070754800010001POS TERM  Purchase at Blick, Kris and Gerlach                                                                 0000003551A800000000Blick, Kris and Gerlach                           Lake Shawnabury                                   65183-096309238771932473302022-06-10 19:27:53.000000"
+141,SUCCESSFUL READ OF XREF
+142,CARD NUMBER: 0923877193247330
+143,ACCOUNT ID : 00000000002
+144,CUSTOMER ID: 000000002
+145,SUCCESSFUL READ OF ACCOUNT FILE
+146,0000000072220498010001POS TERM  Purchase at Graham LLC                                                                              0000006601A800000000Graham LLC                                        Ozellaside                                        89313-074763492503316485092022-06-10 19:27:53.000000
+147,SUCCESSFUL READ OF XREF
+148,CARD NUMBER: 6349250331648509
+149,ACCOUNT ID : 00000000015
+150,CUSTOMER ID: 000000015
+151,SUCCESSFUL READ OF ACCOUNT FILE
+152,0000000084515950010001POS TERM  Purchase at Bradtke Group                                                                           0000003250{800000000Bradtke Group                                     Gerardland                                        63873     89313693518947832022-06-10 19:27:53.000000
+153,SUCCESSFUL READ OF XREF
+154,CARD NUMBER: 8931369351894783
+155,ACCOUNT ID : 00000000008
+156,CUSTOMER ID: 000000008
+157,SUCCESSFUL READ OF ACCOUNT FILE
+158,0000000085824369010001POS TERM  Purchase at Pollich-Mosciski                                                                        0000009997G800000000Pollich-Mosciski                                  Georgettemouth                                    85890     39991692463758852022-06-10 19:27:53.000000
+159,SUCCESSFUL READ OF XREF
+160,CARD NUMBER: 3999169246375885
+161,ACCOUNT ID : 00000000003
+162,CUSTOMER ID: 000000003
+163,SUCCESSFUL READ OF ACCOUNT FILE
+164,"0000000095706092010001POS TERM  Purchase at Swift, Wolf and Goldner                                                                 0000004824D800000000Swift, Wolf and Goldner                           Keeblerborough                                    31923-450389313693518947832022-06-10 19:27:53.000000"
+165,SUCCESSFUL READ OF XREF
+166,CARD NUMBER: 8931369351894783
+167,ACCOUNT ID : 00000000008
+168,CUSTOMER ID: 000000008
+169,SUCCESSFUL READ OF ACCOUNT FILE
+170,0000000099965527010001POS TERM  Purchase at Jaskolski-Rolfson                                                                       0000005552B800000000Jaskolski-Rolfson                                 Lake Arjuntown                                    90924-295109279871086362322022-06-10 19:27:53.000000
+171,SUCCESSFUL READ OF XREF
+172,CARD NUMBER: 0927987108636232
+173,ACCOUNT ID : 00000000020
+174,CUSTOMER ID: 000000020
+175,SUCCESSFUL READ OF ACCOUNT FILE
+176,0000000100915314010001POS TERM  Purchase at Gislason and Daughters                                                                  0000003562B800000000Gislason and Daughters                            Torphyville                                       09737     98055834089965882022-06-10 19:27:53.000000
+177,SUCCESSFUL READ OF XREF
+178,CARD NUMBER: 9805583408996588
+179,ACCOUNT ID : 00000000040
+180,CUSTOMER ID: 000000040
+181,SUCCESSFUL READ OF ACCOUNT FILE
+182,0000000107748365010001POS TERM  Purchase at Waelchi and Daughters                                                                   0000002740{800000000Waelchi and Daughters                             Dickensborough                                    86052-115470941427510555512022-06-10 19:27:53.000000
+183,SUCCESSFUL READ OF XREF
+184,CARD NUMBER: 7094142751055551
+185,ACCOUNT ID : 00000000032
+186,CUSTOMER ID: 000000032
+187,SUCCESSFUL READ OF ACCOUNT FILE
+188,0000000108402349010001POS TERM  Purchase at Lynch-Bode                                                                              0000006330{800000000Lynch-Bode                                        New Cieloberg                                     85766     93491074758692142022-06-10 19:27:53.000000
+189,SUCCESSFUL READ OF XREF
+190,CARD NUMBER: 9349107475869214
+191,ACCOUNT ID : 00000000017
+192,CUSTOMER ID: 000000017
+193,SUCCESSFUL READ OF ACCOUNT FILE
+194,0000000109340521010001POS TERM  Purchase at Runte and Sons                                                                          0000008405E800000000Runte and Sons                                    Lake Chesleyfurt                                  94215     73793356346611422022-06-10 19:27:53.000000
+195,SUCCESSFUL READ OF XREF
+196,CARD NUMBER: 7379335634661142
+197,ACCOUNT ID : 00000000045
+198,CUSTOMER ID: 000000045
+199,SUCCESSFUL READ OF ACCOUNT FILE
+200,"0000000109506921010001POS TERM  Purchase at Will, Frami and Lynch                                                                   0000007695E800000000Will, Frami and Lynch                             South Cadefort                                    47040-355068326760476980872022-06-10 19:27:53.000000"
+201,SUCCESSFUL READ OF XREF
+202,CARD NUMBER: 6832676047698087
+203,ACCOUNT ID : 00000000033
+204,CUSTOMER ID: 000000033
+205,SUCCESSFUL READ OF ACCOUNT FILE
+206,0000000111054243010001POS TERM  Purchase at Pollich and Sons                                                                        0000009484D800000000Pollich and Sons                                  West Burdetteburgh                                51061-771067230004632077642022-06-10 19:27:53.000000
+207,SUCCESSFUL READ OF XREF
+208,CARD NUMBER: 6723000463207764
+209,ACCOUNT ID : 00000000028
+210,CUSTOMER ID: 000000028
+211,SUCCESSFUL READ OF ACCOUNT FILE
+212,"0000000115716061010001POS TERM  Purchase at Bednar, Marvin and Kozey                                                                0000004012B800000000Bednar, Marvin and Kozey                          Port Marisolshire                                 89976-086729401393623004492022-06-10 19:27:53.000000"
+213,SUCCESSFUL READ OF XREF
+214,CARD NUMBER: 2940139362300449
+215,ACCOUNT ID : 00000000022
+216,CUSTOMER ID: 000000022
+217,SUCCESSFUL READ OF ACCOUNT FILE
+218,0000000130111733010001POS TERM  Purchase at Rogahn Group                                                                            0000007773C800000000Rogahn Group                                      Keltonton                                         18842     06835861981715162022-06-10 19:27:53.000000
+219,SUCCESSFUL READ OF XREF
+220,CARD NUMBER: 0683586198171516
+221,ACCOUNT ID : 00000000027
+222,CUSTOMER ID: 000000027
+223,SUCCESSFUL READ OF ACCOUNT FILE
+224,0000000132831571030001OPERATOR  Return item at Boehm-Sanford                                                                        0000002153L800000000Boehm-Sanford                                     Winifredville                                     93238-716910140865652243502022-06-10 19:27:53.000000
+225,SUCCESSFUL READ OF XREF
+226,CARD NUMBER: 1014086565224350
+227,ACCOUNT ID : 00000000044
+228,CUSTOMER ID: 000000044
+229,SUCCESSFUL READ OF ACCOUNT FILE
+230,0000000137879630010001POS TERM  Purchase at Wiza-Langworth                                                                          0000000466F800000000Wiza-Langworth                                    South Jayson                                      83135     56711844785058442022-06-10 19:27:53.000000
+231,SUCCESSFUL READ OF XREF
+232,CARD NUMBER: 5671184478505844
+233,ACCOUNT ID : 00000000018
+234,CUSTOMER ID: 000000018
+235,SUCCESSFUL READ OF ACCOUNT FILE
+236,"0000000139910093010001POS TERM  Purchase at Harris, Johnston and Harris                                                             0000005706F800000000Harris, Johnston and Harris                       New Aurelia                                       81068     72515081491888832022-06-10 19:27:53.000000"
+237,SUCCESSFUL READ OF XREF
+238,CARD NUMBER: 7251508149188883
+239,ACCOUNT ID : 00000000029
+240,CUSTOMER ID: 000000029
+241,SUCCESSFUL READ OF ACCOUNT FILE
+242,0000000142315472010001POS TERM  Purchase at Kutch-Farrell                                                                           0000008436F800000000Kutch-Farrell                                     Letatown                                          39869-953728719682528124902022-06-10 19:27:53.000000
+243,SUCCESSFUL READ OF XREF
+244,CARD NUMBER: 2871968252812490
+245,ACCOUNT ID : 00000000006
+246,CUSTOMER ID: 000000006
+247,SUCCESSFUL READ OF ACCOUNT FILE
+248,"0000000143386237010001POS TERM  Purchase at Blanda, Nienow and Hilpert                                                              0000005598H800000000Blanda, Nienow and Hilpert                        Leuschkestad                                      24074-551382625936024730762022-06-10 19:27:53.000000"
+249,SUCCESSFUL READ OF XREF
+250,CARD NUMBER: 8262593602473076
+251,ACCOUNT ID : 00000000049
+252,CUSTOMER ID: 000000049
+253,SUCCESSFUL READ OF ACCOUNT FILE
+254,0000000148803688010001POS TERM  Purchase at Crist Inc                                                                               0000002034D800000000Crist Inc                                         Spencerchester                                    18577     65092303625538162022-06-10 19:27:53.000000
+255,SUCCESSFUL READ OF XREF
+256,CARD NUMBER: 6509230362553816
+257,ACCOUNT ID : 00000000030
+258,CUSTOMER ID: 000000030
+259,SUCCESSFUL READ OF ACCOUNT FILE
+260,0000000152467982010001POS TERM  Purchase at Kreiger and Sons                                                                        0000001683C800000000Kreiger and Sons                                  North Lue                                         30616-517627453037200020902022-06-10 19:27:53.000000
+261,SUCCESSFUL READ OF XREF
+262,CARD NUMBER: 2745303720002090
+263,ACCOUNT ID : 00000000039
+264,CUSTOMER ID: 000000039
+265,SUCCESSFUL READ OF ACCOUNT FILE
+266,0000000160469204010001POS TERM  Purchase at Greenfelder-Larson                                                                      0000008644D800000000Greenfelder-Larson                                New Mertie                                        06860     80405804103486802022-06-10 19:27:53.000000
+267,SUCCESSFUL READ OF XREF
+268,CARD NUMBER: 8040580410348680
+269,ACCOUNT ID : 00000000026
+270,CUSTOMER ID: 000000026
+271,SUCCESSFUL READ OF ACCOUNT FILE
+272,"0000000166444519010001POS TERM  Purchase at Wyman, Feest and Moen                                                                   0000001832B800000000Wyman, Feest and Moen                             Haleyborough                                      83262-306890562979316640112022-06-10 19:27:53.000000"
+273,SUCCESSFUL READ OF XREF
+274,CARD NUMBER: 9056297931664011
+275,ACCOUNT ID : 00000000025
+276,CUSTOMER ID: 000000025
+277,SUCCESSFUL READ OF ACCOUNT FILE
+278,"0000000169879332010001POS TERM  Purchase at Buckridge, Fisher and Schroeder                                                         0000002560{800000000Buckridge, Fisher and Schroeder                   Port Kiraport                                     29568     67230004632077642022-06-10 19:27:53.000000"
+279,SUCCESSFUL READ OF XREF
+280,CARD NUMBER: 6723000463207764
+281,ACCOUNT ID : 00000000028
+282,CUSTOMER ID: 000000028
+283,SUCCESSFUL READ OF ACCOUNT FILE
+284,0000000173069364010001POS TERM  Purchase at Runte-Schmidt                                                                           0000009853C800000000Runte-Schmidt                                     Krajcikshire                                      03491-571685178669582060082022-06-10 19:27:53.000000
+285,SUCCESSFUL READ OF XREF
+286,CARD NUMBER: 8517866958206008
+287,ACCOUNT ID : 00000000014
+288,CUSTOMER ID: 000000014
+289,SUCCESSFUL READ OF ACCOUNT FILE
+290,0000000174748684010001POS TERM  Purchase at McLaughlin-Reichel                                                                      0000000199I800000000McLaughlin-Reichel                                Rippinville                                       32264-695267270551906160142022-06-10 19:27:53.000000
+291,SUCCESSFUL READ OF XREF
+292,CARD NUMBER: 6727055190616014
+293,ACCOUNT ID : 00000000016
+294,CUSTOMER ID: 000000016
+295,SUCCESSFUL READ OF ACCOUNT FILE
+296,0000000183226769010001POS TERM  Purchase at Conroy and Daughters                                                                    0000009075E800000000Conroy and Daughters                              Greenholtborough                                  24059-870480405804103486802022-06-10 19:27:53.000000
+297,SUCCESSFUL READ OF XREF
+298,CARD NUMBER: 8040580410348680
+299,ACCOUNT ID : 00000000026
+300,CUSTOMER ID: 000000026
+301,SUCCESSFUL READ OF ACCOUNT FILE
+302,0000000184933166010001POS TERM  Purchase at Walker LLC                                                                              0000009897G800000000Walker LLC                                        East Tavares                                      25508     72515081491888832022-06-10 19:27:53.000000
+303,SUCCESSFUL READ OF XREF
+304,CARD NUMBER: 7251508149188883
+305,ACCOUNT ID : 00000000029
+306,CUSTOMER ID: 000000029
+307,SUCCESSFUL READ OF ACCOUNT FILE
+308,0000000187573156010001POS TERM  Purchase at Cruickshank and Daughters                                                               0000005797G800000000Cruickshank and Daughters                         Bobbieberg                                        45382     06835861981715162022-06-10 19:27:53.000000
+309,SUCCESSFUL READ OF XREF
+310,CARD NUMBER: 0683586198171516
+311,ACCOUNT ID : 00000000027
+312,CUSTOMER ID: 000000027
+313,SUCCESSFUL READ OF ACCOUNT FILE
+314,0000000189414937030001OPERATOR  Return item at Treutel-Douglas                                                                      0000003584M800000000Treutel-Douglas                                   Port Mittiestad                                   12880-018563492503316485092022-06-10 19:27:53.000000
+315,SUCCESSFUL READ OF XREF
+316,CARD NUMBER: 6349250331648509
+317,ACCOUNT ID : 00000000015
+318,CUSTOMER ID: 000000015
+319,SUCCESSFUL READ OF ACCOUNT FILE
+320,"0000000191360674010001POS TERM  Purchase at Wyman, Breitenberg and Gusikowski                                                       0000008483C800000000Wyman, Breitenberg and Gusikowski                 Rosettaberg                                       51594-314727453037200020902022-06-10 19:27:53.000000"
+321,SUCCESSFUL READ OF XREF
+322,CARD NUMBER: 2745303720002090
+323,ACCOUNT ID : 00000000039
+324,CUSTOMER ID: 000000039
+325,SUCCESSFUL READ OF ACCOUNT FILE
+326,0000000192039153030001OPERATOR  Return item at Smith-Upton                                                                          0000002430}800000000Smith-Upton                                       Vandervortburgh                                   15012-100770582672618377522022-06-10 19:27:53.000000
+327,SUCCESSFUL READ OF XREF
+328,CARD NUMBER: 7058267261837752
+329,ACCOUNT ID : 00000000043
+330,CUSTOMER ID: 000000043
+331,SUCCESSFUL READ OF ACCOUNT FILE
+332,0000000194189303010001POS TERM  Purchase at Dickinson and Sons                                                                      0000000593C800000000Dickinson and Sons                                Port Hunter                                       93555-884367270551906160142022-06-10 19:27:53.000000
+333,SUCCESSFUL READ OF XREF
+334,CARD NUMBER: 6727055190616014
+335,ACCOUNT ID : 00000000016
+336,CUSTOMER ID: 000000016
+337,SUCCESSFUL READ OF ACCOUNT FILE
+338,0000000196728331030001OPERATOR  Return item at Hane and Sons                                                                        0000007447P800000000Hane and Sons                                     Erdmanberg                                        80151     74276848634232092022-06-10 19:27:53.000000
+339,SUCCESSFUL READ OF XREF
+340,CARD NUMBER: 7427684863423209
+341,ACCOUNT ID : 00000000011
+342,CUSTOMER ID: 000000011
+343,SUCCESSFUL READ OF ACCOUNT FILE
+344,0000000198494663010001POS TERM  Purchase at Dietrich-Ledner                                                                         0000003857G800000000Dietrich-Ledner                                   Lilastad                                          79844-497627453037200020902022-06-10 19:27:53.000000
+345,SUCCESSFUL READ OF XREF
+346,CARD NUMBER: 2745303720002090
+347,ACCOUNT ID : 00000000039
+348,CUSTOMER ID: 000000039
+349,SUCCESSFUL READ OF ACCOUNT FILE
+350,0000000201032783010001POS TERM  Purchase at Heidenreich-Feil                                                                        0000003264D800000000Heidenreich-Feil                                  North Christybury                                 32759     40115008917773672022-06-10 19:27:53.000000
+351,SUCCESSFUL READ OF XREF
+352,CARD NUMBER: 4011500891777367
+353,ACCOUNT ID : 00000000013
+354,CUSTOMER ID: 000000013
+355,SUCCESSFUL READ OF ACCOUNT FILE
+356,0000000202217428010001POS TERM  Purchase at Simonis and Sons                                                                        0000002993C800000000Simonis and Sons                                  Joanieview                                        81755-548943852714766278192022-06-10 19:27:53.000000
+357,SUCCESSFUL READ OF XREF
+358,CARD NUMBER: 4385271476627819
+359,ACCOUNT ID : 00000000034
+360,CUSTOMER ID: 000000034
+361,SUCCESSFUL READ OF ACCOUNT FILE
+362,0000000202886897010001POS TERM  Purchase at Ryan-Homenick                                                                           0000001758H800000000Ryan-Homenick                                     North Franciscaside                               14400     28719682528124902022-06-10 19:27:53.000000
+363,SUCCESSFUL READ OF XREF
+364,CARD NUMBER: 2871968252812490
+365,ACCOUNT ID : 00000000006
+366,CUSTOMER ID: 000000006
+367,SUCCESSFUL READ OF ACCOUNT FILE
+368,"0000000203305494010001POS TERM  Purchase at Kunze, Koss and Erdman                                                                  0000004792B800000000Kunze, Koss and Erdman                            West Lempi                                        60316-462057873512288793392022-06-10 19:27:53.000000"
+369,SUCCESSFUL READ OF XREF
+370,CARD NUMBER: 5787351228879339
+371,ACCOUNT ID : 00000000047
+372,CUSTOMER ID: 000000047
+373,SUCCESSFUL READ OF ACCOUNT FILE
+374,0000000204143988010001POS TERM  Purchase at Buckridge-Stiedemann                                                                    0000000763C800000000Buckridge-Stiedemann                              Kuvalishaven                                      15327     37662819841551542022-06-10 19:27:53.000000
+375,SUCCESSFUL READ OF XREF
+376,CARD NUMBER: 3766281984155154
+377,ACCOUNT ID : 00000000041
+378,CUSTOMER ID: 000000041
+379,SUCCESSFUL READ OF ACCOUNT FILE
+380,"0000000211219588010001POS TERM  Purchase at Cummings, Nitzsche and Bosco                                                            0000005530{800000000Cummings, Nitzsche and Bosco                      Cordeliamouth                                     55811     67230004632077642022-06-10 19:27:53.000000"
+381,SUCCESSFUL READ OF XREF
+382,CARD NUMBER: 6723000463207764
+383,ACCOUNT ID : 00000000028
+384,CUSTOMER ID: 000000028
+385,SUCCESSFUL READ OF ACCOUNT FILE
+386,0000000218186931030001OPERATOR  Return item at Reichert and Daughters                                                               0000008351J800000000Reichert and Daughters                            Amaliafort                                        31060-917889313693518947832022-06-10 19:27:53.000000
+387,SUCCESSFUL READ OF XREF
+388,CARD NUMBER: 8931369351894783
+389,ACCOUNT ID : 00000000008
+390,CUSTOMER ID: 000000008
+391,SUCCESSFUL READ OF ACCOUNT FILE
+392,0000000220001505010001POS TERM  Purchase at Schmeler Group                                                                          0000009297G800000000Schmeler Group                                    New Kennediburgh                                  39202-238065092303625538162022-06-10 19:27:53.000000
+393,SUCCESSFUL READ OF XREF
+394,CARD NUMBER: 6509230362553816
+395,ACCOUNT ID : 00000000030
+396,CUSTOMER ID: 000000030
+397,SUCCESSFUL READ OF ACCOUNT FILE
+398,"0000000220745261010001POS TERM  Purchase at Swaniawski, Torphy and Bruen                                                            0000004956F800000000Swaniawski, Torphy and Bruen                      East Devenborough                                 70124     70266376150322772022-06-10 19:27:53.000000"
+399,SUCCESSFUL READ OF XREF
+400,CARD NUMBER: 7026637615032277
+401,ACCOUNT ID : 00000000031
+402,CUSTOMER ID: 000000031
+403,SUCCESSFUL READ OF ACCOUNT FILE
+404,"0000000223138231010001POS TERM  Purchase at Prohaska, Grant and Hirthe                                                              0000008513C800000000Prohaska, Grant and Hirthe                        Kennyview                                         79664     95017337214298932022-06-10 19:27:53.000000"
+405,SUCCESSFUL READ OF XREF
+406,CARD NUMBER: 9501733721429893
+407,ACCOUNT ID : 00000000009
+408,CUSTOMER ID: 000000009
+409,SUCCESSFUL READ OF ACCOUNT FILE
+410,0000000224060323010001POS TERM  Purchase at Kunze and Sons                                                                          0000003437G800000000Kunze and Sons                                    Port Genoveva                                     96001     93491074758692142022-06-10 19:27:53.000000
+411,SUCCESSFUL READ OF XREF
+412,CARD NUMBER: 9349107475869214
+413,ACCOUNT ID : 00000000017
+414,CUSTOMER ID: 000000017
+415,SUCCESSFUL READ OF ACCOUNT FILE
+416,"0000000226849749030001OPERATOR  Return item at Smith, Cummings and Medhurst                                                         0000004289R800000000Smith, Cummings and Medhurst                      South Adriannaland                                54229-745960096191506745262022-06-10 19:27:53.000000"
+417,SUCCESSFUL READ OF XREF
+418,CARD NUMBER: 6009619150674526
+419,ACCOUNT ID : 00000000005
+420,CUSTOMER ID: 000000005
+421,SUCCESSFUL READ OF ACCOUNT FILE
+422,0000000232640164010001POS TERM  Purchase at Blick LLC                                                                               0000001609I800000000Blick LLC                                         East Ali                                          23808     74276848634232092022-06-10 19:27:53.000000
+423,SUCCESSFUL READ OF XREF
+424,CARD NUMBER: 7427684863423209
+425,ACCOUNT ID : 00000000011
+426,CUSTOMER ID: 000000011
+427,SUCCESSFUL READ OF ACCOUNT FILE
+428,"0000000238329981030001OPERATOR  Return item at Effertz, Ortiz and Gusikowski                                                        0000009303L800000000Effertz, Ortiz and Gusikowski                     Harrisonfurt                                      89418-499965092303625538162022-06-10 19:27:53.000000"
+429,SUCCESSFUL READ OF XREF
+430,CARD NUMBER: 6509230362553816
+431,ACCOUNT ID : 00000000030
+432,CUSTOMER ID: 000000030
+433,SUCCESSFUL READ OF ACCOUNT FILE
+434,0000000241121967030001OPERATOR  Return item at Kulas and Daughters                                                                  0000004455N800000000Kulas and Daughters                               Billybury                                         68626-499668326760476980872022-06-10 19:27:53.000000
+435,SUCCESSFUL READ OF XREF
+436,CARD NUMBER: 6832676047698087
+437,ACCOUNT ID : 00000000033
+438,CUSTOMER ID: 000000033
+439,SUCCESSFUL READ OF ACCOUNT FILE
+440,0000000246307558010001POS TERM  Purchase at Jacobi and Sons                                                                         0000008167G800000000Jacobi and Sons                                   Lake Hoseaside                                    45822     74438709888975302022-06-10 19:27:53.000000
+441,SUCCESSFUL READ OF XREF
+442,CARD NUMBER: 7443870988897530
+443,ACCOUNT ID : 00000000038
+444,CUSTOMER ID: 000000038
+445,SUCCESSFUL READ OF ACCOUNT FILE
+446,0000000246312084010001POS TERM  Purchase at Weimann-Graham                                                                          0000008487G800000000Weimann-Graham                                    Thielburgh                                        41063-541229401393623004492022-06-10 19:27:53.000000
+447,SUCCESSFUL READ OF XREF
+448,CARD NUMBER: 2940139362300449
+449,ACCOUNT ID : 00000000022
+450,CUSTOMER ID: 000000022
+451,SUCCESSFUL READ OF ACCOUNT FILE
+452,"0000000246549911010001POS TERM  Purchase at Kulas, Reichert and O'Conner                                                            0000003395E800000000Kulas, Reichert and O'Conner                      Travishaven                                       59094-428357873512288793392022-06-10 19:27:53.000000"
+453,SUCCESSFUL READ OF XREF
+454,CARD NUMBER: 5787351228879339
+455,ACCOUNT ID : 00000000047
+456,CUSTOMER ID: 000000047
+457,SUCCESSFUL READ OF ACCOUNT FILE
+458,0000000248557079010001POS TERM  Purchase at Strosin-Fadel                                                                           0000009050{800000000Strosin-Fadel                                     Krajcikmouth                                      25843     59751175166160772022-06-10 19:27:53.000000
+459,SUCCESSFUL READ OF XREF
+460,CARD NUMBER: 5975117516616077
+461,ACCOUNT ID : 00000000042
+462,CUSTOMER ID: 000000042
+463,SUCCESSFUL READ OF ACCOUNT FILE
+464,"0000000250062442010001POS TERM  Purchase at Willms, Abshire and Daugherty                                                           0000003469I800000000Willms, Abshire and Daugherty                     Shieldston                                        97909-123360096191506745262022-06-10 19:27:53.000000"
+465,SUCCESSFUL READ OF XREF
+466,CARD NUMBER: 6009619150674526
+467,ACCOUNT ID : 00000000005
+468,CUSTOMER ID: 000000005
+469,SUCCESSFUL READ OF ACCOUNT FILE
+470,"0000000252891459010001POS TERM  Purchase at Nitzsche, Feil and Bergstrom                                                            0000009449I800000000Nitzsche, Feil and Bergstrom                      Carriebury                                        40432-259467230004632077642022-06-10 19:27:53.000000"
+471,SUCCESSFUL READ OF XREF
+472,CARD NUMBER: 6723000463207764
+473,ACCOUNT ID : 00000000028
+474,CUSTOMER ID: 000000028
+475,SUCCESSFUL READ OF ACCOUNT FILE
+476,0000000253579636010001POS TERM  Purchase at D'Amore-Batz                                                                            0000002575E800000000D'Amore-Batz                                      Collierview                                       97716     74438709888975302022-06-10 19:27:53.000000
+477,SUCCESSFUL READ OF XREF
+478,CARD NUMBER: 7443870988897530
+479,ACCOUNT ID : 00000000038
+480,CUSTOMER ID: 000000038
+481,SUCCESSFUL READ OF ACCOUNT FILE
+482,0000000253685514010001POS TERM  Purchase at Von-Schmeler                                                                            0000004963C800000000Von-Schmeler                                      Lake Maximillian                                  85711     45347841027139512022-06-10 19:27:53.000000
+483,SUCCESSFUL READ OF XREF
+484,CARD NUMBER: 4534784102713951
+485,ACCOUNT ID : 00000000036
+486,CUSTOMER ID: 000000036
+487,SUCCESSFUL READ OF ACCOUNT FILE
+488,"0000000263663553010001POS TERM  Purchase at Wehner, Turcotte and Nikolaus                                                           0000005261A800000000Wehner, Turcotte and Nikolaus                     Fritschfort                                       75845-068865035351817959922022-06-10 19:27:53.000000"
+489,SUCCESSFUL READ OF XREF
+490,CARD NUMBER: 6503535181795992
+491,ACCOUNT ID : 00000000048
+492,CUSTOMER ID: 000000048
+493,SUCCESSFUL READ OF ACCOUNT FILE
+494,0000000263926805010001POS TERM  Purchase at Batz-Gaylord                                                                            0000002103C800000000Batz-Gaylord                                      Beahanhaven                                       00022     09824962136297952022-06-10 19:27:53.000000
+495,SUCCESSFUL READ OF XREF
+496,CARD NUMBER: 0982496213629795
+497,ACCOUNT ID : 00000000012
+498,CUSTOMER ID: 000000012
+499,SUCCESSFUL READ OF ACCOUNT FILE
+500,0000000265935610010001POS TERM  Purchase at Morar-Cartwright                                                                        0000004619I800000000Morar-Cartwright                                  Lake Sanfordmouth                                 93080-110774438709888975302022-06-10 19:27:53.000000
+501,SUCCESSFUL READ OF XREF
+502,CARD NUMBER: 7443870988897530
+503,ACCOUNT ID : 00000000038
+504,CUSTOMER ID: 000000038
+505,SUCCESSFUL READ OF ACCOUNT FILE
+506,0000000272698228010001POS TERM  Purchase at Schultz-Morissette                                                                      0000004575E800000000Schultz-Morissette                                East Jakaylashire                                 84498-860932607636123375602022-06-10 19:27:53.000000
+507,SUCCESSFUL READ OF XREF
+508,CARD NUMBER: 3260763612337560
+509,ACCOUNT ID : 00000000010
+510,CUSTOMER ID: 000000010
+511,SUCCESSFUL READ OF ACCOUNT FILE
+512,0000000273137276010001POS TERM  Purchase at Lowe-Blick                                                                              0000007642B800000000Lowe-Blick                                        Boyerchester                                      15468-892465035351817959922022-06-10 19:27:53.000000
+513,SUCCESSFUL READ OF XREF
+514,CARD NUMBER: 6503535181795992
+515,ACCOUNT ID : 00000000048
+516,CUSTOMER ID: 000000048
+517,SUCCESSFUL READ OF ACCOUNT FILE
+518,0000000274427056030001OPERATOR  Return item at Gibson-Maggio                                                                        0000007630}800000000Gibson-Maggio                                     Port Genevieveberg                                92794-645709238771932473302022-06-10 19:27:53.000000
+519,SUCCESSFUL READ OF XREF
+520,CARD NUMBER: 0923877193247330
+521,ACCOUNT ID : 00000000002
+522,CUSTOMER ID: 000000002
+523,SUCCESSFUL READ OF ACCOUNT FILE
+524,0000000274596018010001POS TERM  Purchase at Renner LLC                                                                              0000000400{800000000Renner LLC                                        Sengerport                                        73531     54070998504798662022-06-10 19:27:53.000000
+525,SUCCESSFUL READ OF XREF
+526,CARD NUMBER: 5407099850479866
+527,ACCOUNT ID : 00000000021
+528,CUSTOMER ID: 000000021
+529,SUCCESSFUL READ OF ACCOUNT FILE
+530,0000000277916619010001POS TERM  Purchase at Champlin and Sons                                                                       0000009968H800000000Champlin and Sons                                 North Dale                                        85808-463870941427510555512022-06-10 19:27:53.000000
+531,SUCCESSFUL READ OF XREF
+532,CARD NUMBER: 7094142751055551
+533,ACCOUNT ID : 00000000032
+534,CUSTOMER ID: 000000032
+535,SUCCESSFUL READ OF ACCOUNT FILE
+536,0000000283702177010001POS TERM  Purchase at Bradtke-Considine                                                                       0000000899I800000000Bradtke-Considine                                 Geovannyville                                     39499-216959751175166160772022-06-10 19:27:53.000000
+537,SUCCESSFUL READ OF XREF
+538,CARD NUMBER: 5975117516616077
+539,ACCOUNT ID : 00000000042
+540,CUSTOMER ID: 000000042
+541,SUCCESSFUL READ OF ACCOUNT FILE
+542,"0000000292939458010001POS TERM  Purchase at O'Hara, Ledner and Runte                                                                0000000495E800000000O'Hara, Ledner and Runte                          Port Fleta                                        42362-403882625936024730762022-06-10 19:27:53.000000"
+543,SUCCESSFUL READ OF XREF
+544,CARD NUMBER: 8262593602473076
+545,ACCOUNT ID : 00000000049
+546,CUSTOMER ID: 000000049
+547,SUCCESSFUL READ OF ACCOUNT FILE
+548,"0000000298764221010001POS TERM  Purchase at Zboncak, Kohler and Ziemann                                                             0000007061A800000000Zboncak, Kohler and Ziemann                       Gilesmouth                                        93998-894674438709888975302022-06-10 19:27:53.000000"
+549,SUCCESSFUL READ OF XREF
+550,CARD NUMBER: 7443870988897530
+551,ACCOUNT ID : 00000000038
+552,CUSTOMER ID: 000000038
+553,SUCCESSFUL READ OF ACCOUNT FILE
+554,0000000298806396010001POS TERM  Purchase at Powlowski-Greenholt                                                                     0000009362B800000000Powlowski-Greenholt                               Naderfort                                         19262-470670582672618377522022-06-10 19:27:53.000000
+555,SUCCESSFUL READ OF XREF
+556,CARD NUMBER: 7058267261837752
+557,ACCOUNT ID : 00000000043
+558,CUSTOMER ID: 000000043
+559,SUCCESSFUL READ OF ACCOUNT FILE
+560,"0000000307523903030001OPERATOR  Return item at Hamill, Sawayn and O'Conner                                                          0000005854M800000000Hamill, Sawayn and O'Conner                       Vonview                                           83262     57873512288793392022-06-10 19:27:53.000000"
+561,SUCCESSFUL READ OF XREF
+562,CARD NUMBER: 5787351228879339
+563,ACCOUNT ID : 00000000047
+564,CUSTOMER ID: 000000047
+565,SUCCESSFUL READ OF ACCOUNT FILE
+566,0000000312054308010001POS TERM  Purchase at Bogan LLC                                                                               0000007170{800000000Bogan LLC                                         Josiahhaven                                       59167     73793356346611422022-06-10 19:27:53.000000
+567,SUCCESSFUL READ OF XREF
+568,CARD NUMBER: 7379335634661142
+569,ACCOUNT ID : 00000000045
+570,CUSTOMER ID: 000000045
+571,SUCCESSFUL READ OF ACCOUNT FILE
+572,0000000312439873010001POS TERM  Purchase at Rowe and Daughters                                                                      0000007453C800000000Rowe and Daughters                                New Adriannamouth                                 89172-748674438709888975302022-06-10 19:27:53.000000
+573,SUCCESSFUL READ OF XREF
+574,CARD NUMBER: 7443870988897530
+575,ACCOUNT ID : 00000000038
+576,CUSTOMER ID: 000000038
+577,SUCCESSFUL READ OF ACCOUNT FILE
+578,0000000312675172010001POS TERM  Purchase at Hermiston Inc                                                                           0000007287G800000000Hermiston Inc                                     Port Bennyburgh                                   34656     89313693518947832022-06-10 19:27:53.000000
+579,SUCCESSFUL READ OF XREF
+580,CARD NUMBER: 8931369351894783
+581,ACCOUNT ID : 00000000008
+582,CUSTOMER ID: 000000008
+583,SUCCESSFUL READ OF ACCOUNT FILE
+584,0000000313527007010001POS TERM  Purchase at Ebert-Grimes                                                                            0000009482B800000000Ebert-Grimes                                      New Kelleyton                                     51492-327281125458342397352022-06-10 19:27:53.000000
+585,SUCCESSFUL READ OF XREF
+586,CARD NUMBER: 8112545834239735
+587,ACCOUNT ID : 00000000023
+588,CUSTOMER ID: 000000023
+589,SUCCESSFUL READ OF ACCOUNT FILE
+590,0000000325686503010001POS TERM  Purchase at Cruickshank-Marvin                                                                      0000005699I800000000Cruickshank-Marvin                                Russelshire                                       66858     09238771932473302022-06-10 19:27:53.000000
+591,SUCCESSFUL READ OF XREF
+592,CARD NUMBER: 0923877193247330
+593,ACCOUNT ID : 00000000002
+594,CUSTOMER ID: 000000002
+595,SUCCESSFUL READ OF ACCOUNT FILE
+596,0000000328781772010001POS TERM  Purchase at Hayes and Daughters                                                                     0000008594D800000000Hayes and Daughters                               Beahanville                                       08781     90562979316640112022-06-10 19:27:53.000000
+597,SUCCESSFUL READ OF XREF
+598,CARD NUMBER: 9056297931664011
+599,ACCOUNT ID : 00000000025
+600,CUSTOMER ID: 000000025
+601,SUCCESSFUL READ OF ACCOUNT FILE
+602,"0000000329446511010001POS TERM  Purchase at Ernser, Ward and Lehner                                                                 0000006675E800000000Ernser, Ward and Lehner                           Lake Rita                                         78140-947080405804103486802022-06-10 19:27:53.000000"
+603,SUCCESSFUL READ OF XREF
+604,CARD NUMBER: 8040580410348680
+605,ACCOUNT ID : 00000000026
+606,CUSTOMER ID: 000000026
+607,SUCCESSFUL READ OF ACCOUNT FILE
+608,0000000329724245010001POS TERM  Purchase at Reichel Group                                                                           0000000140{800000000Reichel Group                                     Port Romanfort                                    95843     05000244537657402022-06-10 19:27:53.000000
+609,SUCCESSFUL READ OF XREF
+610,CARD NUMBER: 0500024453765740
+611,ACCOUNT ID : 00000000050
+612,CUSTOMER ID: 000000050
+613,SUCCESSFUL READ OF ACCOUNT FILE
+614,0000000338128146030001OPERATOR  Return item at Terry-Mertz                                                                          0000007429R800000000Terry-Mertz                                       Enidview                                          31259     70941427510555512022-06-10 19:27:53.000000
+615,SUCCESSFUL READ OF XREF
+616,CARD NUMBER: 7094142751055551
+617,ACCOUNT ID : 00000000032
+618,CUSTOMER ID: 000000032
+619,SUCCESSFUL READ OF ACCOUNT FILE
+620,0000000341155503010001POS TERM  Purchase at Parker-Erdman                                                                           0000009908H800000000Parker-Erdman                                     New Khalid                                        72240     85178669582060082022-06-10 19:27:53.000000
+621,SUCCESSFUL READ OF XREF
+622,CARD NUMBER: 8517866958206008
+623,ACCOUNT ID : 00000000014
+624,CUSTOMER ID: 000000014
+625,SUCCESSFUL READ OF ACCOUNT FILE
+626,"0000000341634875010001POS TERM  Purchase at Medhurst, Bogisich and Schmeler                                                         0000009978H800000000Medhurst, Bogisich and Schmeler                   Dickensport                                       29931-931327608367971075652022-06-10 19:27:53.000000"
+627,SUCCESSFUL READ OF XREF
+628,CARD NUMBER: 2760836797107565
+629,ACCOUNT ID : 00000000024
+630,CUSTOMER ID: 000000024
+631,SUCCESSFUL READ OF ACCOUNT FILE
+632,0000000357518499030001OPERATOR  Return item at Willms-Beier                                                                         0000008523L800000000Willms-Beier                                      Nathanfurt                                        70715-733372515081491888832022-06-10 19:27:53.000000
+633,SUCCESSFUL READ OF XREF
+634,CARD NUMBER: 7251508149188883
+635,ACCOUNT ID : 00000000029
+636,CUSTOMER ID: 000000029
+637,SUCCESSFUL READ OF ACCOUNT FILE
+638,0000000358543876010001POS TERM  Purchase at Zulauf Group                                                                            0000005527G800000000Zulauf Group                                      Schowalterland                                    26981     59751175166160772022-06-10 19:27:53.000000
+639,SUCCESSFUL READ OF XREF
+640,CARD NUMBER: 5975117516616077
+641,ACCOUNT ID : 00000000042
+642,CUSTOMER ID: 000000042
+643,SUCCESSFUL READ OF ACCOUNT FILE
+644,0000000361866674010001POS TERM  Purchase at Mayer and Daughters                                                                     0000004460{800000000Mayer and Daughters                               North Keeley                                      40519     74276848634232092022-06-10 19:27:53.000000
+645,SUCCESSFUL READ OF XREF
+646,CARD NUMBER: 7427684863423209
+647,ACCOUNT ID : 00000000011
+648,CUSTOMER ID: 000000011
+649,SUCCESSFUL READ OF ACCOUNT FILE
+650,"0000000366513257010001POS TERM  Purchase at Klein, Buckridge and Johnson                                                            0000009655E800000000Klein, Buckridge and Johnson                      Shieldsbury                                       79412-946209279871086362322022-06-10 19:27:53.000000"
+651,SUCCESSFUL READ OF XREF
+652,CARD NUMBER: 0927987108636232
+653,ACCOUNT ID : 00000000020
+654,CUSTOMER ID: 000000020
+655,SUCCESSFUL READ OF ACCOUNT FILE
+656,0000000373973344010001POS TERM  Purchase at Wehner LLC                                                                              0000009583C800000000Wehner LLC                                        South Harmonmouth                                 92575     56711844785058442022-06-10 19:27:53.000000
+657,SUCCESSFUL READ OF XREF
+658,CARD NUMBER: 5671184478505844
+659,ACCOUNT ID : 00000000018
+660,CUSTOMER ID: 000000018
+661,SUCCESSFUL READ OF ACCOUNT FILE
+662,0000000375247552010001POS TERM  Purchase at Guann Group                                                                             0000001151A800000000Guann Group                                       Port Grant                                        76360-645739991692463758852022-06-10 19:27:53.000000
+663,SUCCESSFUL READ OF XREF
+664,CARD NUMBER: 3999169246375885
+665,ACCOUNT ID : 00000000003
+666,CUSTOMER ID: 000000003
+667,SUCCESSFUL READ OF ACCOUNT FILE
+668,"0000000378710702030001OPERATOR  Return item at Wilderman, Koepp and Ledner                                                          0000003447P800000000Wilderman, Koepp and Ledner                       Wuckerthaven                                      29965     73793356346611422022-06-10 19:27:53.000000"
+669,SUCCESSFUL READ OF XREF
+670,CARD NUMBER: 7379335634661142
+671,ACCOUNT ID : 00000000045
+672,CUSTOMER ID: 000000045
+673,SUCCESSFUL READ OF ACCOUNT FILE
+674,0000000379084859030001OPERATOR  Return item at Lebsack-Treutel                                                                      0000000752K800000000Lebsack-Treutel                                   Kennedyside                                       66077-146367230004632077642022-06-10 19:27:53.000000
+675,SUCCESSFUL READ OF XREF
+676,CARD NUMBER: 6723000463207764
+677,ACCOUNT ID : 00000000028
+678,CUSTOMER ID: 000000028
+679,SUCCESSFUL READ OF ACCOUNT FILE
+680,"0000000380632461010001POS TERM  Purchase at Beahan, Little and Sanford                                                              0000004283C800000000Beahan, Little and Sanford                        East Ebonyville                                   17826-099948594526128770652022-06-10 19:27:53.000000"
+681,SUCCESSFUL READ OF XREF
+682,CARD NUMBER: 4859452612877065
+683,ACCOUNT ID : 00000000007
+684,CUSTOMER ID: 000000007
+685,SUCCESSFUL READ OF ACCOUNT FILE
+686,0000000382018782010001POS TERM  Purchase at Hackett-Kautzer                                                                         0000008849I800000000Hackett-Kautzer                                   East Cristopherfurt                               10894-935856568305449812162022-06-10 19:27:53.000000
+687,SUCCESSFUL READ OF XREF
+688,CARD NUMBER: 5656830544981216
+689,ACCOUNT ID : 00000000046
+690,CUSTOMER ID: 000000046
+691,SUCCESSFUL READ OF ACCOUNT FILE
+692,0000000382291356010001POS TERM  Purchase at Jacobi and Daughters                                                                    0000008607G800000000Jacobi and Daughters                              Carterland                                        70592-564056711844785058442022-06-10 19:27:53.000000
+693,SUCCESSFUL READ OF XREF
+694,CARD NUMBER: 5671184478505844
+695,ACCOUNT ID : 00000000018
+696,CUSTOMER ID: 000000018
+697,SUCCESSFUL READ OF ACCOUNT FILE
+698,0000000392772234010001POS TERM  Purchase at Williamson LLC                                                                          0000003516F800000000Williamson LLC                                    Runteville                                        18400-684543852714766278192022-06-10 19:27:53.000000
+699,SUCCESSFUL READ OF XREF
+700,CARD NUMBER: 4385271476627819
+701,ACCOUNT ID : 00000000034
+702,CUSTOMER ID: 000000034
+703,SUCCESSFUL READ OF ACCOUNT FILE
+704,0000000397282953030001OPERATOR  Return item at Ankunding Group                                                                      0000003962K800000000Ankunding Group                                   Adrainton                                         59712-645128719682528124902022-06-10 19:27:53.000000
+705,SUCCESSFUL READ OF XREF
+706,CARD NUMBER: 2871968252812490
+707,ACCOUNT ID : 00000000006
+708,CUSTOMER ID: 000000006
+709,SUCCESSFUL READ OF ACCOUNT FILE
+710,0000000399296572010001POS TERM  Purchase at McGlynn Inc                                                                             0000002547G800000000McGlynn Inc                                       New Berenice                                      76608     60096191506745262022-06-10 19:27:53.000000
+711,SUCCESSFUL READ OF XREF
+712,CARD NUMBER: 6009619150674526
+713,ACCOUNT ID : 00000000005
+714,CUSTOMER ID: 000000005
+715,SUCCESSFUL READ OF ACCOUNT FILE
+716,0000000400022505010001POS TERM  Purchase at Klocko LLC                                                                              0000003854D800000000Klocko LLC                                        Taniatown                                         25662     10140865652243502022-06-10 19:27:53.000000
+717,SUCCESSFUL READ OF XREF
+718,CARD NUMBER: 1014086565224350
+719,ACCOUNT ID : 00000000044
+720,CUSTOMER ID: 000000044
+721,SUCCESSFUL READ OF ACCOUNT FILE
+722,0000000400762013010001POS TERM  Purchase at Will-Murazik                                                                            0000006170{800000000Will-Murazik                                      New Estefania                                     36903-335027608367971075652022-06-10 19:27:53.000000
+723,SUCCESSFUL READ OF XREF
+724,CARD NUMBER: 2760836797107565
+725,ACCOUNT ID : 00000000024
+726,CUSTOMER ID: 000000024
+727,SUCCESSFUL READ OF ACCOUNT FILE
+728,"0000000402032668030001OPERATOR  Return item at Torphy, Collins and Witting                                                          0000007566O800000000Torphy, Collins and Witting                       Lake Augusttown                                   06644     37662819841551542022-06-10 19:27:53.000000"
+729,SUCCESSFUL READ OF XREF
+730,CARD NUMBER: 3766281984155154
+731,ACCOUNT ID : 00000000041
+732,CUSTOMER ID: 000000041
+733,SUCCESSFUL READ OF ACCOUNT FILE
+734,0000000407178785010001POS TERM  Purchase at Cole-Wyman                                                                              0000009497G800000000Cole-Wyman                                        Olenmouth                                         47296     39402460161414892022-06-10 19:27:53.000000
+735,SUCCESSFUL READ OF XREF
+736,CARD NUMBER: 3940246016141489
+737,ACCOUNT ID : 00000000019
+738,CUSTOMER ID: 000000019
+739,SUCCESSFUL READ OF ACCOUNT FILE
+740,0000000407637739030001OPERATOR  Return item at Price LLC                                                                            0000005014M800000000Price LLC                                         New Annabell                                      91216     59751175166160772022-06-10 19:27:53.000000
+741,SUCCESSFUL READ OF XREF
+742,CARD NUMBER: 5975117516616077
+743,ACCOUNT ID : 00000000042
+744,CUSTOMER ID: 000000042
+745,SUCCESSFUL READ OF ACCOUNT FILE
+746,0000000412515011010001POS TERM  Purchase at Wehner-Ebert                                                                            0000002147G800000000Wehner-Ebert                                      Ednaville                                         70885     59751175166160772022-06-10 19:27:53.000000
+747,SUCCESSFUL READ OF XREF
+748,CARD NUMBER: 5975117516616077
+749,ACCOUNT ID : 00000000042
+750,CUSTOMER ID: 000000042
+751,SUCCESSFUL READ OF ACCOUNT FILE
+752,"0000000415671623010001POS TERM  Purchase at Kshlerin, Schulist and Oberbrunner                                                      0000000009I800000000Kshlerin, Schulist and Oberbrunner                Dallinmouth                                       19897-909715614091064916002022-06-10 19:27:53.000000"
+753,SUCCESSFUL READ OF XREF
+754,CARD NUMBER: 1561409106491600
+755,ACCOUNT ID : 00000000035
+756,CUSTOMER ID: 000000035
+757,SUCCESSFUL READ OF ACCOUNT FILE
+758,0000000416848414010001POS TERM  Purchase at Medhurst-Feeney                                                                         0000009952B800000000Medhurst-Feeney                                   New Terrance                                      87377     68326760476980872022-06-10 19:27:53.000000
+759,SUCCESSFUL READ OF XREF
+760,CARD NUMBER: 6832676047698087
+761,ACCOUNT ID : 00000000033
+762,CUSTOMER ID: 000000033
+763,SUCCESSFUL READ OF ACCOUNT FILE
+764,0000000420768809010001POS TERM  Purchase at Bartell-Rempel                                                                          0000006749I800000000Bartell-Rempel                                    Alexanderport                                     08405     70582672618377522022-06-10 19:27:53.000000
+765,SUCCESSFUL READ OF XREF
+766,CARD NUMBER: 7058267261837752
+767,ACCOUNT ID : 00000000043
+768,CUSTOMER ID: 000000043
+769,SUCCESSFUL READ OF ACCOUNT FILE
+770,0000000424689871010001POS TERM  Purchase at Rempel and Daughters                                                                    0000006481A800000000Rempel and Daughters                              Aliyachester                                      08642     57873512288793392022-06-10 19:27:53.000000
+771,SUCCESSFUL READ OF XREF
+772,CARD NUMBER: 5787351228879339
+773,ACCOUNT ID : 00000000047
+774,CUSTOMER ID: 000000047
+775,SUCCESSFUL READ OF ACCOUNT FILE
+776,"0000000429557611010001POS TERM  Purchase at Pagac, Funk and Kiehn                                                                   0000005456F800000000Pagac, Funk and Kiehn                             Krajcikshire                                      32088-094009824962136297952022-06-10 19:27:53.000000"
+777,SUCCESSFUL READ OF XREF
+778,CARD NUMBER: 0982496213629795
+779,ACCOUNT ID : 00000000012
+780,CUSTOMER ID: 000000012
+781,SUCCESSFUL READ OF ACCOUNT FILE
+782,0000000432231260030001OPERATOR  Return item at Schuster-Bashirian                                                                   0000009627P800000000Schuster-Bashirian                                New Gageton                                       47405-236282625936024730762022-06-10 19:27:53.000000
+783,SUCCESSFUL READ OF XREF
+784,CARD NUMBER: 8262593602473076
+785,ACCOUNT ID : 00000000049
+786,CUSTOMER ID: 000000049
+787,SUCCESSFUL READ OF ACCOUNT FILE
+788,0000000433607101010001POS TERM  Purchase at VonRueden Inc                                                                           0000008512B800000000VonRueden Inc                                     Lake Gailland                                     82720-305595017337214298932022-06-10 19:27:53.000000
+789,SUCCESSFUL READ OF XREF
+790,CARD NUMBER: 9501733721429893
+791,ACCOUNT ID : 00000000009
+792,CUSTOMER ID: 000000009
+793,SUCCESSFUL READ OF ACCOUNT FILE
+794,0000000434343718010001POS TERM  Purchase at Vandervort-McClure                                                                      0000007932B800000000Vandervort-McClure                                Kaydenborough                                     73288-415168326760476980872022-06-10 19:27:53.000000
+795,SUCCESSFUL READ OF XREF
+796,CARD NUMBER: 6832676047698087
+797,ACCOUNT ID : 00000000033
+798,CUSTOMER ID: 000000033
+799,SUCCESSFUL READ OF ACCOUNT FILE
+800,"0000000435144487010001POS TERM  Purchase at Pacocha, Goyette and Leuschke                                                           0000004088H800000000Pacocha, Goyette and Leuschke                     Gutkowskiport                                     64919-495381125458342397352022-06-10 19:27:53.000000"
+801,SUCCESSFUL READ OF XREF
+802,CARD NUMBER: 8112545834239735
+803,ACCOUNT ID : 00000000023
+804,CUSTOMER ID: 000000023
+805,SUCCESSFUL READ OF ACCOUNT FILE
+806,"0000000445507761010001POS TERM  Purchase at Rice, Luettgen and Aufderhar                                                            0000001293C800000000Rice, Luettgen and Aufderhar                      O'Reillychester                                   75844     39402460161414892022-06-10 19:27:53.000000"
+807,SUCCESSFUL READ OF XREF
+808,CARD NUMBER: 3940246016141489
+809,ACCOUNT ID : 00000000019
+810,CUSTOMER ID: 000000019
+811,SUCCESSFUL READ OF ACCOUNT FILE
+812,0000000446945803010001POS TERM  Purchase at Yost and Daughters                                                                      0000002412B800000000Yost and Daughters                                Lake Manley                                       52896-044839402460161414892022-06-10 19:27:53.000000
+813,SUCCESSFUL READ OF XREF
+814,CARD NUMBER: 3940246016141489
+815,ACCOUNT ID : 00000000019
+816,CUSTOMER ID: 000000019
+817,SUCCESSFUL READ OF ACCOUNT FILE
+818,"0000000450622695010001POS TERM  Purchase at Schmitt, Kohler and Skiles                                                              0000000283C800000000Schmitt, Kohler and Skiles                        Farrellhaven                                      00796     29880913530943122022-06-10 19:27:53.000000"
+819,SUCCESSFUL READ OF XREF
+820,CARD NUMBER: 2988091353094312
+821,ACCOUNT ID : 00000000004
+822,CUSTOMER ID: 000000004
+823,SUCCESSFUL READ OF ACCOUNT FILE
+824,"0000000458331136010001POS TERM  Purchase at Howe, Rippin and Watsica                                                                0000004371A800000000Howe, Rippin and Watsica                          West Kianachester                                 75201     29880913530943122022-06-10 19:27:53.000000"
+825,SUCCESSFUL READ OF XREF
+826,CARD NUMBER: 2988091353094312
+827,ACCOUNT ID : 00000000004
+828,CUSTOMER ID: 000000004
+829,SUCCESSFUL READ OF ACCOUNT FILE
+830,"0000000462765346010001POS TERM  Purchase at Marquardt, Ward and Brekke                                                              0000005871A800000000Marquardt, Ward and Brekke                        Lake Nataliastad                                  61706-791509824962136297952022-06-10 19:27:53.000000"
+831,SUCCESSFUL READ OF XREF
+832,CARD NUMBER: 0982496213629795
+833,ACCOUNT ID : 00000000012
+834,CUSTOMER ID: 000000012
+835,SUCCESSFUL READ OF ACCOUNT FILE
+836,0000000474475283010001POS TERM  Purchase at Pouros Inc                                                                              0000001746F800000000Pouros Inc                                        East Jerald                                       35802     54070998504798662022-06-10 19:27:53.000000
+837,SUCCESSFUL READ OF XREF
+838,CARD NUMBER: 5407099850479866
+839,ACCOUNT ID : 00000000021
+840,CUSTOMER ID: 000000021
+841,SUCCESSFUL READ OF ACCOUNT FILE
+842,0000000475609951010001POS TERM  Purchase at Predovic-Deckow                                                                         0000009138H800000000Predovic-Deckow                                   West Gunnar                                       46493-944356568305449812162022-06-10 19:27:53.000000
+843,SUCCESSFUL READ OF XREF
+844,CARD NUMBER: 5656830544981216
+845,ACCOUNT ID : 00000000046
+846,CUSTOMER ID: 000000046
+847,SUCCESSFUL READ OF ACCOUNT FILE
+848,0000000475746885010001POS TERM  Purchase at Adams-Watsica                                                                           0000009674D800000000Adams-Watsica                                     Ratkemouth                                        55474-037305000244537657402022-06-10 19:27:53.000000
+849,SUCCESSFUL READ OF XREF
+850,CARD NUMBER: 0500024453765740
+851,ACCOUNT ID : 00000000050
+852,CUSTOMER ID: 000000050
+853,SUCCESSFUL READ OF ACCOUNT FILE
+854,0000000482016448010001POS TERM  Purchase at Becker Group                                                                            0000003100{800000000Becker Group                                      Sanfordhaven                                      50166     27608367971075652022-06-10 19:27:53.000000
+855,SUCCESSFUL READ OF XREF
+856,CARD NUMBER: 2760836797107565
+857,ACCOUNT ID : 00000000024
+858,CUSTOMER ID: 000000024
+859,SUCCESSFUL READ OF ACCOUNT FILE
+860,0000000482116790010001POS TERM  Purchase at Erdman-Cartwright                                                                       0000008201A800000000Erdman-Cartwright                                 Lake Lavonne                                      06930     43852714766278192022-06-10 19:27:53.000000
+861,SUCCESSFUL READ OF XREF
+862,CARD NUMBER: 4385271476627819
+863,ACCOUNT ID : 00000000034
+864,CUSTOMER ID: 000000034
+865,SUCCESSFUL READ OF ACCOUNT FILE
+866,0000000486159054010001POS TERM  Purchase at Christiansen-Jacobi                                                                     0000003198H800000000Christiansen-Jacobi                               West Conor                                        53124     06835861981715162022-06-10 19:27:53.000000
+867,SUCCESSFUL READ OF XREF
+868,CARD NUMBER: 0683586198171516
+869,ACCOUNT ID : 00000000027
+870,CUSTOMER ID: 000000027
+871,SUCCESSFUL READ OF ACCOUNT FILE
+872,0000000490043047010001POS TERM  Purchase at Yost-Kertzmann                                                                          0000005848H800000000Yost-Kertzmann                                    Lake Josh                                         59545     54070998504798662022-06-10 19:27:53.000000
+873,SUCCESSFUL READ OF XREF
+874,CARD NUMBER: 5407099850479866
+875,ACCOUNT ID : 00000000021
+876,CUSTOMER ID: 000000021
+877,SUCCESSFUL READ OF ACCOUNT FILE
+878,0000000496711357010001POS TERM  Purchase at Koepp-Wiegand                                                                           0000001619I800000000Koepp-Wiegand                                     Cristianstad                                      23187-032927608367971075652022-06-10 19:27:53.000000
+879,SUCCESSFUL READ OF XREF
+880,CARD NUMBER: 2760836797107565
+881,ACCOUNT ID : 00000000024
+882,CUSTOMER ID: 000000024
+883,SUCCESSFUL READ OF ACCOUNT FILE
+884,0000000497995808010001POS TERM  Purchase at Beier and Daughters                                                                     0000006490{800000000Beier and Daughters                               Norbertstad                                       48162-533195017337214298932022-06-10 19:27:53.000000
+885,SUCCESSFUL READ OF XREF
+886,CARD NUMBER: 9501733721429893
+887,ACCOUNT ID : 00000000009
+888,CUSTOMER ID: 000000009
+889,SUCCESSFUL READ OF ACCOUNT FILE
+890,0000000498548061010001POS TERM  Purchase at Bernier and Daughters                                                                   0000002090{800000000Bernier and Daughters                             Lake Rosefurt                                     83724-552967270551906160142022-06-10 19:27:53.000000
+891,SUCCESSFUL READ OF XREF
+892,CARD NUMBER: 6727055190616014
+893,ACCOUNT ID : 00000000016
+894,CUSTOMER ID: 000000016
+895,SUCCESSFUL READ OF ACCOUNT FILE
+896,0000000498615524030001OPERATOR  Return item at Powlowski LLC                                                                        0000009070}800000000Powlowski LLC                                     New Aprilstad                                     57040-549390562979316640112022-06-10 19:27:53.000000
+897,SUCCESSFUL READ OF XREF
+898,CARD NUMBER: 9056297931664011
+899,ACCOUNT ID : 00000000025
+900,CUSTOMER ID: 000000025
+901,SUCCESSFUL READ OF ACCOUNT FILE
+902,"0000000498857207010001POS TERM  Purchase at Friesen, Murphy and Beier                                                               0000002934D800000000Friesen, Murphy and Beier                         Dallasberg                                        02275     32607636123375602022-06-10 19:27:53.000000"
+903,SUCCESSFUL READ OF XREF
+904,CARD NUMBER: 3260763612337560
+905,ACCOUNT ID : 00000000010
+906,CUSTOMER ID: 000000010
+907,SUCCESSFUL READ OF ACCOUNT FILE
+908,0000000499424514010001POS TERM  Purchase at Schumm-Stamm                                                                            0000009525E800000000Schumm-Stamm                                      Imogeneburgh                                      12605     45347841027139512022-06-10 19:27:53.000000
+909,SUCCESSFUL READ OF XREF
+910,CARD NUMBER: 4534784102713951
+911,ACCOUNT ID : 00000000036
+912,CUSTOMER ID: 000000036
+913,SUCCESSFUL READ OF ACCOUNT FILE
+914,"0000000500479019010001POS TERM  Purchase at Hilpert, Purdy and Kilback                                                              0000006549I800000000Hilpert, Purdy and Kilback                        Schummshire                                       49771-261610140865652243502022-06-10 19:27:53.000000"
+915,SUCCESSFUL READ OF XREF
+916,CARD NUMBER: 1014086565224350
+917,ACCOUNT ID : 00000000044
+918,CUSTOMER ID: 000000044
+919,SUCCESSFUL READ OF ACCOUNT FILE
+920,0000000500885895030001OPERATOR  Return item at Klein-Stark                                                                          0000005798Q800000000Klein-Stark                                       West Arlo                                         35478     48594526128770652022-06-10 19:27:53.000000
+921,SUCCESSFUL READ OF XREF
+922,CARD NUMBER: 4859452612877065
+923,ACCOUNT ID : 00000000007
+924,CUSTOMER ID: 000000007
+925,SUCCESSFUL READ OF ACCOUNT FILE
+926,0000000502617711010001POS TERM  Purchase at Klocko LLC                                                                              0000009551A800000000Klocko LLC                                        Winonaland                                        07626     48594526128770652022-06-10 19:27:53.000000
+927,SUCCESSFUL READ OF XREF
+928,CARD NUMBER: 4859452612877065
+929,ACCOUNT ID : 00000000007
+930,CUSTOMER ID: 000000007
+931,SUCCESSFUL READ OF ACCOUNT FILE
+932,0000000503557384010001POS TERM  Purchase at Casper Group                                                                            0000000814D800000000Casper Group                                      Millsborough                                      57690     96802941546036972022-06-10 19:27:53.000000
+933,SUCCESSFUL READ OF XREF
+934,CARD NUMBER: 9680294154603697
+935,ACCOUNT ID : 00000000001
+936,CUSTOMER ID: 000000001
+937,SUCCESSFUL READ OF ACCOUNT FILE
+938,"0000000504099546010001POS TERM  Purchase at Jewess, Sauer and Runolfsson                                                            0000006551A800000000Jewess, Sauer and Runolfsson                      Parkermouth                                       00391     09238771932473302022-06-10 19:27:53.000000"
+939,SUCCESSFUL READ OF XREF
+940,CARD NUMBER: 0923877193247330
+941,ACCOUNT ID : 00000000002
+942,CUSTOMER ID: 000000002
+943,SUCCESSFUL READ OF ACCOUNT FILE
+944,"0000000508429766010001POS TERM  Purchase at Kassulke, Reynolds and Runolfsson                                                       0000005341A800000000Kassulke, Reynolds and Runolfsson                 Seamuston                                         13633-315670941427510555512022-06-10 19:27:53.000000"
+945,SUCCESSFUL READ OF XREF
+946,CARD NUMBER: 7094142751055551
+947,ACCOUNT ID : 00000000032
+948,CUSTOMER ID: 000000032
+949,SUCCESSFUL READ OF ACCOUNT FILE
+950,"0000000519771423010001POS TERM  Purchase at Herman, Swift and Nikolaus                                                              0000006700{800000000Herman, Swift and Nikolaus                        Durganport                                        31302     67230004632077642022-06-10 19:27:53.000000"
+951,SUCCESSFUL READ OF XREF
+952,CARD NUMBER: 6723000463207764
+953,ACCOUNT ID : 00000000028
+954,CUSTOMER ID: 000000028
+955,SUCCESSFUL READ OF ACCOUNT FILE
+956,"0000000519935575010001POS TERM  Purchase at Gaylord, Kuhlman and Reichert                                                           0000001649I800000000Gaylord, Kuhlman and Reichert                     West Reillymouth                                  05765     09238771932473302022-06-10 19:27:53.000000"
+957,SUCCESSFUL READ OF XREF
+958,CARD NUMBER: 0923877193247330
+959,ACCOUNT ID : 00000000002
+960,CUSTOMER ID: 000000002
+961,SUCCESSFUL READ OF ACCOUNT FILE
+962,"0000000522130011010001POS TERM  Purchase at D'Amore, Conroy and Wilkinson                                                           0000006994D800000000D'Amore, Conroy and Wilkinson                     East Larissatown                                  12025-536272515081491888832022-06-10 19:27:53.000000"
+963,SUCCESSFUL READ OF XREF
+964,CARD NUMBER: 7251508149188883
+965,ACCOUNT ID : 00000000029
+966,CUSTOMER ID: 000000029
+967,SUCCESSFUL READ OF ACCOUNT FILE
+968,0000000523110055010001POS TERM  Purchase at Purdy-King                                                                              0000007368H800000000Purdy-King                                        Port Maximusshire                                 95835     73793356346611422022-06-10 19:27:53.000000
+969,SUCCESSFUL READ OF XREF
+970,CARD NUMBER: 7379335634661142
+971,ACCOUNT ID : 00000000045
+972,CUSTOMER ID: 000000045
+973,SUCCESSFUL READ OF ACCOUNT FILE
+974,0000000528007115030001OPERATOR  Return item at Trantow-Sipes                                                                        0000001131J800000000Trantow-Sipes                                     Reubentown                                        12694     56711844785058442022-06-10 19:27:53.000000
+975,SUCCESSFUL READ OF XREF
+976,CARD NUMBER: 5671184478505844
+977,ACCOUNT ID : 00000000018
+978,CUSTOMER ID: 000000018
+979,SUCCESSFUL READ OF ACCOUNT FILE
+980,0000000532120892030001OPERATOR  Return item at Frami-Hyatt                                                                          0000000707P800000000Frami-Hyatt                                       Jamilside                                         14372-179096802941546036972022-06-10 19:27:53.000000
+981,SUCCESSFUL READ OF XREF
+982,CARD NUMBER: 9680294154603697
+983,ACCOUNT ID : 00000000001
+984,CUSTOMER ID: 000000001
+985,SUCCESSFUL READ OF ACCOUNT FILE
+986,"0000000539225404030001OPERATOR  Return item at Hamill, Blick and Kling                                                              0000003720}800000000Hamill, Blick and Kling                           Sporerview                                        52731     80405804103486802022-06-10 19:27:53.000000"
+987,SUCCESSFUL READ OF XREF
+988,CARD NUMBER: 8040580410348680
+989,ACCOUNT ID : 00000000026
+990,CUSTOMER ID: 000000026
+991,SUCCESSFUL READ OF ACCOUNT FILE
+992,0000000540034453010001POS TERM  Purchase at Baumbach-Mohr                                                                           0000002024D800000000Baumbach-Mohr                                     Kovacekhaven                                      88690-144268326760476980872022-06-10 19:27:53.000000
+993,SUCCESSFUL READ OF XREF
+994,CARD NUMBER: 6832676047698087
+995,ACCOUNT ID : 00000000033
+996,CUSTOMER ID: 000000033
+997,SUCCESSFUL READ OF ACCOUNT FILE
+998,0000000540260014030001OPERATOR  Return item at McCullough-Gottlieb                                                                  0000008802K800000000McCullough-Gottlieb                               Clarissaside                                      80982-407239991692463758852022-06-10 19:27:53.000000
+999,SUCCESSFUL READ OF XREF
+1000,CARD NUMBER: 3999169246375885
+1001,ACCOUNT ID : 00000000003
+1002,CUSTOMER ID: 000000003
+1003,SUCCESSFUL READ OF ACCOUNT FILE
+1004,0000000544248006010001POS TERM  Purchase at Mann Inc                                                                                0000006594D800000000Mann Inc                                          Koeppton                                          40246-595715614091064916002022-06-10 19:27:53.000000
+1005,SUCCESSFUL READ OF XREF
+1006,CARD NUMBER: 1561409106491600
+1007,ACCOUNT ID : 00000000035
+1008,CUSTOMER ID: 000000035
+1009,SUCCESSFUL READ OF ACCOUNT FILE
+1010,"0000000547488622010001POS TERM  Purchase at Reichert, Kemmer and Funk                                                               0000004036F800000000Reichert, Kemmer and Funk                         North Destinibury                                 84879     40115008917773672022-06-10 19:27:53.000000"
+1011,SUCCESSFUL READ OF XREF
+1012,CARD NUMBER: 4011500891777367
+1013,ACCOUNT ID : 00000000013
+1014,CUSTOMER ID: 000000013
+1015,SUCCESSFUL READ OF ACCOUNT FILE
+1016,"0000000549364593010001POS TERM  Purchase at Waters, Considine and Borer                                                             0000001954D800000000Waters, Considine and Borer                       Lake Lillianaville                                60590-496785178669582060082022-06-10 19:27:53.000000"
+1017,SUCCESSFUL READ OF XREF
+1018,CARD NUMBER: 8517866958206008
+1019,ACCOUNT ID : 00000000014
+1020,CUSTOMER ID: 000000014
+1021,SUCCESSFUL READ OF ACCOUNT FILE
+1022,0000000550089732030001OPERATOR  Return item at Sanford-Gleichner                                                                    0000005374M800000000Sanford-Gleichner                                 Dorisberg                                         29319     32607636123375602022-06-10 19:27:53.000000
+1023,SUCCESSFUL READ OF XREF
+1024,CARD NUMBER: 3260763612337560
+1025,ACCOUNT ID : 00000000010
+1026,CUSTOMER ID: 000000010
+1027,SUCCESSFUL READ OF ACCOUNT FILE
+1028,0000000550860982010001POS TERM  Purchase at Bogan LLC                                                                               0000008502B800000000Bogan LLC                                         Lilyberg                                          56494     63492503316485092022-06-10 19:27:53.000000
+1029,SUCCESSFUL READ OF XREF
+1030,CARD NUMBER: 6349250331648509
+1031,ACCOUNT ID : 00000000015
+1032,CUSTOMER ID: 000000015
+1033,SUCCESSFUL READ OF ACCOUNT FILE
+1034,"0000000554096178010001POS TERM  Purchase at Turner, Dickinson and Grant                                                             0000007223C800000000Turner, Dickinson and Grant                       Lucianofort                                       91006-938165035351817959922022-06-10 19:27:53.000000"
+1035,SUCCESSFUL READ OF XREF
+1036,CARD NUMBER: 6503535181795992
+1037,ACCOUNT ID : 00000000048
+1038,CUSTOMER ID: 000000048
+1039,SUCCESSFUL READ OF ACCOUNT FILE
+1040,"0000000555363230010001POS TERM  Purchase at Metz, Blanda and Homenick                                                               0000004849I800000000Metz, Blanda and Homenick                         North Linwood                                     41398     96802941546036972022-06-10 19:27:53.000000"
+1041,SUCCESSFUL READ OF XREF
+1042,CARD NUMBER: 9680294154603697
+1043,ACCOUNT ID : 00000000001
+1044,CUSTOMER ID: 000000001
+1045,SUCCESSFUL READ OF ACCOUNT FILE
+1046,0000000561673599010001POS TERM  Purchase at Bergnaum and Sons                                                                       0000004305E800000000Bergnaum and Sons                                 Leuschkeberg                                      87213-540056568305449812162022-06-10 19:27:53.000000
+1047,SUCCESSFUL READ OF XREF
+1048,CARD NUMBER: 5656830544981216
+1049,ACCOUNT ID : 00000000046
+1050,CUSTOMER ID: 000000046
+1051,SUCCESSFUL READ OF ACCOUNT FILE
+1052,0000000564257675010001POS TERM  Purchase at Jast LLC                                                                                0000006231A800000000Jast LLC                                          Lednermouth                                       82698     65035351817959922022-06-10 19:27:53.000000
+1053,SUCCESSFUL READ OF XREF
+1054,CARD NUMBER: 6503535181795992
+1055,ACCOUNT ID : 00000000048
+1056,CUSTOMER ID: 000000048
+1057,SUCCESSFUL READ OF ACCOUNT FILE
+1058,"0000000569807281030001OPERATOR  Return item at Kiehn, Russel and Schaefer                                                           0000009983L800000000Kiehn, Russel and Schaefer                        New Loren                                         41813     93491074758692142022-06-10 19:27:53.000000"
+1059,SUCCESSFUL READ OF XREF
+1060,CARD NUMBER: 9349107475869214
+1061,ACCOUNT ID : 00000000017
+1062,CUSTOMER ID: 000000017
+1063,SUCCESSFUL READ OF ACCOUNT FILE
+1064,"0000000570013846010001POS TERM  Purchase at Parker, Pfannerstill and Donnelly                                                       0000003523C800000000Parker, Pfannerstill and Donnelly                 Mohrport                                          18642-672693491074758692142022-06-10 19:27:53.000000"
+1065,SUCCESSFUL READ OF XREF
+1066,CARD NUMBER: 9349107475869214
+1067,ACCOUNT ID : 00000000017
+1068,CUSTOMER ID: 000000017
+1069,SUCCESSFUL READ OF ACCOUNT FILE
+1070,0000000570880433010001POS TERM  Purchase at Kuvalis-Leffler                                                                         0000001617G800000000Kuvalis-Leffler                                   East Tiffany                                      09856-174960096191506745262022-06-10 19:27:53.000000
+1071,SUCCESSFUL READ OF XREF
+1072,CARD NUMBER: 6009619150674526
+1073,ACCOUNT ID : 00000000005
+1074,CUSTOMER ID: 000000005
+1075,SUCCESSFUL READ OF ACCOUNT FILE
+1076,"0000000573732499010001POS TERM  Purchase at Ortiz, Langworth and Feeney                                                             0000002374D800000000Ortiz, Langworth and Feeney                       New Deonte                                        32314     98055834089965882022-06-10 19:27:53.000000"
+1077,SUCCESSFUL READ OF XREF
+1078,CARD NUMBER: 9805583408996588
+1079,ACCOUNT ID : 00000000040
+1080,CUSTOMER ID: 000000040
+1081,SUCCESSFUL READ OF ACCOUNT FILE
+1082,0000000575834812010001POS TERM  Purchase at Ritchie and Sons                                                                        0000006898H800000000Ritchie and Sons                                  O'Haraberg                                        45500-291173793356346611422022-06-10 19:27:53.000000
+1083,SUCCESSFUL READ OF XREF
+1084,CARD NUMBER: 7379335634661142
+1085,ACCOUNT ID : 00000000045
+1086,CUSTOMER ID: 000000045
+1087,SUCCESSFUL READ OF ACCOUNT FILE
+1088,0000000576344938010001POS TERM  Purchase at Smith and Sons                                                                          0000004251A800000000Smith and Sons                                    Lake Dallinfurt                                   26352-264927453037200020902022-06-10 19:27:53.000000
+1089,SUCCESSFUL READ OF XREF
+1090,CARD NUMBER: 2745303720002090
+1091,ACCOUNT ID : 00000000039
+1092,CUSTOMER ID: 000000039
+1093,SUCCESSFUL READ OF ACCOUNT FILE
+1094,0000000577165878010001POS TERM  Purchase at Macejkovic-Mohr                                                                         0000006212B800000000Macejkovic-Mohr                                   Trantowberg                                       59291     74276848634232092022-06-10 19:27:53.000000
+1095,SUCCESSFUL READ OF XREF
+1096,CARD NUMBER: 7427684863423209
+1097,ACCOUNT ID : 00000000011
+1098,CUSTOMER ID: 000000011
+1099,SUCCESSFUL READ OF ACCOUNT FILE
+1100,"0000000577826814030001OPERATOR  Return item at DuBuque, Wuckert and Mraz                                                            0000000478Q800000000DuBuque, Wuckert and Mraz                         South Lurline                                     37081     05000244537657402022-06-10 19:27:53.000000"
+1101,SUCCESSFUL READ OF XREF
+1102,CARD NUMBER: 0500024453765740
+1103,ACCOUNT ID : 00000000050
+1104,CUSTOMER ID: 000000050
+1105,SUCCESSFUL READ OF ACCOUNT FILE
+1106,0000000585883106010001POS TERM  Purchase at Heathcote Inc                                                                           0000004354D800000000Heathcote Inc                                     Marlenemouth                                      72239-507160096191506745262022-06-10 19:27:53.000000
+1107,SUCCESSFUL READ OF XREF
+1108,CARD NUMBER: 6009619150674526
+1109,ACCOUNT ID : 00000000005
+1110,CUSTOMER ID: 000000005
+1111,SUCCESSFUL READ OF ACCOUNT FILE
+1112,0000000588642606010001POS TERM  Purchase at Marks and Daughters                                                                     0000005688H800000000Marks and Daughters                               New Berryton                                      84059-047670582672618377522022-06-10 19:27:53.000000
+1113,SUCCESSFUL READ OF XREF
+1114,CARD NUMBER: 7058267261837752
+1115,ACCOUNT ID : 00000000043
+1116,CUSTOMER ID: 000000043
+1117,SUCCESSFUL READ OF ACCOUNT FILE
+1118,0000000598262041010001POS TERM  Purchase at Terry-Rohan                                                                             0000000395E800000000Terry-Rohan                                       Rempelview                                        34789-459115614091064916002022-06-10 19:27:53.000000
+1119,SUCCESSFUL READ OF XREF
+1120,CARD NUMBER: 1561409106491600
+1121,ACCOUNT ID : 00000000035
+1122,CUSTOMER ID: 000000035
+1123,SUCCESSFUL READ OF ACCOUNT FILE
+1124,"0000000600564499010001POS TERM  Purchase at Schmeler, Crooks and Barton                                                             0000007363C800000000Schmeler, Crooks and Barton                       Hodkiewiczville                                   09147-969029880913530943122022-06-10 19:27:53.000000"
+1125,SUCCESSFUL READ OF XREF
+1126,CARD NUMBER: 2988091353094312
+1127,ACCOUNT ID : 00000000004
+1128,CUSTOMER ID: 000000004
+1129,SUCCESSFUL READ OF ACCOUNT FILE
+1130,"0000000601274842010001POS TERM  Purchase at Yost, Hoppe and Heathcote                                                               0000007441A800000000Yost, Hoppe and Heathcote                         Heathermouth                                      15216-771872515081491888832022-06-10 19:27:53.000000"
+1131,SUCCESSFUL READ OF XREF
+1132,CARD NUMBER: 7251508149188883
+1133,ACCOUNT ID : 00000000029
+1134,CUSTOMER ID: 000000029
+1135,SUCCESSFUL READ OF ACCOUNT FILE
+1136,0000000601496057010001POS TERM  Purchase at Ortiz-Douglas                                                                           0000009002B800000000Ortiz-Douglas                                     Rosaleemouth                                      64903     65092303625538162022-06-10 19:27:53.000000
+1137,SUCCESSFUL READ OF XREF
+1138,CARD NUMBER: 6509230362553816
+1139,ACCOUNT ID : 00000000030
+1140,CUSTOMER ID: 000000030
+1141,SUCCESSFUL READ OF ACCOUNT FILE
+1142,0000000603071214010001POS TERM  Purchase at Schinner-Feeney                                                                         0000001669I800000000Schinner-Feeney                                   North Wilfred                                     36776-939272515081491888832022-06-10 19:27:53.000000
+1143,SUCCESSFUL READ OF XREF
+1144,CARD NUMBER: 7251508149188883
+1145,ACCOUNT ID : 00000000029
+1146,CUSTOMER ID: 000000029
+1147,SUCCESSFUL READ OF ACCOUNT FILE
+1148,"0000000605048564010001POS TERM  Purchase at Schamberger, O'Reilly and Wintheiser                                                    0000000959I800000000Schamberger, O'Reilly and Wintheiser              West Bernadineland                                74526     89313693518947832022-06-10 19:27:53.000000"
+1149,SUCCESSFUL READ OF XREF
+1150,CARD NUMBER: 8931369351894783
+1151,ACCOUNT ID : 00000000008
+1152,CUSTOMER ID: 000000008
+1153,SUCCESSFUL READ OF ACCOUNT FILE
+1154,0000000606140907010001POS TERM  Purchase at Yost-Schaefer                                                                           0000005983C800000000Yost-Schaefer                                     Barrowsfurt                                       88050     29401393623004492022-06-10 19:27:53.000000
+1155,SUCCESSFUL READ OF XREF
+1156,CARD NUMBER: 2940139362300449
+1157,ACCOUNT ID : 00000000022
+1158,CUSTOMER ID: 000000022
+1159,SUCCESSFUL READ OF ACCOUNT FILE
+1160,"0000000606716618010001POS TERM  Purchase at Barton, Schmidt and Hodkiewicz                                                          0000007156F800000000Barton, Schmidt and Hodkiewicz                    Sethtown                                          63152     09824962136297952022-06-10 19:27:53.000000"
+1161,SUCCESSFUL READ OF XREF
+1162,CARD NUMBER: 0982496213629795
+1163,ACCOUNT ID : 00000000012
+1164,CUSTOMER ID: 000000012
+1165,SUCCESSFUL READ OF ACCOUNT FILE
+1166,0000000606830191030001OPERATOR  Return item at Bogisich-O'Connell                                                                   0000000716O800000000Bogisich-O'Connell                                New Bennie                                        00871     39402460161414892022-06-10 19:27:53.000000
+1167,SUCCESSFUL READ OF XREF
+1168,CARD NUMBER: 3940246016141489
+1169,ACCOUNT ID : 00000000019
+1170,CUSTOMER ID: 000000019
+1171,SUCCESSFUL READ OF ACCOUNT FILE
+1172,0000000614267358030001OPERATOR  Return item at Gibson-Abbott                                                                        0000001328Q800000000Gibson-Abbott                                     New Kodyton                                       82751     11421676928789312022-06-10 19:27:53.000000
+1173,SUCCESSFUL READ OF XREF
+1174,CARD NUMBER: 1142167692878931
+1175,ACCOUNT ID : 00000000037
+1176,CUSTOMER ID: 000000037
+1177,SUCCESSFUL READ OF ACCOUNT FILE
+1178,0000000618712102010001POS TERM  Purchase at Hahn-Lueilwitz                                                                          0000000211A800000000Hahn-Lueilwitz                                    Deondreville                                      55366-229881125458342397352022-06-10 19:27:53.000000
+1179,SUCCESSFUL READ OF XREF
+1180,CARD NUMBER: 8112545834239735
+1181,ACCOUNT ID : 00000000023
+1182,CUSTOMER ID: 000000023
+1183,SUCCESSFUL READ OF ACCOUNT FILE
+1184,0000000621178666010001POS TERM  Purchase at Orn-Dach                                                                                0000006392B800000000Orn-Dach                                          Maxineville                                       39263-839215614091064916002022-06-10 19:27:53.000000
+1185,SUCCESSFUL READ OF XREF
+1186,CARD NUMBER: 1561409106491600
+1187,ACCOUNT ID : 00000000035
+1188,CUSTOMER ID: 000000035
+1189,SUCCESSFUL READ OF ACCOUNT FILE
+1190,"0000000624335286010001POS TERM  Purchase at Crona, Turner and Hane                                                                  0000005984D800000000Crona, Turner and Hane                            Glenton                                           32966-635996802941546036972022-06-10 19:27:53.000000"
+1191,SUCCESSFUL READ OF XREF
+1192,CARD NUMBER: 9680294154603697
+1193,ACCOUNT ID : 00000000001
+1194,CUSTOMER ID: 000000001
+1195,SUCCESSFUL READ OF ACCOUNT FILE
+1196,0000000627601011030001OPERATOR  Return item at Stokes Inc                                                                           0000005382K800000000Stokes Inc                                        Koeppfurt                                         91991     74438709888975302022-06-10 19:27:53.000000
+1197,SUCCESSFUL READ OF XREF
+1198,CARD NUMBER: 7443870988897530
+1199,ACCOUNT ID : 00000000038
+1200,CUSTOMER ID: 000000038
+1201,SUCCESSFUL READ OF ACCOUNT FILE
+1202,0000000628524597010001POS TERM  Purchase at Wiegand-Weimann                                                                         0000002692B800000000Wiegand-Weimann                                   East Arnomouth                                    21317     10140865652243502022-06-10 19:27:53.000000
+1203,SUCCESSFUL READ OF XREF
+1204,CARD NUMBER: 1014086565224350
+1205,ACCOUNT ID : 00000000044
+1206,CUSTOMER ID: 000000044
+1207,SUCCESSFUL READ OF ACCOUNT FILE
+1208,0000000634329004010001POS TERM  Purchase at Durgan-Nader                                                                            0000000891A800000000Durgan-Nader                                      Robynmouth                                        39869     54070998504798662022-06-10 19:27:53.000000
+1209,SUCCESSFUL READ OF XREF
+1210,CARD NUMBER: 5407099850479866
+1211,ACCOUNT ID : 00000000021
+1212,CUSTOMER ID: 000000021
+1213,SUCCESSFUL READ OF ACCOUNT FILE
+1214,0000000635121182010001POS TERM  Purchase at Douglas and Daughters                                                                   0000006295E800000000Douglas and Daughters                             Yvettetown                                        03935     68326760476980872022-06-10 19:27:53.000000
+1215,SUCCESSFUL READ OF XREF
+1216,CARD NUMBER: 6832676047698087
+1217,ACCOUNT ID : 00000000033
+1218,CUSTOMER ID: 000000033
+1219,SUCCESSFUL READ OF ACCOUNT FILE
+1220,0000000641694180010001POS TERM  Purchase at Schumm-Reinger                                                                          0000005542B800000000Schumm-Reinger                                    Antoniatown                                       52581     39991692463758852022-06-10 19:27:53.000000
+1221,SUCCESSFUL READ OF XREF
+1222,CARD NUMBER: 3999169246375885
+1223,ACCOUNT ID : 00000000003
+1224,CUSTOMER ID: 000000003
+1225,SUCCESSFUL READ OF ACCOUNT FILE
+1226,0000000643758597010001POS TERM  Purchase at Bins Inc                                                                                0000007442B800000000Bins Inc                                          Port Georgianaside                                24098-508270582672618377522022-06-10 19:27:53.000000
+1227,SUCCESSFUL READ OF XREF
+1228,CARD NUMBER: 7058267261837752
+1229,ACCOUNT ID : 00000000043
+1230,CUSTOMER ID: 000000043
+1231,SUCCESSFUL READ OF ACCOUNT FILE
+1232,0000000647754915010001POS TERM  Purchase at Gerlach-Jaskolski                                                                       0000007185E800000000Gerlach-Jaskolski                                 New Kalistad                                      51103-793228719682528124902022-06-10 19:27:53.000000
+1233,SUCCESSFUL READ OF XREF
+1234,CARD NUMBER: 2871968252812490
+1235,ACCOUNT ID : 00000000006
+1236,CUSTOMER ID: 000000006
+1237,SUCCESSFUL READ OF ACCOUNT FILE
+1238,0000000652713581010001POS TERM  Purchase at Pagac-Hackett                                                                           0000006335E800000000Pagac-Hackett                                     New Hans                                          35901     67270551906160142022-06-10 19:27:53.000000
+1239,SUCCESSFUL READ OF XREF
+1240,CARD NUMBER: 6727055190616014
+1241,ACCOUNT ID : 00000000016
+1242,CUSTOMER ID: 000000016
+1243,SUCCESSFUL READ OF ACCOUNT FILE
+1244,0000000667157384010001POS TERM  Purchase at Stamm and Sons                                                                          0000009527G800000000Stamm and Sons                                    Hayleybury                                        33611     56711844785058442022-06-10 19:27:53.000000
+1245,SUCCESSFUL READ OF XREF
+1246,CARD NUMBER: 5671184478505844
+1247,ACCOUNT ID : 00000000018
+1248,CUSTOMER ID: 000000018
+1249,SUCCESSFUL READ OF ACCOUNT FILE
+1250,0000000669905307010001POS TERM  Purchase at Schneider and Daughters                                                                 0000004250{800000000Schneider and Daughters                           Blandafurt                                        74767-710767270551906160142022-06-10 19:27:53.000000
+1251,SUCCESSFUL READ OF XREF
+1252,CARD NUMBER: 6727055190616014
+1253,ACCOUNT ID : 00000000016
+1254,CUSTOMER ID: 000000016
+1255,SUCCESSFUL READ OF ACCOUNT FILE
+1256,0000000672061881030001OPERATOR  Return item at Rippin-Gibson                                                                        0000004350}800000000Rippin-Gibson                                     Hansenstad                                        16980-878956568305449812162022-06-10 19:27:53.000000
+1257,SUCCESSFUL READ OF XREF
+1258,CARD NUMBER: 5656830544981216
+1259,ACCOUNT ID : 00000000046
+1260,CUSTOMER ID: 000000046
+1261,SUCCESSFUL READ OF ACCOUNT FILE
+1262,0000000672573296030001OPERATOR  Return item at Veum-Treutel                                                                         0000007106O800000000Veum-Treutel                                      Amelybury                                         60686     85178669582060082022-06-10 19:27:53.000000
+1263,SUCCESSFUL READ OF XREF
+1264,CARD NUMBER: 8517866958206008
+1265,ACCOUNT ID : 00000000014
+1266,CUSTOMER ID: 000000014
+1267,SUCCESSFUL READ OF ACCOUNT FILE
+1268,0000000673250360010001POS TERM  Purchase at Ebert-Gleason                                                                           0000001910{800000000Ebert-Gleason                                     Altenwerthbury                                    89085     74276848634232092022-06-10 19:27:53.000000
+1269,SUCCESSFUL READ OF XREF
+1270,CARD NUMBER: 7427684863423209
+1271,ACCOUNT ID : 00000000011
+1272,CUSTOMER ID: 000000011
+1273,SUCCESSFUL READ OF ACCOUNT FILE
+1274,0000000676149118010001POS TERM  Purchase at Sauer-Ruecker                                                                           0000006974D800000000Sauer-Ruecker                                     Port Nestor                                       24148-989443852714766278192022-06-10 19:27:53.000000
+1275,SUCCESSFUL READ OF XREF
+1276,CARD NUMBER: 4385271476627819
+1277,ACCOUNT ID : 00000000034
+1278,CUSTOMER ID: 000000034
+1279,SUCCESSFUL READ OF ACCOUNT FILE
+1280,0000000685488982010001POS TERM  Purchase at Williamson Group                                                                        0000000947G800000000Williamson Group                                  Lake Bradyport                                    32996     05000244537657402022-06-10 19:27:53.000000
+1281,SUCCESSFUL READ OF XREF
+1282,CARD NUMBER: 0500024453765740
+1283,ACCOUNT ID : 00000000050
+1284,CUSTOMER ID: 000000050
+1285,SUCCESSFUL READ OF ACCOUNT FILE
+1286,"0000000686167627010001POS TERM  Purchase at Gibson, Beahan and Reichert                                                             0000000814D800000000Gibson, Beahan and Reichert                       Maeveland                                         51385-603198055834089965882022-06-10 19:27:53.000000"
+1287,SUCCESSFUL READ OF XREF
+1288,CARD NUMBER: 9805583408996588
+1289,ACCOUNT ID : 00000000040
+1290,CUSTOMER ID: 000000040
+1291,SUCCESSFUL READ OF ACCOUNT FILE
+1292,0000000689276136010001POS TERM  Purchase at Bins Group                                                                              0000001920{800000000Bins Group                                        North Anabellehaven                               61914-323290562979316640112022-06-10 19:27:53.000000
+1293,SUCCESSFUL READ OF XREF
+1294,CARD NUMBER: 9056297931664011
+1295,ACCOUNT ID : 00000000025
+1296,CUSTOMER ID: 000000025
+1297,SUCCESSFUL READ OF ACCOUNT FILE
+1298,0000000700096853010001POS TERM  Purchase at Pollich Group                                                                           0000003299I800000000Pollich Group                                     Nikolausburgh                                     88031     39402460161414892022-06-10 19:27:53.000000
+1299,SUCCESSFUL READ OF XREF
+1300,CARD NUMBER: 3940246016141489
+1301,ACCOUNT ID : 00000000019
+1302,CUSTOMER ID: 000000019
+1303,SUCCESSFUL READ OF ACCOUNT FILE
+1304,0000000703553020010001POS TERM  Purchase at Gleason-Streich                                                                         0000000770{800000000Gleason-Streich                                   New Huntermouth                                   60103-737027608367971075652022-06-10 19:27:53.000000
+1305,SUCCESSFUL READ OF XREF
+1306,CARD NUMBER: 2760836797107565
+1307,ACCOUNT ID : 00000000024
+1308,CUSTOMER ID: 000000024
+1309,SUCCESSFUL READ OF ACCOUNT FILE
+1310,"0000000717135758030001OPERATOR  Return item at Crona, Veum and D'Amore                                                              0000007624M800000000Crona, Veum and D'Amore                           South Nashland                                    13804-560809824962136297952022-06-10 19:27:53.000000"
+1311,SUCCESSFUL READ OF XREF
+1312,CARD NUMBER: 0982496213629795
+1313,ACCOUNT ID : 00000000012
+1314,CUSTOMER ID: 000000012
+1315,SUCCESSFUL READ OF ACCOUNT FILE
+1316,"0000000727152111010001POS TERM  Purchase at Von, Klein and Cremin                                                                   0000009835E800000000Von, Klein and Cremin                             Evansfurt                                         36814-904963492503316485092022-06-10 19:27:53.000000"
+1317,SUCCESSFUL READ OF XREF
+1318,CARD NUMBER: 6349250331648509
+1319,ACCOUNT ID : 00000000015
+1320,CUSTOMER ID: 000000015
+1321,SUCCESSFUL READ OF ACCOUNT FILE
+1322,"0000000731515153030001OPERATOR  Return item at Gleichner, Mitchell and Schmidt                                                      0000000259R800000000Gleichner, Mitchell and Schmidt                   North Vincent                                     89467-926398055834089965882022-06-10 19:27:53.000000"
+1323,SUCCESSFUL READ OF XREF
+1324,CARD NUMBER: 9805583408996588
+1325,ACCOUNT ID : 00000000040
+1326,CUSTOMER ID: 000000040
+1327,SUCCESSFUL READ OF ACCOUNT FILE
+1328,0000000734452614010001POS TERM  Purchase at Stokes-Mueller                                                                          0000003582B800000000Stokes-Mueller                                    Ambroseland                                       19819-929845347841027139512022-06-10 19:27:53.000000
+1329,SUCCESSFUL READ OF XREF
+1330,CARD NUMBER: 4534784102713951
+1331,ACCOUNT ID : 00000000036
+1332,CUSTOMER ID: 000000036
+1333,SUCCESSFUL READ OF ACCOUNT FILE
+1334,0000000735823935010001POS TERM  Purchase at Johnston and Daughters                                                                  0000009101A800000000Johnston and Daughters                            Delaneymouth                                      49269-266754070998504798662022-06-10 19:27:53.000000
+1335,SUCCESSFUL READ OF XREF
+1336,CARD NUMBER: 5407099850479866
+1337,ACCOUNT ID : 00000000021
+1338,CUSTOMER ID: 000000021
+1339,SUCCESSFUL READ OF ACCOUNT FILE
+1340,"0000000741999667010001POS TERM  Purchase at Corkery, Boehm and Hudson                                                               0000006434D800000000Corkery, Boehm and Hudson                         Walkermouth                                       83831     93491074758692142022-06-10 19:27:53.000000"
+1341,SUCCESSFUL READ OF XREF
+1342,CARD NUMBER: 9349107475869214
+1343,ACCOUNT ID : 00000000017
+1344,CUSTOMER ID: 000000017
+1345,SUCCESSFUL READ OF ACCOUNT FILE
+1346,0000000742447110010001POS TERM  Purchase at Hauck Inc                                                                               0000007467G800000000Hauck Inc                                         Estellville                                       11000     85178669582060082022-06-10 19:27:53.000000
+1347,SUCCESSFUL READ OF XREF
+1348,CARD NUMBER: 8517866958206008
+1349,ACCOUNT ID : 00000000014
+1350,CUSTOMER ID: 000000014
+1351,SUCCESSFUL READ OF ACCOUNT FILE
+1352,0000000747646163030001OPERATOR  Return item at Watsica LLC                                                                          0000004999R800000000Watsica LLC                                       Durgantown                                        74690-618315614091064916002022-06-10 19:27:53.000000
+1353,SUCCESSFUL READ OF XREF
+1354,CARD NUMBER: 1561409106491600
+1355,ACCOUNT ID : 00000000035
+1356,CUSTOMER ID: 000000035
+1357,SUCCESSFUL READ OF ACCOUNT FILE
+1358,0000000749066680010001POS TERM  Purchase at O'Reilly LLC                                                                            0000008057G800000000O'Reilly LLC                                      Jerelport                                         39298-360565092303625538162022-06-10 19:27:53.000000
+1359,SUCCESSFUL READ OF XREF
+1360,CARD NUMBER: 6509230362553816
+1361,ACCOUNT ID : 00000000030
+1362,CUSTOMER ID: 000000030
+1363,SUCCESSFUL READ OF ACCOUNT FILE
+1364,0000000749493129010001POS TERM  Purchase at Pollich-Kuhn                                                                            0000000138H800000000Pollich-Kuhn                                      Kelliview                                         98624-679170582672618377522022-06-10 19:27:53.000000
+1365,SUCCESSFUL READ OF XREF
+1366,CARD NUMBER: 7058267261837752
+1367,ACCOUNT ID : 00000000043
+1368,CUSTOMER ID: 000000043
+1369,SUCCESSFUL READ OF ACCOUNT FILE
+1370,0000000751145919010001POS TERM  Purchase at Rohan-Jacobson                                                                          0000001400{800000000Rohan-Jacobson                                    East Delmer                                       37476     95017337214298932022-06-10 19:27:53.000000
+1371,SUCCESSFUL READ OF XREF
+1372,CARD NUMBER: 9501733721429893
+1373,ACCOUNT ID : 00000000009
+1374,CUSTOMER ID: 000000009
+1375,SUCCESSFUL READ OF ACCOUNT FILE
+1376,"0000000751696292010001POS TERM  Purchase at Smith, Hansen and Waelchi                                                               0000006535E800000000Smith, Hansen and Waelchi                         Jerrodport                                        37182-009074276848634232092022-06-10 19:27:53.000000"
+1377,SUCCESSFUL READ OF XREF
+1378,CARD NUMBER: 7427684863423209
+1379,ACCOUNT ID : 00000000011
+1380,CUSTOMER ID: 000000011
+1381,SUCCESSFUL READ OF ACCOUNT FILE
+1382,0000000755736377010001POS TERM  Purchase at Torp-Stark                                                                              0000009064D800000000Torp-Stark                                        North Edison                                      41040-709996802941546036972022-06-10 19:27:53.000000
+1383,SUCCESSFUL READ OF XREF
+1384,CARD NUMBER: 9680294154603697
+1385,ACCOUNT ID : 00000000001
+1386,CUSTOMER ID: 000000001
+1387,SUCCESSFUL READ OF ACCOUNT FILE
+1388,0000000760577632010001POS TERM  Purchase at Kulas-Hayes                                                                             0000007359I800000000Kulas-Hayes                                       Prohaskaview                                      38756     89313693518947832022-06-10 19:27:53.000000
+1389,SUCCESSFUL READ OF XREF
+1390,CARD NUMBER: 8931369351894783
+1391,ACCOUNT ID : 00000000008
+1392,CUSTOMER ID: 000000008
+1393,SUCCESSFUL READ OF ACCOUNT FILE
+1394,0000000762269241010001POS TERM  Purchase at Kuvalis Group                                                                           0000009888H800000000Kuvalis Group                                     Lake Cierrashire                                  92525     39402460161414892022-06-10 19:27:53.000000
+1395,SUCCESSFUL READ OF XREF
+1396,CARD NUMBER: 3940246016141489
+1397,ACCOUNT ID : 00000000019
+1398,CUSTOMER ID: 000000019
+1399,SUCCESSFUL READ OF ACCOUNT FILE
+1400,"0000000767081090010001POS TERM  Purchase at Bergnaum, Effertz and Wilkinson                                                         0000006711A800000000Bergnaum, Effertz and Wilkinson                   Lake Twila                                        39210-358111421676928789312022-06-10 19:27:53.000000"
+1401,SUCCESSFUL READ OF XREF
+1402,CARD NUMBER: 1142167692878931
+1403,ACCOUNT ID : 00000000037
+1404,CUSTOMER ID: 000000037
+1405,SUCCESSFUL READ OF ACCOUNT FILE
+1406,"0000000767308626010001POS TERM  Purchase at Shields, DuBuque and Wyman                                                              0000008564D800000000Shields, DuBuque and Wyman                        South Christelle                                  94060-305011421676928789312022-06-10 19:27:53.000000"
+1407,SUCCESSFUL READ OF XREF
+1408,CARD NUMBER: 1142167692878931
+1409,ACCOUNT ID : 00000000037
+1410,CUSTOMER ID: 000000037
+1411,SUCCESSFUL READ OF ACCOUNT FILE
+1412,0000000767314476010001POS TERM  Purchase at Renner Inc                                                                              0000002731A800000000Renner Inc                                        Lednerberg                                        11838     09279871086362322022-06-10 19:27:53.000000
+1413,SUCCESSFUL READ OF XREF
+1414,CARD NUMBER: 0927987108636232
+1415,ACCOUNT ID : 00000000020
+1416,CUSTOMER ID: 000000020
+1417,SUCCESSFUL READ OF ACCOUNT FILE
+1418,"0000000768119840010001POS TERM  Purchase at Towne, Hickle and Orn                                                                   0000000654D800000000Towne, Hickle and Orn                             Toybury                                           15228     81125458342397352022-06-10 19:27:53.000000"
+1419,SUCCESSFUL READ OF XREF
+1420,CARD NUMBER: 8112545834239735
+1421,ACCOUNT ID : 00000000023
+1422,CUSTOMER ID: 000000023
+1423,SUCCESSFUL READ OF ACCOUNT FILE
+1424,0000000770707563010001POS TERM  Purchase at Leffler-Hilll                                                                           0000003094D800000000Leffler-Hilll                                     Lake Samantha                                     94910     90562979316640112022-06-10 19:27:53.000000
+1425,SUCCESSFUL READ OF XREF
+1426,CARD NUMBER: 9056297931664011
+1427,ACCOUNT ID : 00000000025
+1428,CUSTOMER ID: 000000025
+1429,SUCCESSFUL READ OF ACCOUNT FILE
+1430,"0000000772421231010001POS TERM  Purchase at Pfeffer, Rogahn and Hessel                                                              0000004053C800000000Pfeffer, Rogahn and Hessel                        Christborough                                     21176-442043852714766278192022-06-10 19:27:53.000000"
+1431,SUCCESSFUL READ OF XREF
+1432,CARD NUMBER: 4385271476627819
+1433,ACCOUNT ID : 00000000034
+1434,CUSTOMER ID: 000000034
+1435,SUCCESSFUL READ OF ACCOUNT FILE
+1436,0000000776200014010001POS TERM  Purchase at Lebsack and Sons                                                                        0000009852B800000000Lebsack and Sons                                  Otisbury                                          32545     96802941546036972022-06-10 19:27:53.000000
+1437,SUCCESSFUL READ OF XREF
+1438,CARD NUMBER: 9680294154603697
+1439,ACCOUNT ID : 00000000001
+1440,CUSTOMER ID: 000000001
+1441,SUCCESSFUL READ OF ACCOUNT FILE
+1442,"0000000778829157010001POS TERM  Purchase at Renner, Mertz and Ondricka                                                              0000002705E800000000Renner, Mertz and Ondricka                        South Emeliatown                                  37065-208882625936024730762022-06-10 19:27:53.000000"
+1443,SUCCESSFUL READ OF XREF
+1444,CARD NUMBER: 8262593602473076
+1445,ACCOUNT ID : 00000000049
+1446,CUSTOMER ID: 000000049
+1447,SUCCESSFUL READ OF ACCOUNT FILE
+1448,"0000000781205695010001POS TERM  Purchase at Beer, Goldner and Armstrong                                                             0000004896F800000000Beer, Goldner and Armstrong                       South Madelynnland                                21570     57873512288793392022-06-10 19:27:53.000000"
+1449,SUCCESSFUL READ OF XREF
+1450,CARD NUMBER: 5787351228879339
+1451,ACCOUNT ID : 00000000047
+1452,CUSTOMER ID: 000000047
+1453,SUCCESSFUL READ OF ACCOUNT FILE
+1454,0000000781512834010001POS TERM  Purchase at Koch-Pouros                                                                             0000003190{800000000Koch-Pouros                                       Daytonstad                                        13199-246348594526128770652022-06-10 19:27:53.000000
+1455,SUCCESSFUL READ OF XREF
+1456,CARD NUMBER: 4859452612877065
+1457,ACCOUNT ID : 00000000007
+1458,CUSTOMER ID: 000000007
+1459,SUCCESSFUL READ OF ACCOUNT FILE
+1460,0000000784621975010001POS TERM  Purchase at Kunde-Howe                                                                              0000002272B800000000Kunde-Howe                                        New Darylberg                                     34409     39991692463758852022-06-10 19:27:53.000000
+1461,SUCCESSFUL READ OF XREF
+1462,CARD NUMBER: 3999169246375885
+1463,ACCOUNT ID : 00000000003
+1464,CUSTOMER ID: 000000003
+1465,SUCCESSFUL READ OF ACCOUNT FILE
+1466,0000000793409700010001POS TERM  Purchase at Douglas Inc                                                                             0000001686F800000000Douglas Inc                                       South Keyshawnton                                 15099     70266376150322772022-06-10 19:27:53.000000
+1467,SUCCESSFUL READ OF XREF
+1468,CARD NUMBER: 7026637615032277
+1469,ACCOUNT ID : 00000000031
+1470,CUSTOMER ID: 000000031
+1471,SUCCESSFUL READ OF ACCOUNT FILE
+1472,"0000000796832699010001POS TERM  Purchase at Schroeder, Bergnaum and Waters                                                          0000008039I800000000Schroeder, Bergnaum and Waters                    Jaskolskimouth                                    83332-835763492503316485092022-06-10 19:27:53.000000"
+1473,SUCCESSFUL READ OF XREF
+1474,CARD NUMBER: 6349250331648509
+1475,ACCOUNT ID : 00000000015
+1476,CUSTOMER ID: 000000015
+1477,SUCCESSFUL READ OF ACCOUNT FILE
+1478,0000000802663079010001POS TERM  Purchase at Zulauf-O'Keefe                                                                          0000009751A800000000Zulauf-O'Keefe                                    Rauview                                           52467-235006835861981715162022-06-10 19:27:53.000000
+1479,SUCCESSFUL READ OF XREF
+1480,CARD NUMBER: 0683586198171516
+1481,ACCOUNT ID : 00000000027
+1482,CUSTOMER ID: 000000027
+1483,SUCCESSFUL READ OF ACCOUNT FILE
+1484,0000000803014982010001POS TERM  Purchase at Effertz-Abbott                                                                          0000000535E800000000Effertz-Abbott                                    Claudiechester                                    95970-268328719682528124902022-06-10 19:27:53.000000
+1485,SUCCESSFUL READ OF XREF
+1486,CARD NUMBER: 2871968252812490
+1487,ACCOUNT ID : 00000000006
+1488,CUSTOMER ID: 000000006
+1489,SUCCESSFUL READ OF ACCOUNT FILE
+1490,"0000000806255008030001OPERATOR  Return item at Wisoky, Jacobs and Sanford                                                           0000004393L800000000Wisoky, Jacobs and Sanford                        New Alanaview                                     05488-319545347841027139512022-06-10 19:27:53.000000"
+1491,SUCCESSFUL READ OF XREF
+1492,CARD NUMBER: 4534784102713951
+1493,ACCOUNT ID : 00000000036
+1494,CUSTOMER ID: 000000036
+1495,SUCCESSFUL READ OF ACCOUNT FILE
+1496,0000000812607213030001OPERATOR  Return item at Volkman-Goodwin                                                                      0000006417P800000000Volkman-Goodwin                                   Gulgowskifort                                     59834-680127608367971075652022-06-10 19:27:53.000000
+1497,SUCCESSFUL READ OF XREF
+1498,CARD NUMBER: 2760836797107565
+1499,ACCOUNT ID : 00000000024
+1500,CUSTOMER ID: 000000024
+1501,SUCCESSFUL READ OF ACCOUNT FILE
+1502,0000000821287727010001POS TERM  Purchase at Russel LLC                                                                              0000000349I800000000Russel LLC                                        New Sarah                                         49041     48594526128770652022-06-10 19:27:53.000000
+1503,SUCCESSFUL READ OF XREF
+1504,CARD NUMBER: 4859452612877065
+1505,ACCOUNT ID : 00000000007
+1506,CUSTOMER ID: 000000007
+1507,SUCCESSFUL READ OF ACCOUNT FILE
+1508,"0000000822135100010001POS TERM  Purchase at Larkin, Hills and Becker                                                                0000007960{800000000Larkin, Hills and Becker                          Coleton                                           54392-107356711844785058442022-06-10 19:27:53.000000"
+1509,SUCCESSFUL READ OF XREF
+1510,CARD NUMBER: 5671184478505844
+1511,ACCOUNT ID : 00000000018
+1512,CUSTOMER ID: 000000018
+1513,SUCCESSFUL READ OF ACCOUNT FILE
+1514,"0000000823157599010001POS TERM  Purchase at Miller, Hudson and Ziemann                                                              0000001111A800000000Miller, Hudson and Ziemann                        West Jasmin                                       72736     93491074758692142022-06-10 19:27:53.000000"
+1515,SUCCESSFUL READ OF XREF
+1516,CARD NUMBER: 9349107475869214
+1517,ACCOUNT ID : 00000000017
+1518,CUSTOMER ID: 000000017
+1519,SUCCESSFUL READ OF ACCOUNT FILE
+1520,0000000824152956010001POS TERM  Purchase at Weissnat-Sanford                                                                        0000005947G800000000Weissnat-Sanford                                  Schuppeton                                        25158-324209238771932473302022-06-10 19:27:53.000000
+1521,SUCCESSFUL READ OF XREF
+1522,CARD NUMBER: 0923877193247330
+1523,ACCOUNT ID : 00000000002
+1524,CUSTOMER ID: 000000002
+1525,SUCCESSFUL READ OF ACCOUNT FILE
+1526,0000000828072981030001OPERATOR  Return item at Hayes Inc                                                                            0000003622K800000000Hayes Inc                                         Dinoville                                         72795-650270266376150322772022-06-10 19:27:53.000000
+1527,SUCCESSFUL READ OF XREF
+1528,CARD NUMBER: 7026637615032277
+1529,ACCOUNT ID : 00000000031
+1530,CUSTOMER ID: 000000031
+1531,SUCCESSFUL READ OF ACCOUNT FILE
+1532,0000000835855923030001OPERATOR  Return item at Pouros and Sons                                                                      0000000417P800000000Pouros and Sons                                   Kerlukechester                                    32347     54070998504798662022-06-10 19:27:53.000000
+1533,SUCCESSFUL READ OF XREF
+1534,CARD NUMBER: 5407099850479866
+1535,ACCOUNT ID : 00000000021
+1536,CUSTOMER ID: 000000021
+1537,SUCCESSFUL READ OF ACCOUNT FILE
+1538,0000000838587312010001POS TERM  Purchase at Abbott-Gerlach                                                                          0000002416F800000000Abbott-Gerlach                                    McClureburgh                                      95049     05000244537657402022-06-10 19:27:53.000000
+1539,SUCCESSFUL READ OF XREF
+1540,CARD NUMBER: 0500024453765740
+1541,ACCOUNT ID : 00000000050
+1542,CUSTOMER ID: 000000050
+1543,SUCCESSFUL READ OF ACCOUNT FILE
+1544,0000000838796166030001OPERATOR  Return item at Bauch-Crooks                                                                         0000004575N800000000Bauch-Crooks                                      Stokesberg                                        30306     43852714766278192022-06-10 19:27:53.000000
+1545,SUCCESSFUL READ OF XREF
+1546,CARD NUMBER: 4385271476627819
+1547,ACCOUNT ID : 00000000034
+1548,CUSTOMER ID: 000000034
+1549,SUCCESSFUL READ OF ACCOUNT FILE
+1550,0000000840146978010001POS TERM  Purchase at Gutkowski-Bayer                                                                         0000007022B800000000Gutkowski-Bayer                                   Baileyville                                       48332-191340115008917773672022-06-10 19:27:53.000000
+1551,SUCCESSFUL READ OF XREF
+1552,CARD NUMBER: 4011500891777367
+1553,ACCOUNT ID : 00000000013
+1554,CUSTOMER ID: 000000013
+1555,SUCCESSFUL READ OF ACCOUNT FILE
+1556,"0000000841555701010001POS TERM  Purchase at Kub, Gislason and Haraann                                                               0000002815E800000000Kub, Gislason and Haraann                         Port Bryonfurt                                    16314-373129880913530943122022-06-10 19:27:53.000000"
+1557,SUCCESSFUL READ OF XREF
+1558,CARD NUMBER: 2988091353094312
+1559,ACCOUNT ID : 00000000004
+1560,CUSTOMER ID: 000000004
+1561,SUCCESSFUL READ OF ACCOUNT FILE
+1562,"0000000845039454010001POS TERM  Purchase at Borer, Farrell and Doyle                                                                0000000456F800000000Borer, Farrell and Doyle                          Evelineborough                                    36781     90562979316640112022-06-10 19:27:53.000000"
+1563,SUCCESSFUL READ OF XREF
+1564,CARD NUMBER: 9056297931664011
+1565,ACCOUNT ID : 00000000025
+1566,CUSTOMER ID: 000000025
+1567,SUCCESSFUL READ OF ACCOUNT FILE
+1568,"0000000855260493030001OPERATOR  Return item at Cassin, Huel and Conroy                                                              0000002709R800000000Cassin, Huel and Conroy                           East Kurtborough                                  83037     67270551906160142022-06-10 19:27:53.000000"
+1569,SUCCESSFUL READ OF XREF
+1570,CARD NUMBER: 6727055190616014
+1571,ACCOUNT ID : 00000000016
+1572,CUSTOMER ID: 000000016
+1573,SUCCESSFUL READ OF ACCOUNT FILE
+1574,0000000858238426010001POS TERM  Purchase at Thiel Group                                                                             0000000806F800000000Thiel Group                                       New Martineberg                                   27981     32607636123375602022-06-10 19:27:53.000000
+1575,SUCCESSFUL READ OF XREF
+1576,CARD NUMBER: 3260763612337560
+1577,ACCOUNT ID : 00000000010
+1578,CUSTOMER ID: 000000010
+1579,SUCCESSFUL READ OF ACCOUNT FILE
+1580,"0000000858501945010001POS TERM  Purchase at Braun, Schulist and Kreiger                                                             0000001986F800000000Braun, Schulist and Kreiger                       Port Tamiamouth                                   52536     82625936024730762022-06-10 19:27:53.000000"
+1581,SUCCESSFUL READ OF XREF
+1582,CARD NUMBER: 8262593602473076
+1583,ACCOUNT ID : 00000000049
+1584,CUSTOMER ID: 000000049
+1585,SUCCESSFUL READ OF ACCOUNT FILE
+1586,0000000865987685030001OPERATOR  Return item at Kovacek-Beatty                                                                       0000003229R800000000Kovacek-Beatty                                    Cecilemouth                                       18917     29880913530943122022-06-10 19:27:53.000000
+1587,SUCCESSFUL READ OF XREF
+1588,CARD NUMBER: 2988091353094312
+1589,ACCOUNT ID : 00000000004
+1590,CUSTOMER ID: 000000004
+1591,SUCCESSFUL READ OF ACCOUNT FILE
+1592,0000000869383367010001POS TERM  Purchase at Thompson-Streich                                                                        0000007688H800000000Thompson-Streich                                  Port Estrella                                     21832-375129401393623004492022-06-10 19:27:53.000000
+1593,SUCCESSFUL READ OF XREF
+1594,CARD NUMBER: 2940139362300449
+1595,ACCOUNT ID : 00000000022
+1596,CUSTOMER ID: 000000022
+1597,SUCCESSFUL READ OF ACCOUNT FILE
+1598,"0000000873232405010001POS TERM  Purchase at Bins, Boehm and Casper                                                                  0000007209I800000000Bins, Boehm and Casper                            South Lon                                         87054     45347841027139512022-06-10 19:27:53.000000"
+1599,SUCCESSFUL READ OF XREF
+1600,CARD NUMBER: 4534784102713951
+1601,ACCOUNT ID : 00000000036
+1602,CUSTOMER ID: 000000036
+1603,SUCCESSFUL READ OF ACCOUNT FILE
+1604,0000000874953803010001POS TERM  Purchase at McLaughlin-Blick                                                                        0000003994D800000000McLaughlin-Blick                                  Wintheisermouth                                   03064     10140865652243502022-06-10 19:27:53.000000
+1605,SUCCESSFUL READ OF XREF
+1606,CARD NUMBER: 1014086565224350
+1607,ACCOUNT ID : 00000000044
+1608,CUSTOMER ID: 000000044
+1609,SUCCESSFUL READ OF ACCOUNT FILE
+1610,0000000882360848010001POS TERM  Purchase at Tromp-Kuhlman                                                                           0000002983C800000000Tromp-Kuhlman                                     Jerdeshire                                        78699     09824962136297952022-06-10 19:27:53.000000
+1611,SUCCESSFUL READ OF XREF
+1612,CARD NUMBER: 0982496213629795
+1613,ACCOUNT ID : 00000000012
+1614,CUSTOMER ID: 000000012
+1615,SUCCESSFUL READ OF ACCOUNT FILE
+1616,0000000884070277010001POS TERM  Purchase at Bayer-O'Reilly                                                                          0000001943C800000000Bayer-O'Reilly                                    Stammmouth                                        54961-549998055834089965882022-06-10 19:27:53.000000
+1617,SUCCESSFUL READ OF XREF
+1618,CARD NUMBER: 9805583408996588
+1619,ACCOUNT ID : 00000000040
+1620,CUSTOMER ID: 000000040
+1621,SUCCESSFUL READ OF ACCOUNT FILE
+1622,0000000885437581010001POS TERM  Purchase at Marquardt-Deckow                                                                        0000008180{800000000Marquardt-Deckow                                  Schmittport                                       16465     70266376150322772022-06-10 19:27:53.000000
+1623,SUCCESSFUL READ OF XREF
+1624,CARD NUMBER: 7026637615032277
+1625,ACCOUNT ID : 00000000031
+1626,CUSTOMER ID: 000000031
+1627,SUCCESSFUL READ OF ACCOUNT FILE
+1628,0000000887771179010001POS TERM  Purchase at Jakubowski and Sons                                                                     0000002422B800000000Jakubowski and Sons                               Port Tyramouth                                    68202-779670266376150322772022-06-10 19:27:53.000000
+1629,SUCCESSFUL READ OF XREF
+1630,CARD NUMBER: 7026637615032277
+1631,ACCOUNT ID : 00000000031
+1632,CUSTOMER ID: 000000031
+1633,SUCCESSFUL READ OF ACCOUNT FILE
+1634,0000000889986293010001POS TERM  Purchase at Littel-Jacobson                                                                         0000009731A800000000Littel-Jacobson                                   Lestertown                                        36198     15614091064916002022-06-10 19:27:53.000000
+1635,SUCCESSFUL READ OF XREF
+1636,CARD NUMBER: 1561409106491600
+1637,ACCOUNT ID : 00000000035
+1638,CUSTOMER ID: 000000035
+1639,SUCCESSFUL READ OF ACCOUNT FILE
+1640,0000000898285002010001POS TERM  Purchase at Gislason-Price                                                                          0000009587G800000000Gislason-Price                                    North Maverickbury                                09515-726128719682528124902022-06-10 19:27:53.000000
+1641,SUCCESSFUL READ OF XREF
+1642,CARD NUMBER: 2871968252812490
+1643,ACCOUNT ID : 00000000006
+1644,CUSTOMER ID: 000000006
+1645,SUCCESSFUL READ OF ACCOUNT FILE
+1646,"0000000899241176010001POS TERM  Purchase at Beier, Larson and Schultz                                                               0000004623C800000000Beier, Larson and Schultz                         North Gudrunville                                 59436-847029880913530943122022-06-10 19:27:53.000000"
+1647,SUCCESSFUL READ OF XREF
+1648,CARD NUMBER: 2988091353094312
+1649,ACCOUNT ID : 00000000004
+1650,CUSTOMER ID: 000000004
+1651,SUCCESSFUL READ OF ACCOUNT FILE
+1652,0000000900382063010001POS TERM  Purchase at Bechtelar Group                                                                         0000000860{800000000Bechtelar Group                                   Mandybury                                         49970-737009279871086362322022-06-10 19:27:53.000000
+1653,SUCCESSFUL READ OF XREF
+1654,CARD NUMBER: 0927987108636232
+1655,ACCOUNT ID : 00000000020
+1656,CUSTOMER ID: 000000020
+1657,SUCCESSFUL READ OF ACCOUNT FILE
+1658,"0000000903281896010001POS TERM  Purchase at Schmitt, Mills and Yundt                                                                0000009325E800000000Schmitt, Mills and Yundt                          West Marlin                                       92662-116906835861981715162022-06-10 19:27:53.000000"
+1659,SUCCESSFUL READ OF XREF
+1660,CARD NUMBER: 0683586198171516
+1661,ACCOUNT ID : 00000000027
+1662,CUSTOMER ID: 000000027
+1663,SUCCESSFUL READ OF ACCOUNT FILE
+1664,0000000909001545010001POS TERM  Purchase at Crist Group                                                                             0000008933C800000000Crist Group                                       South Creola                                      20922-430356568305449812162022-06-10 19:27:53.000000
+1665,SUCCESSFUL READ OF XREF
+1666,CARD NUMBER: 5656830544981216
+1667,ACCOUNT ID : 00000000046
+1668,CUSTOMER ID: 000000046
+1669,SUCCESSFUL READ OF ACCOUNT FILE
+1670,0000000909315074010001POS TERM  Purchase at Abbott and Sons                                                                         0000007592B800000000Abbott and Sons                                   East Cydney                                       03808-746840115008917773672022-06-10 19:27:53.000000
+1671,SUCCESSFUL READ OF XREF
+1672,CARD NUMBER: 4011500891777367
+1673,ACCOUNT ID : 00000000013
+1674,CUSTOMER ID: 000000013
+1675,SUCCESSFUL READ OF ACCOUNT FILE
+1676,0000000910081354010001POS TERM  Purchase at Gerlach Group                                                                           0000001301A800000000Gerlach Group                                     Tannerburgh                                       30389-874170266376150322772022-06-10 19:27:53.000000
+1677,SUCCESSFUL READ OF XREF
+1678,CARD NUMBER: 7026637615032277
+1679,ACCOUNT ID : 00000000031
+1680,CUSTOMER ID: 000000031
+1681,SUCCESSFUL READ OF ACCOUNT FILE
+1682,0000000925687557030001OPERATOR  Return item at Zboncak-Franecki                                                                     0000003729R800000000Zboncak-Franecki                                  Aldenport                                         24426-340106835861981715162022-06-10 19:27:53.000000
+1683,SUCCESSFUL READ OF XREF
+1684,CARD NUMBER: 0683586198171516
+1685,ACCOUNT ID : 00000000027
+1686,CUSTOMER ID: 000000027
+1687,SUCCESSFUL READ OF ACCOUNT FILE
+1688,"0000000926624843010001POS TERM  Purchase at Schowalter, Pagac and Welch                                                             0000006843C800000000Schowalter, Pagac and Welch                       West Isacton                                      46573-235540115008917773672022-06-10 19:27:53.000000"
+1689,SUCCESSFUL READ OF XREF
+1690,CARD NUMBER: 4011500891777367
+1691,ACCOUNT ID : 00000000013
+1692,CUSTOMER ID: 000000013
+1693,SUCCESSFUL READ OF ACCOUNT FILE
+1694,"0000000929059536010001POS TERM  Purchase at Glover, Block and Huel                                                                  0000009201A800000000Glover, Block and Huel                            Lake Dasiabury                                    92661     85178669582060082022-06-10 19:27:53.000000"
+1695,SUCCESSFUL READ OF XREF
+1696,CARD NUMBER: 8517866958206008
+1697,ACCOUNT ID : 00000000014
+1698,CUSTOMER ID: 000000014
+1699,SUCCESSFUL READ OF ACCOUNT FILE
+1700,"0000000934798061030001OPERATOR  Return item at Gottlieb, VonRueden and Raynor                                                       0000002601J800000000Gottlieb, VonRueden and Raynor                    East Darryl                                       94703     95017337214298932022-06-10 19:27:53.000000"
+1701,SUCCESSFUL READ OF XREF
+1702,CARD NUMBER: 9501733721429893
+1703,ACCOUNT ID : 00000000009
+1704,CUSTOMER ID: 000000009
+1705,SUCCESSFUL READ OF ACCOUNT FILE
+1706,"0000000934945079010001POS TERM  Purchase at Boyle, O'Conner and Gorczany                                                            0000002224D800000000Boyle, O'Conner and Gorczany                      South Kirstin                                     23487     65035351817959922022-06-10 19:27:53.000000"
+1707,SUCCESSFUL READ OF XREF
+1708,CARD NUMBER: 6503535181795992
+1709,ACCOUNT ID : 00000000048
+1710,CUSTOMER ID: 000000048
+1711,SUCCESSFUL READ OF ACCOUNT FILE
+1712,"0000000942960329010001POS TERM  Purchase at Bartoletti, Lehner and Johnston                                                         0000007116F800000000Bartoletti, Lehner and Johnston                   North Virginie                                    63690     29401393623004492022-06-10 19:27:53.000000"
+1713,SUCCESSFUL READ OF XREF
+1714,CARD NUMBER: 2940139362300449
+1715,ACCOUNT ID : 00000000022
+1716,CUSTOMER ID: 000000022
+1717,SUCCESSFUL READ OF ACCOUNT FILE
+1718,"0000000943918566010001POS TERM  Purchase at Walker, Mohr and Wyman                                                                  0000004377G800000000Walker, Mohr and Wyman                            Kamronville                                       93454     81125458342397352022-06-10 19:27:53.000000"
+1719,SUCCESSFUL READ OF XREF
+1720,CARD NUMBER: 8112545834239735
+1721,ACCOUNT ID : 00000000023
+1722,CUSTOMER ID: 000000023
+1723,SUCCESSFUL READ OF ACCOUNT FILE
+1724,"0000000946277676010001POS TERM  Purchase at Kemmer, Wyman and Ondricka                                                              0000002200{800000000Kemmer, Wyman and Ondricka                        Marcellechester                                   28632     37662819841551542022-06-10 19:27:53.000000"
+1725,SUCCESSFUL READ OF XREF
+1726,CARD NUMBER: 3766281984155154
+1727,ACCOUNT ID : 00000000041
+1728,CUSTOMER ID: 000000041
+1729,SUCCESSFUL READ OF ACCOUNT FILE
+1730,"0000000956474921010001POS TERM  Purchase at Gottlieb, Turner and Ruecker                                                            0000002233C800000000Gottlieb, Turner and Ruecker                      Brettland                                         98831-658227453037200020902022-06-10 19:27:53.000000"
+1731,SUCCESSFUL READ OF XREF
+1732,CARD NUMBER: 2745303720002090
+1733,ACCOUNT ID : 00000000039
+1734,CUSTOMER ID: 000000039
+1735,SUCCESSFUL READ OF ACCOUNT FILE
+1736,0000000957695517010001POS TERM  Purchase at Schoen-Marvin                                                                           0000005732B800000000Schoen-Marvin                                     West Anastacio                                    10111-502609279871086362322022-06-10 19:27:53.000000
+1737,SUCCESSFUL READ OF XREF
+1738,CARD NUMBER: 0927987108636232
+1739,ACCOUNT ID : 00000000020
+1740,CUSTOMER ID: 000000020
+1741,SUCCESSFUL READ OF ACCOUNT FILE
+1742,0000000957864065010001POS TERM  Purchase at Prohaska-Douglas                                                                        0000003146F800000000Prohaska-Douglas                                  North Leathahaven                                 92680-241837662819841551542022-06-10 19:27:53.000000
+1743,SUCCESSFUL READ OF XREF
+1744,CARD NUMBER: 3766281984155154
+1745,ACCOUNT ID : 00000000041
+1746,CUSTOMER ID: 000000041
+1747,SUCCESSFUL READ OF ACCOUNT FILE
+1748,0000000961186055010001POS TERM  Purchase at Bartell-Fadel                                                                           0000005483C800000000Bartell-Fadel                                     Lebsackchester                                    88382-653811421676928789312022-06-10 19:27:53.000000
+1749,SUCCESSFUL READ OF XREF
+1750,CARD NUMBER: 1142167692878931
+1751,ACCOUNT ID : 00000000037
+1752,CUSTOMER ID: 000000037
+1753,SUCCESSFUL READ OF ACCOUNT FILE
+1754,0000000961714986010001POS TERM  Purchase at West and Sons                                                                           0000006945E800000000West and Sons                                     Lawrencefort                                      06664-609039991692463758852022-06-10 19:27:53.000000
+1755,SUCCESSFUL READ OF XREF
+1756,CARD NUMBER: 3999169246375885
+1757,ACCOUNT ID : 00000000003
+1758,CUSTOMER ID: 000000003
+1759,SUCCESSFUL READ OF ACCOUNT FILE
+1760,0000000971342087030001OPERATOR  Return item at Johnston Inc                                                                         0000008354M800000000Johnston Inc                                      Bergstromchester                                  69737     81125458342397352022-06-10 19:27:53.000000
+1761,SUCCESSFUL READ OF XREF
+1762,CARD NUMBER: 8112545834239735
+1763,ACCOUNT ID : 00000000023
+1764,CUSTOMER ID: 000000023
+1765,SUCCESSFUL READ OF ACCOUNT FILE
+1766,0000000973907278010001POS TERM  Purchase at Klocko-Rice                                                                             0000007841A800000000Klocko-Rice                                       Shayneville                                       50038-515463492503316485092022-06-10 19:27:53.000000
+1767,SUCCESSFUL READ OF XREF
+1768,CARD NUMBER: 6349250331648509
+1769,ACCOUNT ID : 00000000015
+1770,CUSTOMER ID: 000000015
+1771,SUCCESSFUL READ OF ACCOUNT FILE
+1772,0000000974167587010001POS TERM  Purchase at Moore and Sons                                                                          0000004022B800000000Moore and Sons                                    Parkerchester                                     69137     59751175166160772022-06-10 19:27:53.000000
+1773,SUCCESSFUL READ OF XREF
+1774,CARD NUMBER: 5975117516616077
+1775,ACCOUNT ID : 00000000042
+1776,CUSTOMER ID: 000000042
+1777,SUCCESSFUL READ OF ACCOUNT FILE
+1778,0000000976770816010001POS TERM  Purchase at Corkery-Barton                                                                          0000009174D800000000Corkery-Barton                                    North Walterchester                               08815-364982625936024730762022-06-10 19:27:53.000000
+1779,SUCCESSFUL READ OF XREF
+1780,CARD NUMBER: 8262593602473076
+1781,ACCOUNT ID : 00000000049
+1782,CUSTOMER ID: 000000049
+1783,SUCCESSFUL READ OF ACCOUNT FILE
+1784,"0000000982241353010001POS TERM  Purchase at Bins, Gorczany and Denesik                                                              0000007656F800000000Bins, Gorczany and Denesik                        Elveraville                                       52528     98055834089965882022-06-10 19:27:53.000000"
+1785,SUCCESSFUL READ OF XREF
+1786,CARD NUMBER: 9805583408996588
+1787,ACCOUNT ID : 00000000040
+1788,CUSTOMER ID: 000000040
+1789,SUCCESSFUL READ OF ACCOUNT FILE
+1790,"0000000992103545010001POS TERM  Purchase at Dickens, Bartoletti and Ferry                                                           0000006359I800000000Dickens, Bartoletti and Ferry                     Lesleyville                                       89308-847911421676928789312022-06-10 19:27:53.000000"
+1791,SUCCESSFUL READ OF XREF
+1792,CARD NUMBER: 1142167692878931
+1793,ACCOUNT ID : 00000000037
+1794,CUSTOMER ID: 000000037
+1795,SUCCESSFUL READ OF ACCOUNT FILE
+1796,0000000996722787010001POS TERM  Purchase at Kilback LLC                                                                             0000006032B800000000Kilback LLC                                       Cummeratamouth                                    53200-752932607636123375602022-06-10 19:27:53.000000
+1797,SUCCESSFUL READ OF XREF
+1798,CARD NUMBER: 3260763612337560
+1799,ACCOUNT ID : 00000000010
+1800,CUSTOMER ID: 000000010
+1801,SUCCESSFUL READ OF ACCOUNT FILE
+1802,SUCCESSFUL READ OF XREF
+1803,CARD NUMBER: 3260763612337560
+1804,ACCOUNT ID : 00000000010
+1805,CUSTOMER ID: 000000010
+1806,SUCCESSFUL READ OF ACCOUNT FILE
+1807,END OF EXECUTION OF PROGRAM CBTRN01C

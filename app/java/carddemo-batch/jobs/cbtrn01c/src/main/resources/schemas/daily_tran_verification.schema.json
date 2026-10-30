@@ -1,0 +1,94 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "lookup_seq",
+    "type" : "long",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "1-based lookup number in processing order"
+    }
+  }, {
+    "name" : "dalytran_record_no",
+    "type" : "long",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "1-based DALYTRAN record whose data was looked up; null when DALYTRAN was empty"
+    }
+  }, {
+    "name" : "eof_reprocessed",
+    "type" : "boolean",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "true for the lookup MAIN-PARA repeats after end of file on the last DALYTRAN-RECORD"
+    }
+  }, {
+    "name" : "dalytran_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-ID",
+      "comment" : "DALYTRAN-ID",
+      "copybook" : "CVTRA06Y",
+      "length" : 16,
+      "offset" : 1,
+      "pic" : "X(16)"
+    }
+  }, {
+    "name" : "dalytran_card_num",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-CARD-NUM",
+      "comment" : "DALYTRAN-CARD-NUM",
+      "copybook" : "CVTRA06Y",
+      "length" : 16,
+      "offset" : 263,
+      "pic" : "X(16)"
+    }
+  }, {
+    "name" : "xref_read_status",
+    "type" : "integer",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "WS-XREF-READ-STATUS: 0 found, 4 INVALID KEY"
+    }
+  }, {
+    "name" : "xref_acct_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "cobol_field" : "XREF-ACCT-ID",
+      "comment" : "XREF-ACCT-ID",
+      "copybook" : "CVACT03Y",
+      "length" : 11,
+      "offset" : 26,
+      "pic" : "9(11)"
+    }
+  }, {
+    "name" : "xref_cust_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "cobol_field" : "XREF-CUST-ID",
+      "comment" : "XREF-CUST-ID",
+      "copybook" : "CVACT03Y",
+      "length" : 9,
+      "offset" : 17,
+      "pic" : "9(9)"
+    }
+  }, {
+    "name" : "acct_read_status",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "WS-ACCT-READ-STATUS: 0 found, 4 INVALID KEY; null when the account was not read"
+    }
+  }, {
+    "name" : "verification_status",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "VERIFIED | CARD_NOT_VERIFIED | ACCOUNT_NOT_FOUND"
+    }
+  } ]
+}

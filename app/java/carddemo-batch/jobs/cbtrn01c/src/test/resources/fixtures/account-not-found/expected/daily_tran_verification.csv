@@ -1,0 +1,4 @@
+lookup_seq,dalytran_record_no,eof_reprocessed,dalytran_id,dalytran_card_num,xref_read_status,xref_acct_id,xref_cust_id,acct_read_status,verification_status
+1,1,false,0000000000683580,4859452612877065,0,00000000007,000000007,0,VERIFIED
+2,2,false,0000000001774260,0927987108636232,0,00000000020,000000020,4,ACCOUNT_NOT_FOUND
+3,2,true,0000000001774260,0927987108636232,0,00000000020,000000020,4,ACCOUNT_NOT_FOUND
