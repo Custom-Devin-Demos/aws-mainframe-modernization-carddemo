@@ -1,0 +1,89 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "vbrc_record_type",
+    "type" : "integer",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "VBRC-REC1 / VBRC-REC2",
+      "comment" : "VBRC-REC1 / VBRC-REC2",
+      "dd" : "VBRCFILE",
+      "pic" : "1 or 2"
+    }
+  }, {
+    "name" : "vbrc_record_length",
+    "type" : "integer",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "WS-RECD-LEN",
+      "comment" : "WS-RECD-LEN",
+      "dd" : "VBRCFILE",
+      "pic" : "9(04)"
+    }
+  }, {
+    "name" : "vbrc_acct_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "VB1-ACCT-ID / VB2-ACCT-ID",
+      "comment" : "VB1-ACCT-ID / VB2-ACCT-ID",
+      "dd" : "VBRCFILE",
+      "length" : 11,
+      "offset" : 1,
+      "pic" : "9(11)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "vb1_acct_active_status",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "cobol_field" : "VB1-ACCT-ACTIVE-STATUS",
+      "comment" : "VB1-ACCT-ACTIVE-STATUS",
+      "dd" : "VBRCFILE",
+      "length" : 1,
+      "offset" : 12,
+      "pic" : "X(01)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "vb2_acct_curr_bal",
+    "type" : "decimal(12,2)",
+    "nullable" : true,
+    "metadata" : {
+      "cobol_field" : "VB2-ACCT-CURR-BAL",
+      "comment" : "VB2-ACCT-CURR-BAL",
+      "dd" : "VBRCFILE",
+      "length" : 12,
+      "offset" : 12,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "vb2_acct_credit_limit",
+    "type" : "decimal(12,2)",
+    "nullable" : true,
+    "metadata" : {
+      "cobol_field" : "VB2-ACCT-CREDIT-LIMIT",
+      "comment" : "VB2-ACCT-CREDIT-LIMIT",
+      "dd" : "VBRCFILE",
+      "length" : 12,
+      "offset" : 24,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "vb2_acct_reissue_yyyy",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "cobol_field" : "VB2-ACCT-REISSUE-YYYY",
+      "comment" : "VB2-ACCT-REISSUE-YYYY",
+      "dd" : "VBRCFILE",
+      "length" : 4,
+      "offset" : 36,
+      "pic" : "X(04)",
+      "usage" : "DISPLAY"
+    }
+  } ]
+}

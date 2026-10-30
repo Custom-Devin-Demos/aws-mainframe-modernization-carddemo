@@ -1,0 +1,3 @@
+vbrc_record_type,vbrc_record_length,vbrc_acct_id,vb1_acct_active_status,vb2_acct_curr_bal,vb2_acct_credit_limit,vb2_acct_reissue_yyyy
+1,12,00000000001,Y,,,
+2,39,00000000001,,10.00,1000.00,2026
