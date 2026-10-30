@@ -1,0 +1,25 @@
+{
+  "Comment": "READXREF (app/jcl/READXREF.jcl): STEP05 EXEC PGM=CBACT03C, XREFFILE = CARDXREF KSDS unload. SYSOUT goes to CloudWatch and to the sysout dataset. Input: {raw_root, run_date, output_root}.",
+  "StartAt": "STEP05",
+  "States": {
+    "STEP05": {
+      "Type": "Task",
+      "Comment": "CBACT03C: list the card cross-reference in key order",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-cbact03c",
+        "JobDefinition": "carddemo-cbact03c",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--job', 'CBACT03C', '--input', States.Format('XREFFILE={}/raw/cardxref/run_date={}/cardxref.txt', $.raw_root, $.run_date), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "ResultPath": "$.step05",
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "ResultPath": "$.error", "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "CBACT03C exited non-zero (abend U999 on an XREFFILE open/read/close error)"},
+    "Done": {"Type": "Succeed"}
+  }
+}
