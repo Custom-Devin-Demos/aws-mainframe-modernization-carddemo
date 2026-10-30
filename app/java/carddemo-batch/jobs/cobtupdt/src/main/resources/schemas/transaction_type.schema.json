@@ -1,0 +1,26 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "tr_type",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "Transaction type code",
+      "db2_column" : "TR_TYPE",
+      "db2_table" : "CARDDEMO.TRANSACTION_TYPE",
+      "db2_type" : "CHAR(2)",
+      "host_variable" : "INPUT-REC-NUMBER"
+    }
+  }, {
+    "name" : "tr_description",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "Transaction type description, right-trimmed",
+      "db2_column" : "TR_DESCRIPTION",
+      "db2_table" : "CARDDEMO.TRANSACTION_TYPE",
+      "db2_type" : "VARCHAR(50)",
+      "host_variable" : "INPUT-REC-DESC"
+    }
+  } ]
+}

@@ -1,0 +1,6 @@
+D01Restricted by TRANSACTION_TYPE_CATEGORY
+Z01Invalid type after a long message
+U77Not found after a long message
+A01Duplicate key
+A05Success after errors keeps RC 4
+D66Not found after a success

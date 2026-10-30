@@ -1,0 +1,8 @@
+* NON-NUMERIC KEYS: ORDER BY TR_TYPE IS EBCDIC
+AZ9Upper Z digit
+A0ADigit then letter
+A1 Digit then space
+AA1Letter then digit
+AABLetters
+AabLower case
+A 1Space then digit

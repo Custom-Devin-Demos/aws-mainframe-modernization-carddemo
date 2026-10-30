@@ -1,0 +1,6 @@
+tr_type,tr_description
+01,Purchase
+02,
+03,Trailing blanks beyond column 53 are ignored
+05,"   Leading spaces are kept"
+06,Exactly fifty characters of description text 12345
