@@ -1,0 +1,19 @@
+line_no,page_no,line_type,tran_id,account_id,tran_type_cd,tran_type_desc,tran_cat_cd,tran_cat_desc,tran_source,amount,line_text
+1,1,HEADER,,,,,,,,,DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-07-06
+2,1,BLANK,,,,,,,,,
+3,1,COLUMN_HEADER,,,,,,,,,Transaction ID   Account ID  Transaction Type   Tran Category                      Tran Source            Amount
+4,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+5,1,DETAIL,0000000000000001,00000000050,01,Purchase with a,0001,Regular sales draft with a ve,POS TERM,0.00,0000000000000001 00000000050 01-Purchase with a 0001-Regular sales draft with a ve POS TERM
+6,1,DETAIL,0000000000000002,00000000050,01,Purchase with a,0001,Regular sales draft with a ve,POS TERM,0.05,0000000000000002 00000000050 01-Purchase with a 0001-Regular sales draft with a ve POS TERM                  .05
+7,1,DETAIL,0000000000000003,00000000050,03,Credit,0001,Credit to Account,POS TERM,-0.05,0000000000000003 00000000050 03-Credit          0001-Credit to Account             POS TERM      -           .05
+8,1,DETAIL,0000000000000004,00000000050,01,Purchase with a,0001,Regular sales draft with a ve,POS TERM,1000.00,"0000000000000004 00000000050 01-Purchase with a 0001-Regular sales draft with a ve POS TERM             1,000.00"
+9,1,DETAIL,0000000000000005,00000000050,03,Credit,0001,Credit to Account,POS TERM,-1234567.89,"0000000000000005 00000000050 03-Credit          0001-Credit to Account             POS TERM      -  1,234,567.89"
+10,1,DETAIL,0000000000000006,00000000050,01,Purchase with a,0001,Regular sales draft with a ve,POS TERM,999999999.99,"0000000000000006 00000000050 01-Purchase with a 0001-Regular sales draft with a ve POS TERM       999,999,999.99"
+11,1,DETAIL,0000000000000007,00000000050,01,Purchase with a,0001,Regular sales draft with a ve,POS TERM,999999999.99,"0000000000000007 00000000050 01-Purchase with a 0001-Regular sales draft with a ve POS TERM       999,999,999.99"
+12,1,ACCOUNT_TOTAL,,,,,,,,998766432.09,"Account Total....................................................................................+998,766,432.09"
+13,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+14,1,DETAIL,0000000000000008,00000000027,03,Credit,0001,Credit to Account,POS TERM,-999999999.99,"0000000000000008 00000000027 03-Credit          0001-Credit to Account             POS TERM      -999,999,999.99"
+15,1,DETAIL,0000000000000009,00000000027,03,Credit,0001,Credit to Account,POS TERM,-999999999.99,"0000000000000009 00000000027 03-Credit          0001-Credit to Account             POS TERM      -999,999,999.99"
+16,1,PAGE_TOTAL,,,,,,,,-1233567.88,"Page Total ......................................................................................-  1,233,567.88"
+17,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+18,1,GRAND_TOTAL,,,,,,,,-1233567.88,"Grand Total......................................................................................-  1,233,567.88"

@@ -1,0 +1,15 @@
+line_no,page_no,line_type,tran_id,account_id,tran_type_cd,tran_type_desc,tran_cat_cd,tran_cat_desc,tran_source,amount,line_text
+1,1,HEADER,,,,,,,,,DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-07-06
+2,1,BLANK,,,,,,,,,
+3,1,COLUMN_HEADER,,,,,,,,,Transaction ID   Account ID  Transaction Type   Tran Category                      Tran Source            Amount
+4,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+5,1,DETAIL,0000000000000001,00000000020,01,Purchase,0001,Regular Sales Draft,POS TERM,100.00,0000000000000001 00000000020 01-Purchase        0001-Regular Sales Draft           POS TERM               100.00
+6,1,DETAIL,0000000000000002,00000000020,01,Purchase,0001,Regular Sales Draft,POS TERM,200.00,0000000000000002 00000000020 01-Purchase        0001-Regular Sales Draft           POS TERM               200.00
+7,1,ACCOUNT_TOTAL,,,,,,,,300.00,Account Total....................................................................................+        300.00
+8,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+9,1,DETAIL,0000000000000003,00000000012,01,Purchase,0001,Regular Sales Draft,POS TERM,30.00,0000000000000003 00000000012 01-Purchase        0001-Regular Sales Draft           POS TERM                30.00
+10,1,DETAIL,0000000000000004,00000000012,01,Purchase,0001,Regular Sales Draft,POS TERM,40.00,0000000000000004 00000000012 01-Purchase        0001-Regular Sales Draft           POS TERM                40.00
+11,1,DETAIL,0000000000000005,00000000012,01,Purchase,0001,Regular Sales Draft,POS TERM,5.25,0000000000000005 00000000012 01-Purchase        0001-Regular Sales Draft           POS TERM                 5.25
+12,1,PAGE_TOTAL,,,,,,,,380.50,Page Total ......................................................................................+        380.50
+13,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+14,1,GRAND_TOTAL,,,,,,,,380.50,Grand Total......................................................................................+        380.50
