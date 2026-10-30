@@ -1,0 +1,76 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "card_num",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "CARD-NUM",
+      "comment" : "CARD-NUM",
+      "copybook" : "CVACT02Y",
+      "length" : 16,
+      "offset" : 1,
+      "pic" : "X(16)"
+    }
+  }, {
+    "name" : "card_acct_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "CARD-ACCT-ID",
+      "comment" : "CARD-ACCT-ID",
+      "copybook" : "CVACT02Y",
+      "length" : 11,
+      "offset" : 17,
+      "pic" : "9(11)"
+    }
+  }, {
+    "name" : "card_cvv_cd",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "CARD-CVV-CD",
+      "comment" : "CARD-CVV-CD",
+      "copybook" : "CVACT02Y",
+      "length" : 3,
+      "offset" : 28,
+      "pic" : "9(3)"
+    }
+  }, {
+    "name" : "card_embossed_name",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "CARD-EMBOSSED-NAME",
+      "comment" : "CARD-EMBOSSED-NAME",
+      "copybook" : "CVACT02Y",
+      "length" : 50,
+      "offset" : 31,
+      "pic" : "X(50)"
+    }
+  }, {
+    "name" : "card_expiraion_date",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "CARD-EXPIRAION-DATE",
+      "comment" : "CARD-EXPIRAION-DATE",
+      "copybook" : "CVACT02Y",
+      "length" : 10,
+      "offset" : 81,
+      "pic" : "X(10)"
+    }
+  }, {
+    "name" : "card_active_status",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "CARD-ACTIVE-STATUS",
+      "comment" : "CARD-ACTIVE-STATUS",
+      "copybook" : "CVACT02Y",
+      "length" : 1,
+      "offset" : 91,
+      "pic" : "X(1)"
+    }
+  } ]
+}
