@@ -1,0 +1,2 @@
+lookup_seq,dalytran_record_no,eof_reprocessed,dalytran_id,dalytran_card_num,xref_read_status,xref_acct_id,xref_cust_id,acct_read_status,verification_status
+1,,true,,,4,,,,CARD_NOT_VERIFIED

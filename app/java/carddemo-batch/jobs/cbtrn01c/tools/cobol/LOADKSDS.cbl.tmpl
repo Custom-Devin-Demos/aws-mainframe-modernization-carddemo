@@ -1,0 +1,68 @@
+      ******************************************************************
+      * Builds a GnuCOBOL (BDB) indexed file from an ASCII unload in
+      * app/data/ASCII format: one record per line, LF or CRLF, short
+      * lines space-padded, blank lines skipped (same rules as
+      * batch-common FixedWidthFile). Key = first @KEYLEN@ bytes.
+      * Generated per file by build.sh (@RECLEN@ / @KEYLEN@).
+      ******************************************************************
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LOADKSDS.
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT IN-FILE ASSIGN TO LOADIN
+                  ORGANIZATION IS LINE SEQUENTIAL
+                  FILE STATUS  IS IN-STATUS.
+           SELECT OUT-FILE ASSIGN TO LOADOUT
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE  IS RANDOM
+                  RECORD KEY   IS OUT-KEY
+                  FILE STATUS  IS OUT-STATUS.
+       DATA DIVISION.
+       FILE SECTION.
+       FD  IN-FILE.
+       01  IN-REC                  PIC X(@RECLEN@).
+       FD  OUT-FILE.
+       01  OUT-REC.
+           05 OUT-KEY              PIC X(@KEYLEN@).
+           05 OUT-DATA             PIC X(@DATALEN@).
+       WORKING-STORAGE SECTION.
+       01  IN-STATUS               PIC XX.
+       01  OUT-STATUS              PIC XX.
+       01  WS-COUNT                PIC 9(9) VALUE 0.
+       PROCEDURE DIVISION.
+           OPEN INPUT IN-FILE
+           IF IN-STATUS NOT = '00'
+               DISPLAY 'LOADKSDS: OPEN INPUT FAILED ' IN-STATUS
+                   UPON SYSERR
+               MOVE 8 TO RETURN-CODE
+               STOP RUN
+           END-IF
+           OPEN OUTPUT OUT-FILE
+           IF OUT-STATUS NOT = '00'
+               DISPLAY 'LOADKSDS: OPEN OUTPUT FAILED ' OUT-STATUS
+                   UPON SYSERR
+               MOVE 8 TO RETURN-CODE
+               STOP RUN
+           END-IF
+           PERFORM UNTIL IN-STATUS NOT = '00'
+               MOVE SPACES TO IN-REC
+               READ IN-FILE
+               IF IN-STATUS = '00'
+                   INSPECT IN-REC REPLACING ALL X'0D' BY SPACE
+                   IF IN-REC NOT = SPACES
+                       MOVE IN-REC TO OUT-REC
+                       WRITE OUT-REC
+                       IF OUT-STATUS NOT = '00'
+                           DISPLAY 'LOADKSDS: WRITE FAILED '
+                               OUT-STATUS ' KEY ' OUT-KEY UPON SYSERR
+                           MOVE 8 TO RETURN-CODE
+                           STOP RUN
+                       END-IF
+                       ADD 1 TO WS-COUNT
+                   END-IF
+               END-IF
+           END-PERFORM
+           CLOSE IN-FILE OUT-FILE
+           DISPLAY 'LOADKSDS: ' WS-COUNT ' RECORDS LOADED' UPON SYSERR
+           STOP RUN.

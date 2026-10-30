@@ -1,0 +1,23 @@
+{
+  "Comment": "DALYVRFY: daily transaction verification (CBTRN01C). No JCL exists in app/jcl; the single step and its DD names come from the program's SELECT ... ASSIGN TO clauses. Runs before POSTTRAN in the daily chain.",
+  "StartAt": "CBTRN01C",
+  "States": {
+    "CBTRN01C": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-cbtrn01c",
+        "JobDefinition": "carddemo-cbtrn01c",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--input', States.Format('DALYTRAN={}/raw/dalytran/run_date={}/dailytran.txt', $.raw_root, $.run_date), '--input', States.Format('CUSTFILE={}/raw/custfile/run_date={}/custdata.txt', $.raw_root, $.run_date), '--input', States.Format('XREFFILE={}/raw/xreffile/run_date={}/cardxref.txt', $.raw_root, $.run_date), '--input', States.Format('CARDFILE={}/raw/cardfile/run_date={}/carddata.txt', $.raw_root, $.run_date), '--input', States.Format('ACCTFILE={}/raw/acctfile/run_date={}/acctdata.txt', $.raw_root, $.run_date), '--input', States.Format('TRANFILE={}/raw/tranfile/run_date={}/transact.txt', $.raw_root, $.run_date), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "CBTRN01C abended (CEE3ABD U999: OPEN/READ failure on a DD)"},
+    "Done": {"Type": "Succeed"}
+  }
+}

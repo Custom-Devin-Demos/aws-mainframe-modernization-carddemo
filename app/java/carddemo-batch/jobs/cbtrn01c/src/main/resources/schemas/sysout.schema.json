@@ -1,0 +1,18 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "line_no",
+    "type" : "integer",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "1-based SYSOUT line number"
+    }
+  }, {
+    "name" : "line_text",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "DISPLAY line, right-trimmed"
+    }
+  } ]
+}
