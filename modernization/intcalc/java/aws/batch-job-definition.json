@@ -1,0 +1,27 @@
+{
+  "jobDefinitionName": "carddemo-intcalc",
+  "type": "container",
+  "platformCapabilities": ["FARGATE"],
+  "retryStrategy": { "attempts": 1 },
+  "timeout": { "attemptDurationSeconds": 3600 },
+  "containerProperties": {
+    "image": "<account-id>.dkr.ecr.<region>.amazonaws.com/carddemo-intcalc:1.0.0",
+    "jobRoleArn": "arn:aws:iam::<account-id>:role/carddemo-intcalc-job",
+    "executionRoleArn": "arn:aws:iam::<account-id>:role/ecsTaskExecutionRole",
+    "resourceRequirements": [
+      { "type": "VCPU", "value": "1" },
+      { "type": "MEMORY", "value": "2048" }
+    ],
+    "environment": [
+      { "name": "INPUT_S3_URI", "value": "s3://<bucket>/carddemo/intcalc/in/" },
+      { "name": "OUTPUT_S3_URI", "value": "s3://<bucket>/carddemo/intcalc/out/" },
+      { "name": "UPDATE_LAST_ACCOUNT", "value": "false" }
+    ],
+    "command": [],
+    "networkConfiguration": { "assignPublicIp": "DISABLED" },
+    "fargatePlatformConfiguration": { "platformVersion": "LATEST" },
+    "logConfiguration": { "logDriver": "awslogs" }
+  },
+  "parameters": {},
+  "tags": { "app": "carddemo", "job": "INTCALC" }
+}

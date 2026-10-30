@@ -1,0 +1,3 @@
+java/target/
+parity/output/*/.cobol-build/
+parity/notebooks/*.html
