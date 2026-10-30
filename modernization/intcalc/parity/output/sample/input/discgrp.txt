@@ -1,0 +1,10 @@
+GOLD      01000100199I                            
+GOLD      01000200249I                            
+GOLD      02000100000{                            
+DEFAULT   01000100150{                            
+DEFAULT   01000200250{                            
+DEFAULT   01000300213G                            
+DEFAULT   02000100000{                            
+DEFAULT   02000200077G                            
+DEFAULT   03000100123D                            
+ZEROAPR   01000100000{                            
