@@ -1,0 +1,23 @@
+{
+  "Comment": "TRANREPT: STEP05R (IDCAMS REPRO + SORT/INCLUDE) and STEP10R (CBTRN03C) run as one CBTRN03C Batch job; the pre-step is folded into the job (design section 2.2). Inputs: $.raw_root, $.output_root, $.run_date, optional $.start_date/$.end_date are written to DATEPARM by the caller.",
+  "StartAt": "STEP10R",
+  "States": {
+    "STEP10R": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-cbtrn03c",
+        "JobDefinition": "carddemo-cbtrn03c",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--job', 'CBTRN03C', '--input', States.Format('TRANFILE={}/raw/transact.txt', $.raw_root), '--input', States.Format('CARDXREF={}/raw/cardxref.txt', $.raw_root), '--input', States.Format('TRANTYPE={}/raw/trantype.txt', $.raw_root), '--input', States.Format('TRANCATG={}/raw/trancatg.txt', $.raw_root), '--input', States.Format('DATEPARM={}/raw/dateparm.txt', $.raw_root), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "CBTRN03C exited non-zero (abend U999 on an invalid xref/type/category key or a missing DD)"},
+    "Done": {"Type": "Succeed"}
+  }
+}

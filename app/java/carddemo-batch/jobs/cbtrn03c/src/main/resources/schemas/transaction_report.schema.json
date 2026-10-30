@@ -1,0 +1,88 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "line_no",
+    "type" : "integer",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "1-based record number in TRANREPT"
+    }
+  }, {
+    "name" : "page_no",
+    "type" : "integer",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "Page number; a page starts at each REPORT-NAME-HEADER"
+    }
+  }, {
+    "name" : "line_type",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "HEADER, BLANK, COLUMN_HEADER, RULE, DETAIL, PAGE_TOTAL, ACCOUNT_TOTAL or GRAND_TOTAL"
+    }
+  }, {
+    "name" : "tran_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "TRAN-REPORT-TRANS-ID X(16)"
+    }
+  }, {
+    "name" : "account_id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "TRAN-REPORT-ACCOUNT-ID X(11) from XREF-ACCT-ID"
+    }
+  }, {
+    "name" : "tran_type_cd",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "TRAN-REPORT-TYPE-CD X(02)"
+    }
+  }, {
+    "name" : "tran_type_desc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "TRAN-REPORT-TYPE-DESC X(15), truncated TRAN-TYPE-DESC"
+    }
+  }, {
+    "name" : "tran_cat_cd",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "TRAN-REPORT-CAT-CD 9(04)"
+    }
+  }, {
+    "name" : "tran_cat_desc",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "TRAN-REPORT-CAT-DESC X(29), truncated TRAN-CAT-TYPE-DESC"
+    }
+  }, {
+    "name" : "tran_source",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "TRAN-REPORT-SOURCE X(10)"
+    }
+  }, {
+    "name" : "amount",
+    "type" : "decimal(11,2)",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "DETAIL: TRAN-AMT; *_TOTAL: the printed S9(09)V99 total; null for other lines"
+    }
+  }, {
+    "name" : "line_text",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "The exact 133-byte line, right-trimmed"
+    }
+  } ]
+}

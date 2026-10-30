@@ -1,0 +1,70 @@
+DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-07-06                  
+                                                                                                                                     
+Transaction ID   Account ID  Transaction Type   Tran Category                      Tran Source            Amount                     
+-------------------------------------------------------------------------------------------------------------------------------------
+0000000000000100 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 1.00                     
+0000000000000101 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 2.01                     
+0000000000000102 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 3.02                     
+0000000000000103 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 4.03                     
+0000000000000104 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 5.04                     
+0000000000000105 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 6.05                     
+0000000000000106 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 7.06                     
+0000000000000107 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 8.07                     
+0000000000000108 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                 9.08                     
+0000000000000109 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                10.09                     
+0000000000000110 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                11.10                     
+0000000000000111 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                12.11                     
+0000000000000112 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                13.12                     
+0000000000000113 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                14.13                     
+0000000000000114 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                15.14                     
+0000000000000115 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                16.15                     
+Page Total ......................................................................................+        137.20                     
+-------------------------------------------------------------------------------------------------------------------------------------
+DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-07-06                  
+                                                                                                                                     
+Transaction ID   Account ID  Transaction Type   Tran Category                      Tran Source            Amount                     
+-------------------------------------------------------------------------------------------------------------------------------------
+0000000000000116 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                17.16                     
+0000000000000117 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                18.17                     
+0000000000000118 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                19.18                     
+0000000000000119 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                20.19                     
+0000000000000120 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                21.20                     
+0000000000000121 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                22.21                     
+0000000000000122 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                23.22                     
+0000000000000123 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                24.23                     
+0000000000000124 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                25.24                     
+0000000000000125 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                26.25                     
+0000000000000126 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                27.26                     
+0000000000000127 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                28.27                     
+0000000000000128 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                29.28                     
+Account Total....................................................................................+        439.06                     
+-------------------------------------------------------------------------------------------------------------------------------------
+0000000000000200 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          1.50                     
+0000000000000201 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          2.50                     
+0000000000000202 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          3.50                     
+0000000000000203 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          4.50                     
+0000000000000204 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          5.50                     
+0000000000000205 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          6.50                     
+0000000000000206 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          7.50                     
+0000000000000207 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          8.50                     
+0000000000000208 00000000027 03-Credit          0001-Credit to Account             POS TERM      -          9.50                     
+0000000000000209 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         10.50                     
+0000000000000210 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         11.50                     
+0000000000000211 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         12.50                     
+0000000000000212 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         13.50                     
+0000000000000213 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         14.50                     
+0000000000000214 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         15.50                     
+0000000000000215 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         16.50                     
+0000000000000216 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         17.50                     
+0000000000000217 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         18.50                     
+0000000000000218 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         19.50                     
+Page Total ......................................................................................+        102.36                     
+-------------------------------------------------------------------------------------------------------------------------------------
+DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-07-06                  
+                                                                                                                                     
+Transaction ID   Account ID  Transaction Type   Tran Category                      Tran Source            Amount                     
+-------------------------------------------------------------------------------------------------------------------------------------
+0000000000000219 00000000027 03-Credit          0001-Credit to Account             POS TERM      -         20.50                     
+Page Total ......................................................................................-         41.00                     
+-------------------------------------------------------------------------------------------------------------------------------------
+Grand Total......................................................................................+        198.56                     

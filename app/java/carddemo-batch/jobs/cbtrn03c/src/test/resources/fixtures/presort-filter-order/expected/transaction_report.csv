@@ -1,0 +1,18 @@
+line_no,page_no,line_type,tran_id,account_id,tran_type_cd,tran_type_desc,tran_cat_cd,tran_cat_desc,tran_source,amount,line_text
+1,1,HEADER,,,,,,,,,DALYREPT                              Daily Transaction Report                 Date Range: 2022-01-01 to 2022-07-06
+2,1,BLANK,,,,,,,,,
+3,1,COLUMN_HEADER,,,,,,,,,Transaction ID   Account ID  Transaction Type   Tran Category                      Tran Source            Amount
+4,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+5,1,DETAIL,0000000000000020,00000000050,01,Purchase,0001,Regular Sales Draft,POS TERM,13.00,0000000000000020 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                13.00
+6,1,DETAIL,0000000000000040,00000000050,01,Purchase,0001,Regular Sales Draft,POS TERM,14.00,0000000000000040 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                14.00
+7,1,ACCOUNT_TOTAL,,,,,,,,27.00,Account Total....................................................................................+         27.00
+8,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+9,1,DETAIL,0000000000000015,00000000027,01,Purchase,0001,Regular Sales Draft,POS TERM,17.00,0000000000000015 00000000027 01-Purchase        0001-Regular Sales Draft           POS TERM                17.00
+10,1,ACCOUNT_TOTAL,,,,,,,,17.00,Account Total....................................................................................+         17.00
+11,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+12,1,DETAIL,0000000000000005,00000000002,01,Purchase,0001,Regular Sales Draft,POS TERM,18.00,0000000000000005 00000000002 01-Purchase        0001-Regular Sales Draft           POS TERM                18.00
+13,1,DETAIL,0000000000000010,00000000002,01,Purchase,0001,Regular Sales Draft,POS TERM,11.00,0000000000000010 00000000002 01-Purchase        0001-Regular Sales Draft           POS TERM                11.00
+14,1,DETAIL,0000000000000050,00000000002,01,Purchase,0001,Regular Sales Draft,POS TERM,10.00,0000000000000050 00000000002 01-Purchase        0001-Regular Sales Draft           POS TERM                10.00
+15,1,PAGE_TOTAL,,,,,,,,93.00,Page Total ......................................................................................+         93.00
+16,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+17,1,GRAND_TOTAL,,,,,,,,93.00,Grand Total......................................................................................+         93.00

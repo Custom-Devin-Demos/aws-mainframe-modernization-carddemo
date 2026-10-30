@@ -1,0 +1,7 @@
+line_no,page_no,line_type,tran_id,account_id,tran_type_cd,tran_type_desc,tran_cat_cd,tran_cat_desc,tran_source,amount,line_text
+1,1,HEADER,,,,,,,,,DALYREPT                              Daily Transaction Report                 Date Range: 2022-03-01 to 2022-03-31
+2,1,BLANK,,,,,,,,,
+3,1,COLUMN_HEADER,,,,,,,,,Transaction ID   Account ID  Transaction Type   Tran Category                      Tran Source            Amount
+4,1,RULE,,,,,,,,,-------------------------------------------------------------------------------------------------------------------------------------
+5,1,DETAIL,0000000000000001,00000000050,01,Purchase,0001,Regular Sales Draft,POS TERM,10.00,0000000000000001 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                10.00
+6,1,DETAIL,0000000000000002,00000000050,01,Purchase,0001,Regular Sales Draft,POS TERM,20.00,0000000000000002 00000000050 01-Purchase        0001-Regular Sales Draft           POS TERM                20.00

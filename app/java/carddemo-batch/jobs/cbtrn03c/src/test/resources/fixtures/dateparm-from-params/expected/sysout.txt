@@ -1,0 +1,7 @@
+START OF EXECUTION OF PROGRAM CBTRN03C
+Reporting from 2022-06-10 to 2022-06-10
+0000000000000001010001POS TERM  Edge case 1                                                                                         0000000100{000000001Edge Merchant                                     Edge City                                         12345     05000244537657402022-06-10 12:00:00.0000002022-06-10 12:00:00.000000                    
+0000000000000003010001POS TERM  Edge case 3                                                                                         0000000300{000000001Edge Merchant                                     Edge City                                         12345     06835861981715162022-06-10 12:00:00.0000002022-06-10 12:00:00.000000                    
+TRAN-AMT 0000000300{
+WS-PAGE-TOTAL0000000400{
+END OF EXECUTION OF PROGRAM CBTRN03C

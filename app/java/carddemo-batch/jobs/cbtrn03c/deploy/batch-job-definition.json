@@ -1,0 +1,47 @@
+{
+  "jobDefinitionName": "carddemo-cbtrn03c",
+  "type": "container",
+  "platformCapabilities": ["FARGATE"],
+  "parameters": {
+    "tranfile": "s3://${bucket}/carddemo/raw/transact.txt",
+    "cardxref": "s3://${bucket}/carddemo/raw/cardxref.txt",
+    "trantype": "s3://${bucket}/carddemo/raw/trantype.txt",
+    "trancatg": "s3://${bucket}/carddemo/raw/trancatg.txt",
+    "dateparm": "s3://${bucket}/carddemo/raw/dateparm.txt",
+    "output_root": "s3://${bucket}/carddemo",
+    "run_date": "2022-07-06",
+    "run_id": "manual"
+  },
+  "containerProperties": {
+    "image": "${account}.dkr.ecr.${region}.amazonaws.com/carddemo-batch-cbtrn03c:${git_sha}",
+    "command": [
+      "--job", "CBTRN03C",
+      "--input", "TRANFILE=Ref::tranfile",
+      "--input", "CARDXREF=Ref::cardxref",
+      "--input", "TRANTYPE=Ref::trantype",
+      "--input", "TRANCATG=Ref::trancatg",
+      "--input", "DATEPARM=Ref::dateparm",
+      "--output-root", "Ref::output_root",
+      "--run-date", "Ref::run_date",
+      "--run-id", "Ref::run_id"
+    ],
+    "jobRoleArn": "arn:aws:iam::${account}:role/carddemo-cbtrn03c-job",
+    "executionRoleArn": "arn:aws:iam::${account}:role/carddemo-batch-execution",
+    "resourceRequirements": [
+      {"type": "VCPU", "value": "1"},
+      {"type": "MEMORY", "value": "2048"}
+    ],
+    "fargatePlatformConfiguration": {"platformVersion": "LATEST"},
+    "networkConfiguration": {"assignPublicIp": "DISABLED"},
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/carddemo/batch",
+        "awslogs-stream-prefix": "cbtrn03c"
+      }
+    }
+  },
+  "retryStrategy": {"attempts": 1},
+  "timeout": {"attemptDurationSeconds": 3600},
+  "propagateTags": true
+}
