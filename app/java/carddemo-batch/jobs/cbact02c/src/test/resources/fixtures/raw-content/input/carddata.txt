@@ -1,0 +1,4 @@
+10000000000000010000000ABCD     Leading Spaces Name                             2024-01-31N                                                           
+100000000000000200000000002002Smith, "Jr"                                       2024-02-29 NON-BLANK FILLER CONTENT                                   
+1000000000000003           X9 lower case status                                 9999-99-99y                                                           
+100000000000000400000000004004                                                            Y                                                          *

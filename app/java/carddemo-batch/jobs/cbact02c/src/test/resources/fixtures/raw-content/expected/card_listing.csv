@@ -1,0 +1,5 @@
+card_num,card_acct_id,card_cvv_cd,card_embossed_name,card_expiraion_date,card_active_status
+1000000000000001,0000000ABCD,"   ","  Leading Spaces Name",2024-01-31,N
+1000000000000002,00000000002,002,"Smith, ""Jr""",2024-02-29,
+1000000000000003,"           ","X9 ",lower case status,9999-99-99,y
+1000000000000004,00000000004,004,,,Y

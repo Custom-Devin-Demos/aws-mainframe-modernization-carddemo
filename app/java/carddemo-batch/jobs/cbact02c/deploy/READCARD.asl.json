@@ -1,0 +1,23 @@
+{
+  "Comment": "READCARD (app/jcl/READCARD.jcl): STEP05 EXEC PGM=CBACT02C with DD CARDFILE = the card master KSDS unload. Any non-zero exit (CEE3ABD -> 99) fails the execution.",
+  "StartAt": "STEP05",
+  "States": {
+    "STEP05": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-cbact02c",
+        "JobDefinition": "carddemo-cbact02c",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--input', States.Format('CARDFILE={}/raw/carddata.txt', $.raw_root), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "CBACT02C abended (CEE3ABD U999, exit 99): CARDFILE open/read/close file status not 00"},
+    "Done": {"Type": "Succeed"}
+  }
+}
