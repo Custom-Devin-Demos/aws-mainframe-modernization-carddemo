@@ -1,0 +1,34 @@
+      *****************************************************************
+      * Test-harness driver for paragraph 9910-DISPLAY-IO-STATUS.
+      * gen_iostatdrv.py replaces the two @...@ markers with the
+      * working-storage items and the paragraph copied verbatim from
+      * app/cbl/CBACT03C.cbl. Each 2-byte line of DD STATIN is moved
+      * to IO-STATUS and the paragraph is performed.
+      *****************************************************************
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. IOSTATDRV.
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT STATIN-FILE ASSIGN TO STATIN
+                  ORGANIZATION IS LINE SEQUENTIAL
+                  FILE STATUS  IS STATIN-STATUS.
+       DATA DIVISION.
+       FILE SECTION.
+       FD  STATIN-FILE.
+       01  FD-STATIN-REC           PIC X(02).
+       WORKING-STORAGE SECTION.
+       01  STATIN-STATUS           PIC XX.
+      *@WORKING-STORAGE@
+       PROCEDURE DIVISION.
+           OPEN INPUT STATIN-FILE
+           PERFORM UNTIL STATIN-STATUS NOT = '00'
+               READ STATIN-FILE
+               IF STATIN-STATUS = '00'
+                   MOVE FD-STATIN-REC TO IO-STATUS
+                   PERFORM 9910-DISPLAY-IO-STATUS
+               END-IF
+           END-PERFORM
+           CLOSE STATIN-FILE
+           STOP RUN.
+      *@PARAGRAPH@

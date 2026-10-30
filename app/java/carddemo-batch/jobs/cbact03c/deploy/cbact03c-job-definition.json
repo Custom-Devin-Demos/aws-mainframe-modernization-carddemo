@@ -1,0 +1,40 @@
+{
+  "jobDefinitionName": "carddemo-cbact03c",
+  "type": "container",
+  "platformCapabilities": ["FARGATE"],
+  "parameters": {
+    "xreffile_input": "XREFFILE=s3://${bucket}/carddemo/raw/cardxref/run_date=2022-07-06/cardxref.txt",
+    "output_root": "s3://${bucket}/carddemo",
+    "run_date": "2022-07-06",
+    "run_id": "adhoc"
+  },
+  "containerProperties": {
+    "image": "${account}.dkr.ecr.${region}.amazonaws.com/carddemo-batch-cbact03c:${git_sha}",
+    "command": [
+      "--job", "CBACT03C",
+      "--input", "Ref::xreffile_input",
+      "--output-root", "Ref::output_root",
+      "--run-date", "Ref::run_date",
+      "--run-id", "Ref::run_id"
+    ],
+    "jobRoleArn": "arn:aws:iam::${account}:role/carddemo-cbact03c-job",
+    "executionRoleArn": "arn:aws:iam::${account}:role/carddemo-batch-execution",
+    "resourceRequirements": [
+      {"type": "VCPU", "value": "1"},
+      {"type": "MEMORY", "value": "2048"}
+    ],
+    "fargatePlatformConfiguration": {"platformVersion": "LATEST"},
+    "networkConfiguration": {"assignPublicIp": "DISABLED"},
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/carddemo/batch",
+        "awslogs-stream-prefix": "cbact03c"
+      }
+    }
+  },
+  "retryStrategy": {"attempts": 1},
+  "timeout": {"attemptDurationSeconds": 3600},
+  "propagateTags": true,
+  "tags": {"application": "carddemo", "program": "CBACT03C", "jcl_job": "READXREF"}
+}

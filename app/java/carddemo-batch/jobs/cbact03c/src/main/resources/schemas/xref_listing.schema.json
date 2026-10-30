@@ -1,0 +1,40 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "xref_card_num",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "XREF-CARD-NUM",
+      "comment" : "XREF-CARD-NUM",
+      "copybook" : "CVACT03Y",
+      "length" : 16,
+      "offset" : 1,
+      "pic" : "X(16)"
+    }
+  }, {
+    "name" : "xref_cust_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "XREF-CUST-ID",
+      "comment" : "XREF-CUST-ID",
+      "copybook" : "CVACT03Y",
+      "length" : 9,
+      "offset" : 17,
+      "pic" : "9(9)"
+    }
+  }, {
+    "name" : "xref_acct_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "XREF-ACCT-ID",
+      "comment" : "XREF-ACCT-ID",
+      "copybook" : "CVACT03Y",
+      "length" : 11,
+      "offset" : 26,
+      "pic" : "9(11)"
+    }
+  } ]
+}
