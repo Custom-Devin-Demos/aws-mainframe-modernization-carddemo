@@ -1,0 +1,5 @@
+tr_type,tr_description
+01,Purchase
+02,Payment
+03,Credit
+05,Success after errors keeps RC 4

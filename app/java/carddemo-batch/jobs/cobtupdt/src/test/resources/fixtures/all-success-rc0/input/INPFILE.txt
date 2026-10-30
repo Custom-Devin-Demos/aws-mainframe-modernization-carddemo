@@ -1,0 +1,8 @@
+* ONLY SUCCESSFUL CHANGES: RETURN-CODE STAYS 0
+A04Authorization
+U04Authorization (updated in the same run)
+D02
+A02Payment re-added
+U01Purchase - retail
+D04
+*

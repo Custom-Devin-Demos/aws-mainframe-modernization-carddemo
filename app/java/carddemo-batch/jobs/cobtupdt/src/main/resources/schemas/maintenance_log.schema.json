@@ -1,0 +1,72 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "record_no",
+    "type" : "long",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "1-based INPFILE record number"
+    }
+  }, {
+    "name" : "input_type",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "INPUT-REC-TYPE",
+      "comment" : "INPUT-REC-TYPE (A, U, D, * or invalid), right-trimmed",
+      "dd" : "INPFILE",
+      "length" : 1,
+      "offset" : 1
+    }
+  }, {
+    "name" : "tr_type",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "INPUT-REC-NUMBER",
+      "comment" : "INPUT-REC-NUMBER, right-trimmed",
+      "dd" : "INPFILE",
+      "length" : 2,
+      "offset" : 2
+    }
+  }, {
+    "name" : "tr_description",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "INPUT-REC-DESC",
+      "comment" : "INPUT-REC-DESC, right-trimmed",
+      "dd" : "INPFILE",
+      "length" : 50,
+      "offset" : 4
+    }
+  }, {
+    "name" : "action",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "INSERT, UPDATE, DELETE, COMMENT or INVALID"
+    }
+  }, {
+    "name" : "sqlcode",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : {
+      "comment" : "SQLCODE of the EXEC SQL; null when no SQL ran"
+    }
+  }, {
+    "name" : "result",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "OK, NOT_FOUND, SQL_ERROR, IGNORED or INVALID_TYPE"
+    }
+  }, {
+    "name" : "message",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "comment" : "Last message DISPLAYed for the record (WS-RETURN-MSG for errors), right-trimmed"
+    }
+  } ]
+}

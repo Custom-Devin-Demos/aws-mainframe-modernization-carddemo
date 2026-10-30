@@ -1,0 +1,11 @@
+* MNTTRDB2 RUN AGAINST THE SAMPLE TABLES
+A08Chargeback
+A09Fee
+A01Purchase duplicate
+U03Credit to account
+U99No such type
+D01Purchase
+D09
+D98
+X10Invalid maintenance type
+* END OF MAINTENANCE

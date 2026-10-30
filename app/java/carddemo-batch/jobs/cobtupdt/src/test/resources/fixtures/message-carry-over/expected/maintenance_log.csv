@@ -1,0 +1,7 @@
+record_no,input_type,tr_type,tr_description,action,sqlcode,result,message
+1,D,01,Restricted by TRANSACTION_TYPE_CATEGORY,DELETE,-532,SQL_ERROR,Error accessing: TRANSACTION_TYPE table. SQLCODE: -532
+2,Z,01,Invalid type after a long message,INVALID,,INVALID_TYPE,ERROR: TYPE NOT VALIDSACTION_TYPE table. SQLCODE: -532
+3,U,77,Not found after a long message,UPDATE,100,NOT_FOUND,No records found.ALIDSACTION_TYPE table. SQLCODE: -532
+4,A,01,Duplicate key,INSERT,-803,SQL_ERROR,Error accessing: TRANSACTION_TYPE table. SQLCODE: -803
+5,A,05,Success after errors keeps RC 4,INSERT,0,OK,RECORD INSERTED SUCCESSFULLY
+6,D,66,Not found after a success,DELETE,100,NOT_FOUND,No records found.TRANSACTION_TYPE table. SQLCODE: -803

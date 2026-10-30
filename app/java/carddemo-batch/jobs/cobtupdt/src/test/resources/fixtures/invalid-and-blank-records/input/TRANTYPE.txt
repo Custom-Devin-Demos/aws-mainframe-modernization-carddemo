@@ -1,0 +1,3 @@
+01Purchase                                          00000000
+02Payment                                           00000000
+03Credit                                            00000000

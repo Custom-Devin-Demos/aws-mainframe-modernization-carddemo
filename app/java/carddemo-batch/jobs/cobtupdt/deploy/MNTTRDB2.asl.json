@@ -1,0 +1,23 @@
+{
+  "Comment": "MNTTRDB2 (on demand): STEP1 IKJEFT01 / DSN RUN PROGRAM(COBTUPDT). RC 0 and RC 4 (maintenance errors, processing continued) both succeed; RC >= 8 or an abend fails. TRANTYPE/TRANCATG are the current TRANSACTION_TYPE / TRANSACTION_TYPE_CATEGORY snapshots.",
+  "StartAt": "STEP1",
+  "States": {
+    "STEP1": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-cobtupdt",
+        "JobDefinition": "carddemo-cobtupdt",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--job', 'COBTUPDT', '--input', States.Format('INPFILE={}/inpfile/run_date={}/inpfile.txt', $.raw_root, $.run_date), '--input', States.Format('TRANTYPE={}/trantype/run_date={}/trantype.txt', $.raw_root, $.run_date), '--input', States.Format('TRANCATG={}/trancatg/run_date={}/trancatg.txt', $.raw_root, $.run_date), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "COBTUPDT exited non-zero (RC >= 8 or ABEND)"},
+    "Done": {"Type": "Succeed"}
+  }
+}

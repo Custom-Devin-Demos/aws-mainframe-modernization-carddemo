@@ -1,0 +1,10 @@
+a04Lower-case add is not a valid type
+
+104Digit in the type column
+d01Lower-case delete
+U02
+A05   Leading spaces are kept
+A06Exactly fifty characters of description text 12345
+U03Trailing blanks beyond column 53 are ignored             
+ 03Blank type with a key
+*  comment with leading spaces

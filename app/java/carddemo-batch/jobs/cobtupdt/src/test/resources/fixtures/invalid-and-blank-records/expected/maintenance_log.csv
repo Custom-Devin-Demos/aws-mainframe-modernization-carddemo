@@ -1,0 +1,11 @@
+record_no,input_type,tr_type,tr_description,action,sqlcode,result,message
+1,a,04,Lower-case add is not a valid type,INVALID,,INVALID_TYPE,ERROR: TYPE NOT VALID
+2,,,,INVALID,,INVALID_TYPE,ERROR: TYPE NOT VALID
+3,1,04,Digit in the type column,INVALID,,INVALID_TYPE,ERROR: TYPE NOT VALID
+4,d,01,Lower-case delete,INVALID,,INVALID_TYPE,ERROR: TYPE NOT VALID
+5,U,02,,UPDATE,0,OK,RECORD UPDATED SUCCESSFULLY
+6,A,05,"   Leading spaces are kept",INSERT,0,OK,RECORD INSERTED SUCCESSFULLY
+7,A,06,Exactly fifty characters of description text 12345,INSERT,0,OK,RECORD INSERTED SUCCESSFULLY
+8,U,03,Trailing blanks beyond column 53 are ignored,UPDATE,0,OK,RECORD UPDATED SUCCESSFULLY
+9,,03,Blank type with a key,INVALID,,INVALID_TYPE,ERROR: TYPE NOT VALID
+10,*,,comment with leading spaces,COMMENT,,IGNORED,IGNORING COMMENTED LINE

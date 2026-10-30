@@ -1,0 +1,10 @@
+tr_type,tr_description
+" 1",Space then digit
+ab,Lower case
+AB,Letters
+A1,Letter then digit
+Z9,Upper Z digit
+0A,Digit then letter
+01,Purchase
+02,Payment
+1,Digit then space

@@ -1,0 +1,3 @@
+010001Regular Sales Draft                               0000
+010002Regular Cash Advance                              0000
+030001Credit to Account                                 0000
