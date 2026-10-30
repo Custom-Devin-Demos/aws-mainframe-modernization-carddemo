@@ -1,0 +1,147 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "out_acct_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-ID",
+      "comment" : "OUT-ACCT-ID",
+      "dd" : "OUTFILE",
+      "length" : 11,
+      "offset" : 1,
+      "pic" : "9(11)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_active_status",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-ACTIVE-STATUS",
+      "comment" : "OUT-ACCT-ACTIVE-STATUS",
+      "dd" : "OUTFILE",
+      "length" : 1,
+      "offset" : 12,
+      "pic" : "X(01)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_curr_bal",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-CURR-BAL",
+      "comment" : "OUT-ACCT-CURR-BAL",
+      "dd" : "OUTFILE",
+      "length" : 12,
+      "offset" : 13,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_credit_limit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-CREDIT-LIMIT",
+      "comment" : "OUT-ACCT-CREDIT-LIMIT",
+      "dd" : "OUTFILE",
+      "length" : 12,
+      "offset" : 25,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_cash_credit_limit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-CASH-CREDIT-LIMIT",
+      "comment" : "OUT-ACCT-CASH-CREDIT-LIMIT",
+      "dd" : "OUTFILE",
+      "length" : 12,
+      "offset" : 37,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_open_date",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-OPEN-DATE",
+      "comment" : "OUT-ACCT-OPEN-DATE",
+      "dd" : "OUTFILE",
+      "length" : 10,
+      "offset" : 49,
+      "pic" : "X(10)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_expiraion_date",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-EXPIRAION-DATE",
+      "comment" : "OUT-ACCT-EXPIRAION-DATE",
+      "dd" : "OUTFILE",
+      "length" : 10,
+      "offset" : 59,
+      "pic" : "X(10)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_reissue_date",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-REISSUE-DATE",
+      "comment" : "OUT-ACCT-REISSUE-DATE",
+      "dd" : "OUTFILE",
+      "length" : 10,
+      "offset" : 69,
+      "pic" : "X(10)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_curr_cyc_credit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-CURR-CYC-CREDIT",
+      "comment" : "OUT-ACCT-CURR-CYC-CREDIT",
+      "dd" : "OUTFILE",
+      "length" : 12,
+      "offset" : 79,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "out_acct_curr_cyc_debit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-CURR-CYC-DEBIT",
+      "comment" : "OUT-ACCT-CURR-CYC-DEBIT",
+      "dd" : "OUTFILE",
+      "length" : 7,
+      "offset" : 91,
+      "pic" : "S9(10)V99",
+      "usage" : "COMP-3"
+    }
+  }, {
+    "name" : "out_acct_group_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "OUT-ACCT-GROUP-ID",
+      "comment" : "OUT-ACCT-GROUP-ID",
+      "dd" : "OUTFILE",
+      "length" : 10,
+      "offset" : 98,
+      "pic" : "X(10)",
+      "usage" : "DISPLAY"
+    }
+  } ]
+}

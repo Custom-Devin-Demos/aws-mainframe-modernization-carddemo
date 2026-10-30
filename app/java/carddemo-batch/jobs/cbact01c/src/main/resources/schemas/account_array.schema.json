@@ -1,0 +1,147 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "arr_acct_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-ID",
+      "comment" : "ARR-ACCT-ID",
+      "dd" : "ARRYFILE",
+      "length" : 11,
+      "offset" : 1,
+      "pic" : "9(11)",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "arr_acct_curr_bal_1",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-BAL(1)",
+      "comment" : "ARR-ACCT-CURR-BAL(1)",
+      "dd" : "ARRYFILE",
+      "length" : 12,
+      "offset" : 12,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "arr_acct_curr_cyc_debit_1",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-CYC-DEBIT(1)",
+      "comment" : "ARR-ACCT-CURR-CYC-DEBIT(1)",
+      "dd" : "ARRYFILE",
+      "length" : 7,
+      "offset" : 24,
+      "pic" : "S9(10)V99",
+      "usage" : "COMP-3"
+    }
+  }, {
+    "name" : "arr_acct_curr_bal_2",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-BAL(2)",
+      "comment" : "ARR-ACCT-CURR-BAL(2)",
+      "dd" : "ARRYFILE",
+      "length" : 12,
+      "offset" : 31,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "arr_acct_curr_cyc_debit_2",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-CYC-DEBIT(2)",
+      "comment" : "ARR-ACCT-CURR-CYC-DEBIT(2)",
+      "dd" : "ARRYFILE",
+      "length" : 7,
+      "offset" : 43,
+      "pic" : "S9(10)V99",
+      "usage" : "COMP-3"
+    }
+  }, {
+    "name" : "arr_acct_curr_bal_3",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-BAL(3)",
+      "comment" : "ARR-ACCT-CURR-BAL(3)",
+      "dd" : "ARRYFILE",
+      "length" : 12,
+      "offset" : 50,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "arr_acct_curr_cyc_debit_3",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-CYC-DEBIT(3)",
+      "comment" : "ARR-ACCT-CURR-CYC-DEBIT(3)",
+      "dd" : "ARRYFILE",
+      "length" : 7,
+      "offset" : 62,
+      "pic" : "S9(10)V99",
+      "usage" : "COMP-3"
+    }
+  }, {
+    "name" : "arr_acct_curr_bal_4",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-BAL(4)",
+      "comment" : "ARR-ACCT-CURR-BAL(4)",
+      "dd" : "ARRYFILE",
+      "length" : 12,
+      "offset" : 69,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "arr_acct_curr_cyc_debit_4",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-CYC-DEBIT(4)",
+      "comment" : "ARR-ACCT-CURR-CYC-DEBIT(4)",
+      "dd" : "ARRYFILE",
+      "length" : 7,
+      "offset" : 81,
+      "pic" : "S9(10)V99",
+      "usage" : "COMP-3"
+    }
+  }, {
+    "name" : "arr_acct_curr_bal_5",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-BAL(5)",
+      "comment" : "ARR-ACCT-CURR-BAL(5)",
+      "dd" : "ARRYFILE",
+      "length" : 12,
+      "offset" : 88,
+      "pic" : "S9(10)V99",
+      "usage" : "DISPLAY"
+    }
+  }, {
+    "name" : "arr_acct_curr_cyc_debit_5",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ARR-ACCT-CURR-CYC-DEBIT(5)",
+      "comment" : "ARR-ACCT-CURR-CYC-DEBIT(5)",
+      "dd" : "ARRYFILE",
+      "length" : 7,
+      "offset" : 100,
+      "pic" : "S9(10)V99",
+      "usage" : "COMP-3"
+    }
+  } ]
+}

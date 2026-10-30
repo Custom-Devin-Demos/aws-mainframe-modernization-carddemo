@@ -1,0 +1,2 @@
+out_acct_id,out_acct_active_status,out_acct_curr_bal,out_acct_credit_limit,out_acct_cash_credit_limit,out_acct_open_date,out_acct_expiraion_date,out_acct_reissue_date,out_acct_curr_cyc_credit,out_acct_curr_cyc_debit,out_acct_group_id
+00000000001,Y,10.00,1000.00,500.00,2020-01-01,2026-01-01,20260101,0.00,2525.00,

@@ -1,0 +1,24 @@
+{
+  "Comment": "READACCT (app/jcl/READACCT.jcl). PREDEL (IEFBR14 delete of PSCOMP/ARRYPS/VBPS) has no state: every run writes a new run_id partition. STEP05 runs CBACT01C.",
+  "StartAt": "STEP05",
+  "States": {
+    "STEP05": {
+      "Type": "Task",
+      "Comment": "CBACT01C: ACCTFILE -> account_out (OUTFILE), account_array (ARRYFILE), account_vbrc (VBRCFILE), sysout",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-cbact01c",
+        "JobDefinition": "carddemo-cbact01c",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--input', States.Format('ACCTFILE={}/ACCTFILE/run_date={}/acctdata.txt', $.raw_root, $.run_date), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "CBACT01C exited non-zero (CEE3ABD abend 999 on a file-status error)"},
+    "Done": {"Type": "Succeed"}
+  }
+}
