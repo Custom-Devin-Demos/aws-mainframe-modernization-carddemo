@@ -1,0 +1,23 @@
+{
+  "Comment": "Template: one state per JCL step. Each job module ships its own deploy/<JCLJOB>.asl.json based on this.",
+  "StartAt": "STEP05",
+  "States": {
+    "STEP05": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-${program}",
+        "JobDefinition": "carddemo-${program}",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--input', States.Format('DDNAME={}/raw/file.txt', $.raw_root), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "Job step exited non-zero (RC >= 8 or ABEND)"},
+    "Done": {"Type": "Succeed"}
+  }
+}
