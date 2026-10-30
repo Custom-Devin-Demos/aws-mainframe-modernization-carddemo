@@ -1,0 +1,148 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "acct_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-ID",
+      "comment" : "ACCT-ID",
+      "copybook" : "CVACT01Y",
+      "length" : 11,
+      "offset" : 1,
+      "pic" : "9(11)"
+    }
+  }, {
+    "name" : "acct_active_status",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-ACTIVE-STATUS",
+      "comment" : "ACCT-ACTIVE-STATUS",
+      "copybook" : "CVACT01Y",
+      "length" : 1,
+      "offset" : 12,
+      "pic" : "X(1)"
+    }
+  }, {
+    "name" : "acct_curr_bal",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-CURR-BAL",
+      "comment" : "ACCT-CURR-BAL",
+      "copybook" : "CVACT01Y",
+      "length" : 12,
+      "offset" : 13,
+      "pic" : "S9(10)V9(2)"
+    }
+  }, {
+    "name" : "acct_credit_limit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-CREDIT-LIMIT",
+      "comment" : "ACCT-CREDIT-LIMIT",
+      "copybook" : "CVACT01Y",
+      "length" : 12,
+      "offset" : 25,
+      "pic" : "S9(10)V9(2)"
+    }
+  }, {
+    "name" : "acct_cash_credit_limit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-CASH-CREDIT-LIMIT",
+      "comment" : "ACCT-CASH-CREDIT-LIMIT",
+      "copybook" : "CVACT01Y",
+      "length" : 12,
+      "offset" : 37,
+      "pic" : "S9(10)V9(2)"
+    }
+  }, {
+    "name" : "acct_open_date",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-OPEN-DATE",
+      "comment" : "ACCT-OPEN-DATE",
+      "copybook" : "CVACT01Y",
+      "length" : 10,
+      "offset" : 49,
+      "pic" : "X(10)"
+    }
+  }, {
+    "name" : "acct_expiraion_date",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-EXPIRAION-DATE",
+      "comment" : "ACCT-EXPIRAION-DATE",
+      "copybook" : "CVACT01Y",
+      "length" : 10,
+      "offset" : 59,
+      "pic" : "X(10)"
+    }
+  }, {
+    "name" : "acct_reissue_date",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-REISSUE-DATE",
+      "comment" : "ACCT-REISSUE-DATE",
+      "copybook" : "CVACT01Y",
+      "length" : 10,
+      "offset" : 69,
+      "pic" : "X(10)"
+    }
+  }, {
+    "name" : "acct_curr_cyc_credit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-CURR-CYC-CREDIT",
+      "comment" : "ACCT-CURR-CYC-CREDIT",
+      "copybook" : "CVACT01Y",
+      "length" : 12,
+      "offset" : 79,
+      "pic" : "S9(10)V9(2)"
+    }
+  }, {
+    "name" : "acct_curr_cyc_debit",
+    "type" : "decimal(12,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-CURR-CYC-DEBIT",
+      "comment" : "ACCT-CURR-CYC-DEBIT",
+      "copybook" : "CVACT01Y",
+      "length" : 12,
+      "offset" : 91,
+      "pic" : "S9(10)V9(2)"
+    }
+  }, {
+    "name" : "acct_addr_zip",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-ADDR-ZIP",
+      "comment" : "ACCT-ADDR-ZIP",
+      "copybook" : "CVACT01Y",
+      "length" : 10,
+      "offset" : 103,
+      "pic" : "X(10)"
+    }
+  }, {
+    "name" : "acct_group_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "ACCT-GROUP-ID",
+      "comment" : "ACCT-GROUP-ID",
+      "copybook" : "CVACT01Y",
+      "length" : 10,
+      "offset" : 113,
+      "pic" : "X(10)"
+    }
+  } ]
+}

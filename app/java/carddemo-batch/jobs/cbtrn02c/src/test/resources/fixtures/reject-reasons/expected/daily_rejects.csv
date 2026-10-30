@@ -1,0 +1,6 @@
+dalytran_id,dalytran_type_cd,dalytran_cat_cd,dalytran_source,dalytran_desc,dalytran_amt,dalytran_merchant_id,dalytran_merchant_name,dalytran_merchant_city,dalytran_merchant_zip,dalytran_card_num,dalytran_orig_ts,dalytran_proc_ts,validation_fail_reason,validation_fail_reason_desc
+0000000000000101,01,0001,POS TERM,Purchase at Abshire-Lowe,10.00,800000000,Abshire-Lowe,North Enoshaven,72112,4999999999999999,2022-06-10 19:27:53.000000,,0100,INVALID CARD NUMBER FOUND
+0000000000000102,01,0001,POS TERM,Purchase at Abshire-Lowe,10.00,800000000,Abshire-Lowe,North Enoshaven,72112,4000000000000002,2022-06-10 19:27:53.000000,,0101,ACCOUNT RECORD NOT FOUND
+0000000000000103,01,0001,POS TERM,Purchase at Abshire-Lowe,20.01,800000000,Abshire-Lowe,North Enoshaven,72112,4000000000000003,2022-06-10 19:27:53.000000,,0102,OVERLIMIT TRANSACTION
+0000000000000104,01,0001,POS TERM,Purchase at Abshire-Lowe,1.00,800000000,Abshire-Lowe,North Enoshaven,72112,4000000000000004,2022-06-10 19:27:53.000000,,0103,TRANSACTION RECEIVED AFTER ACCT EXPIRATION
+0000000000000105,01,0001,POS TERM,Purchase at Abshire-Lowe,50.00,800000000,Abshire-Lowe,North Enoshaven,72112,4000000000000005,2022-06-10 19:27:53.000000,,0103,TRANSACTION RECEIVED AFTER ACCT EXPIRATION

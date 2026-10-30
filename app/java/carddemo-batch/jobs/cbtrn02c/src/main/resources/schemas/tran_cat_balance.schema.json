@@ -1,0 +1,52 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "trancat_acct_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "TRANCAT-ACCT-ID",
+      "comment" : "TRANCAT-ACCT-ID",
+      "copybook" : "CVTRA01Y",
+      "length" : 11,
+      "offset" : 1,
+      "pic" : "9(11)"
+    }
+  }, {
+    "name" : "trancat_type_cd",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "TRANCAT-TYPE-CD",
+      "comment" : "TRANCAT-TYPE-CD",
+      "copybook" : "CVTRA01Y",
+      "length" : 2,
+      "offset" : 12,
+      "pic" : "X(2)"
+    }
+  }, {
+    "name" : "trancat_cd",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "TRANCAT-CD",
+      "comment" : "TRANCAT-CD",
+      "copybook" : "CVTRA01Y",
+      "length" : 4,
+      "offset" : 14,
+      "pic" : "9(4)"
+    }
+  }, {
+    "name" : "tran_cat_bal",
+    "type" : "decimal(11,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "TRAN-CAT-BAL",
+      "comment" : "TRAN-CAT-BAL",
+      "copybook" : "CVTRA01Y",
+      "length" : 11,
+      "offset" : 18,
+      "pic" : "S9(9)V9(2)"
+    }
+  } ]
+}

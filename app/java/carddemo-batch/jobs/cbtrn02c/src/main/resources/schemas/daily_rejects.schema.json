@@ -1,0 +1,184 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "dalytran_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-ID",
+      "comment" : "DALYTRAN-ID",
+      "copybook" : "CVTRA06Y",
+      "length" : 16,
+      "offset" : 1,
+      "pic" : "X(16)"
+    }
+  }, {
+    "name" : "dalytran_type_cd",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-TYPE-CD",
+      "comment" : "DALYTRAN-TYPE-CD",
+      "copybook" : "CVTRA06Y",
+      "length" : 2,
+      "offset" : 17,
+      "pic" : "X(2)"
+    }
+  }, {
+    "name" : "dalytran_cat_cd",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-CAT-CD",
+      "comment" : "DALYTRAN-CAT-CD",
+      "copybook" : "CVTRA06Y",
+      "length" : 4,
+      "offset" : 19,
+      "pic" : "9(4)"
+    }
+  }, {
+    "name" : "dalytran_source",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-SOURCE",
+      "comment" : "DALYTRAN-SOURCE",
+      "copybook" : "CVTRA06Y",
+      "length" : 10,
+      "offset" : 23,
+      "pic" : "X(10)"
+    }
+  }, {
+    "name" : "dalytran_desc",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-DESC",
+      "comment" : "DALYTRAN-DESC",
+      "copybook" : "CVTRA06Y",
+      "length" : 100,
+      "offset" : 33,
+      "pic" : "X(100)"
+    }
+  }, {
+    "name" : "dalytran_amt",
+    "type" : "decimal(11,2)",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-AMT",
+      "comment" : "DALYTRAN-AMT",
+      "copybook" : "CVTRA06Y",
+      "length" : 11,
+      "offset" : 133,
+      "pic" : "S9(9)V9(2)"
+    }
+  }, {
+    "name" : "dalytran_merchant_id",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-MERCHANT-ID",
+      "comment" : "DALYTRAN-MERCHANT-ID",
+      "copybook" : "CVTRA06Y",
+      "length" : 9,
+      "offset" : 144,
+      "pic" : "9(9)"
+    }
+  }, {
+    "name" : "dalytran_merchant_name",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-MERCHANT-NAME",
+      "comment" : "DALYTRAN-MERCHANT-NAME",
+      "copybook" : "CVTRA06Y",
+      "length" : 50,
+      "offset" : 153,
+      "pic" : "X(50)"
+    }
+  }, {
+    "name" : "dalytran_merchant_city",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-MERCHANT-CITY",
+      "comment" : "DALYTRAN-MERCHANT-CITY",
+      "copybook" : "CVTRA06Y",
+      "length" : 50,
+      "offset" : 203,
+      "pic" : "X(50)"
+    }
+  }, {
+    "name" : "dalytran_merchant_zip",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-MERCHANT-ZIP",
+      "comment" : "DALYTRAN-MERCHANT-ZIP",
+      "copybook" : "CVTRA06Y",
+      "length" : 10,
+      "offset" : 253,
+      "pic" : "X(10)"
+    }
+  }, {
+    "name" : "dalytran_card_num",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-CARD-NUM",
+      "comment" : "DALYTRAN-CARD-NUM",
+      "copybook" : "CVTRA06Y",
+      "length" : 16,
+      "offset" : 263,
+      "pic" : "X(16)"
+    }
+  }, {
+    "name" : "dalytran_orig_ts",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-ORIG-TS",
+      "comment" : "DALYTRAN-ORIG-TS",
+      "copybook" : "CVTRA06Y",
+      "length" : 26,
+      "offset" : 279,
+      "pic" : "X(26)"
+    }
+  }, {
+    "name" : "dalytran_proc_ts",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "DALYTRAN-PROC-TS",
+      "comment" : "DALYTRAN-PROC-TS",
+      "copybook" : "CVTRA06Y",
+      "length" : 26,
+      "offset" : 305,
+      "pic" : "X(26)"
+    }
+  }, {
+    "name" : "validation_fail_reason",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "WS-VALIDATION-FAIL-REASON",
+      "comment" : "Reject reason code: 0100 card not in xref, 0101 account not found, 0102 overlimit, 0103 after expiration",
+      "copybook" : "CBTRN02C WS-VALIDATION-TRAILER",
+      "length" : 4,
+      "offset" : 351,
+      "pic" : "9(04)"
+    }
+  }, {
+    "name" : "validation_fail_reason_desc",
+    "type" : "string",
+    "nullable" : false,
+    "metadata" : {
+      "cobol_field" : "WS-VALIDATION-FAIL-REASON-DESC",
+      "comment" : "Reject reason text",
+      "copybook" : "CBTRN02C WS-VALIDATION-TRAILER",
+      "length" : 76,
+      "offset" : 355,
+      "pic" : "X(76)"
+    }
+  } ]
+}

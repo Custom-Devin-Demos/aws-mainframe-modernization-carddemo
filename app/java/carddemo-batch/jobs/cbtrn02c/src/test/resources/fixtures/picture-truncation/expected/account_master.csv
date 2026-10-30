@@ -1,0 +1,4 @@
+acct_id,acct_active_status,acct_curr_bal,acct_credit_limit,acct_cash_credit_limit,acct_open_date,acct_expiraion_date,acct_reissue_date,acct_curr_cyc_credit,acct_curr_cyc_debit,acct_addr_zip,acct_group_id
+00000000001,Y,0.50,100.00,500.00,2014-11-20,2025-05-20,2025-05-20,0.00,0.00,A000000000,
+00000000002,Y,1.00,100.00,500.00,2014-11-20,2025-05-20,2025-05-20,1000000051.00,0.00,A000000000,
+00000000003,Y,-9999999999.00,100.00,500.00,2014-11-20,2025-05-20,2025-05-20,0.00,-9999999999.99,A000000000,
