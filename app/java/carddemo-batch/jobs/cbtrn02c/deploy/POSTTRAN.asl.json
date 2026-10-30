@@ -1,0 +1,25 @@
+{
+  "Comment": "POSTTRAN (app/jcl/POSTTRAN.jcl): STEP15 EXEC PGM=CBTRN02C. RC 0 and 4 (rejects) exit 0; abend (CEE3ABD) exits 99 and fails the execution. Input: {raw_root, output_root, run_date}.",
+  "StartAt": "STEP15",
+  "States": {
+    "STEP15": {
+      "Type": "Task",
+      "Comment": "CBTRN02C: post DALYTRAN to TRANFILE/ACCTFILE/TCATBALF, rejects to DALYREJS",
+      "Resource": "arn:aws:states:::batch:submitJob.sync",
+      "Parameters": {
+        "JobName": "carddemo-cbtrn02c",
+        "JobDefinition": "carddemo-cbtrn02c",
+        "JobQueue": "carddemo-batch",
+        "ContainerOverrides": {
+          "Command.$": "States.Array('--input', States.Format('DALYTRAN={}/dailytran.txt', $.raw_root), '--input', States.Format('XREFFILE={}/cardxref.txt', $.raw_root), '--input', States.Format('ACCTFILE={}/acctdata.txt', $.raw_root), '--input', States.Format('TCATBALF={}/tcatbal.txt', $.raw_root), '--output-root', $.output_root, '--run-date', $.run_date, '--run-id', $$.Execution.Name)"
+        }
+      },
+      "ResultPath": "$.step15",
+      "Retry": [{"ErrorEquals": ["Batch.AWSBatchException"], "MaxAttempts": 2, "IntervalSeconds": 30, "BackoffRate": 2}],
+      "Catch": [{"ErrorEquals": ["States.ALL"], "ResultPath": "$.error", "Next": "Abended"}],
+      "Next": "Done"
+    },
+    "Abended": {"Type": "Fail", "Error": "CardDemoAbend", "Cause": "CBTRN02C exited non-zero (RC >= 8 or ABEND)"},
+    "Done": {"Type": "Succeed"}
+  }
+}

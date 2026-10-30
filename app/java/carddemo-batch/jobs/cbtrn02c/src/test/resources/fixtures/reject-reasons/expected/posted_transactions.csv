@@ -1,0 +1,4 @@
+tran_id,tran_type_cd,tran_cat_cd,tran_source,tran_desc,tran_amt,tran_merchant_id,tran_merchant_name,tran_merchant_city,tran_merchant_zip,tran_card_num,tran_orig_ts,tran_proc_ts
+0000000000000106,01,0001,POS TERM,Purchase at Abshire-Lowe,50.00,800000000,Abshire-Lowe,North Enoshaven,72112,4000000000000006,2022-06-10 19:27:53.000000,2022-07-06-00.00.00.000000
+0000000000000107,01,0001,POS TERM,Purchase at Abshire-Lowe,25.00,800000000,Abshire-Lowe,North Enoshaven,72112,4000000000000001,2022-06-10 19:27:53.000000,2022-07-06-00.00.00.000000
+0000000000000108,01,0001,POS TERM,Purchase at Abshire-Lowe,20.00,800000000,Abshire-Lowe,North Enoshaven,72112,4000000000000003,2022-06-10 19:27:53.000000,2022-07-06-00.00.00.000000

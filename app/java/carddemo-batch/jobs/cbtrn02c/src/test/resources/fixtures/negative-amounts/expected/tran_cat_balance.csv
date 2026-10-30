@@ -1,0 +1,4 @@
+trancat_acct_id,trancat_type_cd,trancat_cd,tran_cat_bal
+00000000001,01,0001,0.00
+00000000001,03,0001,-26.51
+00000000002,03,0001,-10.00
