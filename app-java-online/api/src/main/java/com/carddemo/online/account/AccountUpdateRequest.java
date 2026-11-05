@@ -1,0 +1,50 @@
+package com.carddemo.online.account;
+
+/**
+ * Input fields of the COACTUP map (CACTUPAI), as typed. Dates, SSN and phone numbers are split into the
+ * same parts as the BMS fields; {@code version} is the token returned by the GET.
+ */
+public record AccountUpdateRequest(
+        String acctStatus,
+        String openYear,
+        String openMonth,
+        String openDay,
+        String creditLimit,
+        String expiryYear,
+        String expiryMonth,
+        String expiryDay,
+        String cashCreditLimit,
+        String reissueYear,
+        String reissueMonth,
+        String reissueDay,
+        String currBal,
+        String currCycCredit,
+        String currCycDebit,
+        String groupId,
+        String ssn1,
+        String ssn2,
+        String ssn3,
+        String dobYear,
+        String dobMonth,
+        String dobDay,
+        String ficoScore,
+        String firstName,
+        String middleName,
+        String lastName,
+        String addrLine1,
+        String addrLine2,
+        String city,
+        String state,
+        String zip,
+        String country,
+        String phone1a,
+        String phone1b,
+        String phone1c,
+        String phone2a,
+        String phone2b,
+        String phone2c,
+        String govtId,
+        String eftAccountId,
+        String primaryCardHolder,
+        String version) {
+}
