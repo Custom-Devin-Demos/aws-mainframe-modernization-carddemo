@@ -30,9 +30,9 @@ public abstract class AbstractIntegrationTest {
         POSTGRES.start();
     }
 
-    /** ADMIN001 / PASSWORDA in the sample USRSEC file. */
+    /** ADMIN001 / PASSWORD (admin) in the sample USRSEC file. */
     public static final SessionUser ADMIN = new SessionUser("ADMIN001", SessionUser.ADMIN);
-    /** USER0001 / PASSWORDU in the sample USRSEC file. */
+    /** USER0001 / PASSWORD (regular user) in the sample USRSEC file. */
     public static final SessionUser USER = new SessionUser("USER0001", SessionUser.USER);
 
     @Autowired
