@@ -1,0 +1,7 @@
+.acct-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 24px; }
+.acct-grid .acct-wide { grid-column: 1 / -1; }
+.acct-row { display: flex; gap: 8px; align-items: baseline; }
+.acct-row input { width: auto; }
+.acct-section { text-align: center; color: #fff; margin: 12px 0 6px; }
+.acct-value { color: #fff; text-decoration: underline; min-width: 4ch; }
+.acct-info { color: #fff; margin-top: 8px; }
