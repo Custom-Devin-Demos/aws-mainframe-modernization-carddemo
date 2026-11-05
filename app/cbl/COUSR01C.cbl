@@ -80,6 +80,9 @@
                PERFORM RETURN-TO-PREV-SCREEN
            ELSE
                MOVE DFHCOMMAREA(1:EIBCALEN) TO CARDDEMO-COMMAREA
+               IF NOT CDEMO-USRTYP-ADMIN
+                   PERFORM RETURN-TO-SIGNON-SCREEN
+               END-IF
                IF NOT CDEMO-PGM-REENTER
                    SET CDEMO-PGM-REENTER    TO TRUE
                    MOVE LOW-VALUES          TO COUSR1AO
@@ -158,6 +161,15 @@
                MOVE USRTYPEI OF COUSR1AI TO SEC-USR-TYPE
                PERFORM WRITE-USER-SEC-FILE
            END-IF.
+
+      *----------------------------------------------------------------*
+      *                      RETURN-TO-SIGNON-SCREEN
+      *----------------------------------------------------------------*
+       RETURN-TO-SIGNON-SCREEN.
+
+           EXEC CICS
+               XCTL PROGRAM('COSGN00C')
+           END-EXEC.
 
       *----------------------------------------------------------------*
       *                      RETURN-TO-PREV-SCREEN

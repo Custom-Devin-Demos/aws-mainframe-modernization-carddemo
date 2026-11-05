@@ -88,6 +88,10 @@
                PERFORM RETURN-TO-SIGNON-SCREEN                                  
            ELSE                                                                 
                MOVE DFHCOMMAREA(1:EIBCALEN) TO CARDDEMO-COMMAREA                
+               IF NOT CDEMO-USRTYP-ADMIN                                        
+                   MOVE 'COSGN00C' TO CDEMO-TO-PROGRAM                          
+                   PERFORM RETURN-TO-SIGNON-SCREEN                              
+               END-IF                                                           
                IF NOT CDEMO-PGM-REENTER                                         
                    SET CDEMO-PGM-REENTER    TO TRUE                             
                    MOVE LOW-VALUES          TO COADM1AO                         
