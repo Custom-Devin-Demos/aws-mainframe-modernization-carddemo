@@ -3,6 +3,12 @@
 Spring Boot 3 / Java 17 REST API (`api/`) and React + TypeScript front end (`web/`) replacing the
 CardDemo CICS online programs. See [plan.md](plan.md) for the schema, endpoint and screen mapping.
 
+## Docker Compose
+
+From the repository root, `docker compose up --build` starts PostgreSQL, the API (with sample data
+loaded) and the web front end on http://localhost:8081. See the root README section
+"Online Re-platform (Java + React)" for details and the COBOL-to-endpoint-to-page table.
+
 ## API
 
 Requires Java 17 and Docker (for the Testcontainers PostgreSQL used by the tests).
