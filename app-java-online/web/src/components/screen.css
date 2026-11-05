@@ -1,0 +1,19 @@
+:root {
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  background: #0b0f14;
+  color: #7fdbff;
+}
+body { margin: 0; }
+.screen { max-width: 960px; margin: 24px auto; padding: 16px 24px; border: 1px solid #234; background: #05080c; }
+.screen-header div { display: flex; justify-content: space-between; color: #4fc3f7; }
+.screen-title01, .screen-title02 { color: #ffeb3b; }
+.screen-title { text-align: center; font-size: 1.1rem; color: #fff; margin: 16px 0; }
+.screen-body { min-height: 320px; }
+.screen-body label { color: #81c784; }
+.screen-body input, .screen-body select { background: #000; color: #fff; border: 0; border-bottom: 1px solid #81c784; font: inherit; }
+.screen-message { min-height: 1.4em; margin-top: 12px; }
+.screen-message-error { color: #ff5252; }
+.screen-message-success { color: #69f0ae; }
+.screen-message-info { color: #fff; }
+.screen-pfkeys { display: flex; gap: 12px; margin-top: 8px; }
+.screen-pfkeys button { background: none; border: 0; color: #ffeb3b; font: inherit; cursor: pointer; padding: 0; }

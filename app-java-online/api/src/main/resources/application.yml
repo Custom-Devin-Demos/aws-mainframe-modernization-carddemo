@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: carddemo-online-api
+  datasource:
+    url: ${CARDDEMO_DB_URL:jdbc:postgresql://localhost:5432/carddemo}
+    username: ${CARDDEMO_DB_USER:carddemo}
+    password: ${CARDDEMO_DB_PASSWORD:carddemo}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    out-of-order: true
+  jackson:
+    default-property-inclusion: non_null
+
+carddemo:
+  session:
+    # HMAC key for the signed session token (replaces the CICS COMMAREA user fields).
+    secret: ${CARDDEMO_SESSION_SECRET:change-me-local-dev-only-secret-0123456789}
+    ttl-minutes: ${CARDDEMO_SESSION_TTL_MINUTES:480}
+  loader:
+    enabled: ${CARDDEMO_LOAD_DATA:false}
+    data-dir: ${CARDDEMO_DATA_DIR:../../app/data}
+    encoding: ${CARDDEMO_DATA_ENCODING:ASCII}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
