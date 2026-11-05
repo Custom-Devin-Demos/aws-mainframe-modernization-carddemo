@@ -1,0 +1,9 @@
+.cards-form { display: grid; grid-template-columns: max-content max-content; gap: 6px 12px; margin-bottom: 12px; }
+.cards-table { border-collapse: collapse; margin: 8px auto; }
+.cards-table th { color: #e0e0e0; font-weight: normal; padding: 2px 12px; border-bottom: 1px dashed #e0e0e0; }
+.cards-table td { padding: 2px 12px; text-align: center; color: #e0e0e0; }
+.cards-table input { width: 2ch; text-align: center; }
+.cards-row-error input { color: #ff5252; border-bottom-color: #ff5252; }
+.cards-page { text-align: right; color: #4fc3f7; }
+.cards-info { text-align: center; color: #e0e0e0; min-height: 1.4em; }
+.cards-field-error { border-bottom-color: #ff5252 !important; }
