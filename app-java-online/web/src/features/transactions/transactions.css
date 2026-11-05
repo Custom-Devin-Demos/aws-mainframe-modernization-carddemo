@@ -1,0 +1,13 @@
+.trn-search { margin-bottom: 12px; display: flex; justify-content: space-between; }
+.trn-table { width: 100%; border-collapse: collapse; }
+.trn-table th { color: #fff; text-align: left; border-bottom: 1px dashed #4fc3f7; font-weight: normal; }
+.trn-table td { color: #4fc3f7; padding: 2px 4px; }
+.trn-table td.trn-amount, .trn-table th.trn-amount { text-align: right; }
+.trn-table input { width: 1.5ch; }
+.trn-fields { display: grid; grid-template-columns: max-content 1fr max-content 1fr; gap: 6px 12px; align-items: center; }
+.trn-fields .trn-value { color: #4fc3f7; min-height: 1.2em; }
+.trn-hint { color: #4fc3f7; margin-left: 6px; }
+.trn-key { display: flex; gap: 16px; align-items: center; margin-bottom: 12px; }
+.trn-rule { border: 0; border-top: 1px dashed #ffeb3b; margin: 12px 0; }
+.trn-confirm { margin-top: 16px; }
+.trn-hidden-submit { display: none; }

@@ -12,6 +12,7 @@ CardDemo is a comprehensive mainframe application that simulates a credit card m
 - [Optional Features](#optional-features)
 - [Installation](#installation)
 - [Running Batch Jobs](#running-batch-jobs)
+- [Online Re-platform (Java + React)](#online-re-platform-java--react)
 - [Application Details](#application-details)
   - [User Functions](#user-functions)
   - [Admin Functions](#admin-functions)
@@ -231,6 +232,56 @@ Execute the following JCLs in sequence to run the full batch process:
 | OPENFIL  | Makes files available to CICS                       |                 |
 | WAITSTEP | Defines a step to wait job for given time           |                 |
 | CBPAUP0J | Purge expired authorizations                        | IMS-DB2-MQ: Pending Authorizations |
+
+## Online Re-platform (Java + React)
+
+`app-java-online/` re-platforms the CICS online programs as a Spring Boot 3 / Java 17 REST API on
+PostgreSQL (`api/`) and a React + TypeScript Vite front end (`web/`) that replaces the BMS screens.
+The COBOL sources are unchanged. See [app-java-online/plan.md](app-java-online/plan.md) for the
+schema and CICS-to-HTTP conventions, and [app-java-online/README.md](app-java-online/README.md)
+for running each part on its own.
+
+### Run with Docker Compose
+
+```bash
+docker compose up --build
+```
+
+| Service | URL | Notes |
+| --- | --- | --- |
+| `web` | http://localhost:8081 | front end; proxies `/api` to the API |
+| `api` | http://localhost:8080 | REST API; `GET /actuator/health` |
+| `db` | localhost:5432 | PostgreSQL 16, database/user/password `carddemo` |
+
+At startup the API applies the Flyway migrations and loads `app/data` into empty tables. Set
+`CARDDEMO_DATA_ENCODING=EBCDIC` to load the EBCDIC files instead of the ASCII ones. Sign on as
+`ADMIN001` (admin) or `USER0001` (regular user), password `PASSWORD`. Use
+`docker compose down -v` to drop the database and reload the sample data.
+
+Tests: `(cd app-java-online/api && ./mvnw verify)` (JUnit 5 + Testcontainers, needs Docker) and
+`(cd app-java-online/web && npm ci && npm test)` (Vitest).
+
+### Traceability
+
+| COBOL program | Tran | BMS map | REST endpoint(s) | Page |
+| --- | --- | --- | --- | --- |
+| COSGN00C | CC00 | COSGN00 | `POST /api/auth/signon`, `POST /api/auth/signoff` | `/signon` |
+| COMEN01C | CM00 | COMEN01 | `GET /api/menu`, `POST /api/menu/select` | `/menu` |
+| COADM01C | CA00 | COADM01 | `GET /api/admin/menu`, `POST /api/admin/menu/select` | `/admin` |
+| COACTVWC | CAVW | COACTVW | `GET /api/accounts/{acctId}` | `/accounts/view` |
+| COACTUPC | CAUP | COACTUP | `GET /api/accounts/{acctId}`, `PUT /api/accounts/{acctId}` | `/accounts/update` |
+| COCRDLIC | CCLI | COCRDLI | `GET /api/cards` | `/cards` |
+| COCRDSLC | CCDL | COCRDSL | `GET /api/cards/{cardNum}` | `/cards/view` |
+| COCRDUPC | CCUP | COCRDUP | `PUT /api/cards/{cardNum}` | `/cards/update` |
+| COTRN00C | CT00 | COTRN00 | `GET /api/transactions` | `/transactions` |
+| COTRN01C | CT01 | COTRN01 | `GET /api/transactions/{tranId}` | `/transactions/view` |
+| COTRN02C | CT02 | COTRN02 | `POST /api/transactions` | `/transactions/add` |
+| COBIL00C | CB00 | COBIL00 | `GET /api/bill-payments/{acctId}`, `POST /api/bill-payments` | `/billpay` |
+| CORPT00C | CR00 | CORPT00 | `POST /api/reports` | `/reports` |
+| COUSR00C | CU00 | COUSR00 | `GET /api/users` | `/users` |
+| COUSR01C | CU01 | COUSR01 | `POST /api/users` | `/users/add` |
+| COUSR02C | CU02 | COUSR02 | `GET /api/users/{userId}`, `PUT /api/users/{userId}` | `/users/update` |
+| COUSR03C | CU03 | COUSR03 | `GET /api/users/{userId}`, `DELETE /api/users/{userId}` | `/users/delete` |
 
 ## Application Details
 
