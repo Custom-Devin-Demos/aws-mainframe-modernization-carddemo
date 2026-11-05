@@ -1,0 +1,46 @@
+# CardDemo online re-platform (app-java-online): PostgreSQL + Spring Boot API + React front end.
+# docker compose up --build   then open http://localhost:8081 (sign on as ADMIN001 or USER0001 / PASSWORD)
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: carddemo
+      POSTGRES_USER: carddemo
+      POSTGRES_PASSWORD: carddemo
+    ports:
+      - "5432:5432"
+    volumes:
+      - carddemo-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U carddemo -d carddemo"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build: app-java-online/api
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      CARDDEMO_DB_URL: jdbc:postgresql://db:5432/carddemo
+      CARDDEMO_DB_USER: carddemo
+      CARDDEMO_DB_PASSWORD: carddemo
+      CARDDEMO_LOAD_DATA: "true"
+      CARDDEMO_DATA_DIR: /data
+      CARDDEMO_DATA_ENCODING: ${CARDDEMO_DATA_ENCODING:-ASCII}
+      CARDDEMO_SESSION_SECRET: ${CARDDEMO_SESSION_SECRET:-local-compose-only-secret-change-me-0123456789}
+    volumes:
+      - ./app/data:/data:ro
+    ports:
+      - "8080:8080"
+
+  web:
+    build: app-java-online/web
+    depends_on:
+      - api
+    ports:
+      - "8081:80"
+
+volumes:
+  carddemo-db:
